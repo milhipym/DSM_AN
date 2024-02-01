@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- 백그라운드 -->
+    <RelativeLayout
+        android:id="@+id/login_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff">
+
+        <LinearLayout
+            android:id="@+id/login_top_layout"
+            android:layout_width="@dimen/activity_login_width"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_layout"
+            android:layout_alignLeft="@+id/login_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/intro_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/img_logo_01" />
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="DSM\n영업용모바일"
+                android:textColor="@color/color_42413e_btn"
+                android:layout_toRightOf="@+id/intro_image"
+                android:layout_weight="1"
+                android:textSize="@dimen/_17_dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1_dp"
+            android:layout_marginLeft="@dimen/_20_dp"
+            android:layout_marginRight="@dimen/_20_dp"
+            android:layout_above="@+id/login_layout"
+            android:background="@color/color_f1f0eb" />
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="@dimen/activity_login_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17_dp"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/id_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_52_dp"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/id_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_20_dp"
+                        android:layout_marginRight="@dimen/_13_dp"
+                        android:background="@null"
+                        android:hint="아이디를 입력하세요"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/color_42413e"
+                        android:textColorHint="@color/color_5042413e"
+                        android:textSize="@dimen/_14_dp" />
+
+                    <ImageButton
+                        android:id="@+id/id_delete_btn"
+                        android:layout_width="@dimen/_50_dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:src="@drawable/icon_delete_black"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1_dp"
+                    android:layout_marginLeft="@dimen/_20_dp"
+                    android:background="@color/color_f1f0eb" />
+
+                <RelativeLayout
+                    android:id="@+id/passwd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_52_dp"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/passwd_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_20_dp"
+                        android:layout_marginRight="@dimen/_13_dp"
+                        android:background="@null"
+                        android:hint="비밀번호를 입력하세요"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/color_42413e"
+                        android:textColorHint="@color/color_5042413e"
+                        android:visibility="visible"
+                        android:textSize="@dimen/_14_dp" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/keyscroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_20_dp"
+                        android:layout_marginRight="@dimen/_33_dp"
+                        android:clickable="true"
+                        android:fillViewport="true"
+                        android:scrollbars="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/keylayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/clearall"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="8dip"-->
+                    <!--android:background="@drawable/transkey_image_button"-->
+                    <!--android:contentDescription="@string/transkey_clear_all" />-->
+
+                    <ImageButton
+                        android:id="@+id/passwd_delete_btn"
+                        android:layout_width="@dimen/_50_dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:src="@drawable/icon_delete_black"
+                        android:contentDescription="@string/transkey_clear_all"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_52_dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/_14_dp"
+                android:background="@drawable/background_2_5_50ac66bc"
+                android:text="@string/login"
+                android:textColor="@color/color_50ffffff"
+                android:textSize="@dimen/_14_dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/search_id_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18_dp"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/color_42413e_btn"
+                android:textSize="@dimen/_14_dp" />
+
+        </LinearLayout>
+
+        <!--&lt;!&ndash; 키 패드 Navi Bar를 넣으려면 &ndash;&gt;-->
+        <!--<include-->
+        <!--android:id="@+id/keypadNaviBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--layout="@layout/transkey_user_navibar2"-->
+        <!--android:visibility="gone"/>-->
+
+        <!-- 키 패드가 들어갈 공간 -->
+        <FrameLayout
+            android:id="@+id/keypadContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+        </FrameLayout>
+
+        <!-- 버튼 눌렀을 때 풍선 모양 효과 처리할 공간 -->
+        <RelativeLayout
+            android:id="@+id/keypadBallon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

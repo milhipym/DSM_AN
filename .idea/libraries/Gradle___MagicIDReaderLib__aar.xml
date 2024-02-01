@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: :MagicIDReaderLib:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/991ac4d708517d9c2df7c937dbb00ac7/jetified-MagicIDReaderLib/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/991ac4d708517d9c2df7c937dbb00ac7/jetified-MagicIDReaderLib/jars/libs/mIDRecogLib.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/991ac4d708517d9c2df7c937dbb00ac7/jetified-MagicIDReaderLib/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/991ac4d708517d9c2df7c937dbb00ac7/jetified-MagicIDReaderLib/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

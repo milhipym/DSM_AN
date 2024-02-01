@@ -1,0 +1,471 @@
+<style type="text/css">
+	/* h1.tit_guide {padding:50px 0 18px 20px;border-bottom:1px solid #000000;font-size:30px;color:#2a2a2a;font-weight:bold}
+h2.tit_guide {margin:20px 0 20px 20px;font-size:14px;color:#666;font-weight:bold}
+.noti {margin:10px 0;color:red;font-size:12px} */
+	
+	.prototype {
+		padding: 30px 0 0 0
+	}
+	
+	.prototype .go_menu {
+		padding: 0 15px;
+	}
+	
+	.prototype .go_menu li {
+		float: left;
+		margin: 2px
+	}
+	
+	.prototype .go_menu li a {
+		display: inline-block;
+		padding: 10px 20px;
+		border: 1px solid #333;
+		border-radius: 6px;
+		background: #333;
+		color: #fff
+	}
+	
+	.prototype .top {
+		display: block;
+		width: 50px;
+		height: 35px;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		padding: 15px 0 0 0;
+		border: 1px solid;
+		text-align: center;
+		z-index: 100;
+		color: #fff;
+		background: #000
+	}
+	
+	.prototype h1 {
+		margin: 50px 0 0;
+		padding: 8px 0 8px 15px;
+		border-bottom: 2px solid #000;
+		font-size: 30px;
+		color: #2a2a2a;
+		font-weight: bold;
+		background: #eee
+	}
+	
+	.prototype h2.tit_guide {
+		margin: 40px 0 20px;
+		font-size: 16px;
+		color: #ff5722;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype h2.tit_guide span {
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
+		color: #000
+	}
+	
+	.prototype h3.tit_guide {
+		margin: 20px 0 10px;
+		font-size: 14px;
+		color: #252525;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype .section h2.tit_guide:first-child {
+		margin-top: 20px
+	}
+	
+	.prototype .guide {
+		position: relative;
+		padding: 0 0 20px 0;
+		margin: 0
+	}
+	
+	.prototype .guide .txt_color .over {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		margin: 0 0 15px 0;
+		background: #ff3091
+	}
+	
+	.prototype .guide .txt_color .txt {
+		display: block;
+		width: 80px;
+		margin: 90px 0 0 0;
+		font-size: 12px;
+		color: #797d84;
+		text-align: center
+	}
+	
+	.prototype .guide .con {
+		margin-bottom: 50px
+	}
+	
+	.prototype .tip_guide {
+		margin: 30px 0 10px 0;
+		font-weight: bold
+	}
+	
+	.code {
+		padding: 20px 10px;
+		background: #e1fcff;
+		font-size: 14px;
+		border-left: 3px solid #cae7ea;
+		line-height: 1.7
+	}
+	
+	.guide_codelist li {
+		margin: 0 0 10px 0
+	}
+	
+	.coding_info li {
+		margin: 0 0 30px 0;
+		line-height: 1.7
+	}
+	
+	.coding_info li strong {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: 18px;
+		color: #673AB7
+	}
+	
+	.coding_info li p {
+		margin: 0 0 10px 0;
+		font-weight: 700
+	}
+	
+	.coding_info li p span {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #666
+	}
+	
+	.section_bx {
+		padding: 17px
+	}
+	
+	.coding_info02 li {
+		margin: 0 0 10px 0;
+		font-weight: 700;
+		line-height: 1.5;
+		font-size: 16px;
+		color: #000
+	}
+	
+	.coding_info02 li span {
+		display: block;
+		position: relative;
+		margin: 0 0 0 50px;
+		padding: 0 0 0 12px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	
+	.coding_info02 li span:before {
+		display: block;
+		content: '-';
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.memo {
+		background: #ffe0b9;
+		padding: 10px;
+		font-size: 12px;
+		color: #461b0c
+	}
+	
+	.memo+.tit_guide {
+		margin-top: 20px !important
+	}
+	
+	.color_type {
+		width: 50%
+	}
+	
+	.color_type li {
+		position: relative;
+		margin: 30px 0
+	}
+	
+	.color_type li span {
+		position: absolute;
+		right: -60px;
+		top: -10px
+	}
+	
+	.color_type li.s1 {
+		height: 2px;
+		background: #009881
+	}
+	
+	.color_type li.s2 {
+		height: 2px;
+		background: #666666
+	}
+	
+	.color_type li.s3 {
+		height: 2px;
+		background: #bbbbbb
+	}
+	
+	.color_type li.s4 {
+		height: 2px;
+		background: #e5e5e5
+	}
+	
+	.color_type li.s5 {
+		height: 2px;
+		background: #eeeeee
+	}
+	
+	.color_zone {
+		overflow: hidden
+	}
+	
+	.color_zone li {
+		float: left
+	}
+	
+	.color_zone li strong {
+		display: block;
+		width: 80px;
+		height: 80px
+	}
+</style>
+<article id="proto_cont">
+	<div class="prototype">
+		<ul class="clfix go_menu">
+			<li>
+				<a href="#go_title">natural JS Code</a>
+			</li>
+			<li>
+				<a href="#go_button">BUTTON</a>
+			</li>
+			<li>
+				<a href="#go_form">FORM</a>
+			</li>
+			<li>
+				<a href="#go_board">BOARD</a>
+			</li>
+			<li>
+				<a href="#go_table">TABLE</a>
+			</li>
+			<li>
+				<a href="#go_tab">TAB</a>
+			</li>
+			<li>
+				<a href="#go_list">LIST</a>
+			</li>
+			<li>
+				<a href="#go_zindex">Z-INDEX</a>
+			</li>
+		</ul>
+		<a href="#content" class="top">TOP</a>
+		<h1>Device</h1>
+		<div class="section_bx">
+			<div class="section">
+				<h2 class="tit_guide">Android / Resolution: 1024 X 768</h2>
+			</div>
+		</div>
+		<h1>Color</h1>
+		<div class="section_bx">
+			<div class="section">
+				<h2 class="tit_guide">Text Color</h2>
+				<ul class="color_zone">
+					<li>
+						<strong style="background:#13756f"></strong>
+						<span>#13756f :
+							<br> class: color01</span>
+					</li>
+					<li>
+						<strong style="background:#009881"></strong>
+						<span>#009881 :
+							<br> class: color02</span>
+					</li>
+					<li>
+						<strong style="background:#db3e07"></strong>
+						<span>#db3e07 :
+							<br> class: color03</span>
+					</li>
+					<li>
+						<strong style="background:#000000"></strong>
+						<span>#000000 :
+							<br> class: color000</span>
+					</li>
+					<li>
+						<strong style="background:#333333"></strong>
+						<span>#333333 :
+							<br> class: color333</span>
+					</li>
+					<li>
+						<strong style="background:#666666"></strong>
+						<span>#666666 :
+							<br> class: color666</span>
+					</li>
+				</ul>
+				<h2 class="tit_guide">Background Color</h2>
+				<ul class="color_zone">
+					<li>
+						<strong style="background:#13756f"></strong>
+						<span>#13756f :
+							<br> class:
+							<br>bg_color01</span>
+					</li>
+					<li>
+						<strong style="background:#009881"></strong>
+						<span>#009881 :
+							<br> class:
+							<br>bg_color02</span>
+					</li>
+					<li>
+						<strong style="background:#db3e07"></strong>
+						<span>#db3e07 :
+							<br> class:
+							<br>bg_color03</span>
+					</li>
+					<li>
+						<strong style="background:#f36f21"></strong>
+						<span>#f36f21 :
+							<br> class:
+							<br> bg_color04</span>
+					</li>
+				</ul>
+				<h2 class="tit_guide">Line Color</h2>
+				<ul class="color_type">
+					<li class="s1">
+						<span>#009881</span>
+					</li>
+					<li class="s2">
+						<span>#666666</span>
+					</li>
+					<li class="s3">
+						<span>#bbbbbb</span>
+					</li>
+					<li class="s4">
+						<span>#e5e5e5</span>
+					</li>
+					<li class="s5">
+						<span>#eeeeee</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>[공통] 코드적용</h1>
+		<div class="section_bx">
+			<div class="section">
+				<ul class="coding_info02">
+					<li>1. div.wrap_tb.txt_2line tbody td 에 white-space : inherit 처리</li>
+					<li>2. .tb_list, .tb_search에 no_line : border-top:0</li>
+					<li>3. 공통 아코디언 + 이용 전 확인하세요 클래스 .acc_open 추가시 기본으로 열려있음</li>
+					<li>4. Alert 공통 2타입(이해 할 수 없음)</li>
+					<li>5. 테이블 스크롤 .tb_scroll 적용</li>
+					<li>6. 조회조건 기본 펼쳐진 상태 : etUI.tbSearch.preOpen(); 함수 실행</li>
+					<li>7. 팝업 Size(325, 600*654, 700*654, 1024*718)</li>
+					<li>8. .tb_list nth-child(2n) 기본이며 .tb_list.nth2_1 일 경우 nth-child(2n-1) 처리됨(tfoot이 있을경우 참고)</li>
+					<li>9. </li>
+				</ul>
+			</div>
+		</div>
+		<h1>Layout Jade</h1>
+		<div class="section_bx">
+			<div class="section">
+				<ul class="coding_info02">
+					<li>etribe_ux_layout_mobile.jade
+						<span>default</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Layout Class</h1>
+		<div class="section_bx">
+			<div class="section">
+				<ul class="coding_info">
+					<li>
+						<strong>body</strong>
+						<p>.main (메인)</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Layout Contents</h1>
+		<div class="section_bx">
+			<div class="section">
+				<h2 class="tit_guide">컨텐츠 영역 구조</h2>
+				<ul class="coding_info02">
+					<li>
+						<span>.bx_pd 양쪽 패딩 17px</span>
+					</li>
+				</ul>div.bx_pd
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;div #@$#@</div>
+		</div>
+		<!--타이틀-->
+		<h1 id="go_title" class="tit_guide">타이틀</h1>
+		<!--버튼-->
+		<h1 id="go_button" class="tit_guide">BUTTON</h1>
+		<!--FORM-->
+		<h1 id="go_form" class="tit_guide">FORM</h1>
+		<!--Table-->
+		<h1 id="go_table" class="tit_guide">TABLE</h1>
+		<!--tab-->
+		<h1 id="go_tab" class="tit_guide">TAB</h1>
+		<!--List-->
+		<h1 id="go_list" class="tit_guide">LIST</h1>
+		<!--zindex-->
+		<h1 id="go_zindex" class="tit_guide">Z-INDEX</h1>
+		<div class="section_bx">
+			<div class="section">
+				<p>* z-index 값은 5 단위</p>
+				<br/>
+				<ul class="guide_codelist">
+					<li>
+						<div class="code">
+							<strong>2. 레이어 팝업 (102)
+								<br>
+							</strong>.popup__ {z-index:102}
+							<br> .block_overlay__ {z-index:101}</div>
+					</li>
+					<li>div.code strong 3. 전체메뉴 (??)
+						<br> | .allmenu_bx {z-index:105;}
+						<br> | .allmenu_gnb {z-index:105;} </li>
+					<li>
+						<div class="code">
+							<strong>4. 헤더 ()
+								<br>
+							</strong>#header {z-index:100}</div>
+					</li>
+					<li>
+						<div class="code">
+							<strong>5. 딤드 (??)
+								<br>
+							</strong>.dimm {z-index:??}</div>
+					</li>
+					<li>
+						<div class="code">
+							<strong>6. 네비 하단 탭
+								<br>
+							</strong>.docs_tab_context__ {z-index:50}</div>
+					</li>
+					<li>
+						<div class="code">
+							<strong>7. 가입설계 플루팅
+								<br>
+							</strong>.docs_tab_context__ {z-index:100}</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</article>
+<script type="text/javascript">
+	N("#proto_cont").cont(
+	{
+		init: function(view, request) {}
+	});
+</script>

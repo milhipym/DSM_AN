@@ -1,0 +1,285 @@
+<!--20170817 수정(스탭수정)-->
+<div class="prd_step">
+	<div class="prd_step_scroll">
+		<ul class="step_list">
+			<!-- 20171018 현재 스텝 => on // 입력중 input 클레스 적용 필요-->
+			<li class="on">
+				<span>설계보관</span>
+			</li>
+			<li class="on input">
+				<span>청약설계</span>
+			</li>
+			<li>
+				<span>인수심사</span>
+			</li>
+			<li>
+				<span>이미지심사</span>
+			</li>
+			<li>
+				<span>입출금처리</span>
+			</li>
+			<li>
+				<span>확정</span>
+			</li>
+		</ul>
+		<a href="#" class="btn_step"></a>
+	</div>
+</div>
+<!--20170908 장기_계약변경 스탭 추가(display=none )-->
+<!--.prd_step.etc_full.prd_step_scroll
+	ul.step_list
+		li.on
+			span 보험료산출
+		li
+			span 설계보관
+		li
+			span 인수심사
+		li
+			span 입출금
+		li
+			span 확정신청
+		li
+			span 변경확정
+-->
+<!-- 입력정보 보기-->
+<div class="ip_info_layer">
+	<div class="ip_info_group">
+		<div class="ctr_area">
+			<strong>입력정보 보기</strong>
+			<a href="#" class="btn_bsn_step">심사신청(심사진행중)</a>
+			<a href="#" class="btn_step"></a>
+		</div>
+		<!--script height 적용 필요-->
+		<div class="ip_info_scroll">
+			<div class="ip_info_area">
+				<!-- 해당스텝 일때 on 클레스 적용 필요-->
+				<div class="step on">
+					<strong>1. 상품정보</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>상품명 :</dt>
+								<dd>무배당 프로미라이프 참좋은종합보험1704</dd>
+							</dl>
+							<dl>
+								<dt>설계번호 :</dt>
+								<dd>81700-532-07-7-0007</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>플랜명 :</dt>
+								<dd>자유설계플랜(연만기)</dd>
+							</dl>
+							<dl>
+								<dt>만기/납기 :</dt>
+								<dd>100세만기/30년납</dd>
+							</dl>
+						</div>
+						<a href="" class="button__ btn_view bd_color02">수정</a>
+						<!--마지막일 경우에만 조회-->
+						<!--a(href="", class="button__ btn_view bd_color02") 조회-->
+					</div>
+				</div>
+				<!--인보험-->
+				<div class="step">
+					<strong>2. 피보험자/목적물 정보</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>피보험자 :</dt>
+								<dd>김동부 외 5명</dd>
+							</dl>
+							<dl>
+								<dt>생년월일 :</dt>
+								<dd>YYYY.MM.DD</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>가입설계동의 :</dt>
+								<dd>모바일 / YYYY.MM.DD</dd>
+							</dl>
+							<dl>
+								<dt>보험연령 / 상령일 :</dt>
+								<dd>30세 / YYYY.MM.DD</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>직업 :</dt>
+								<dd>B6100/그 외 금속/재료공학 개발자 및 연구원/2급</dd>
+							</dl>
+							<dl>
+								<dt>합계보험료 / 받을보험료 :</dt>
+								<dd>
+									<span class="color03">100,000</span> 원 /
+									<span class="color03">100,000</span> 원</dd>
+							</dl>
+						</div>
+						<a href="" class="button__ btn_view bd_color02">수정</a>
+						<!--마지막일 경우에만 조회-->
+						<!--a(href="", class="button__ btn_view bd_color02") 조회-->
+					</div>
+				</div>
+				<!--물보험-->
+				<div class="step">
+					<strong>2. 피보험자/목적물 정보</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>소재지 :</dt>
+								<dd>서울 강남구 테헤란로 432</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>실제업종 :</dt>
+								<dd>123456/제철,제강 및 소재 제조</dd>
+							</dl>
+							<dl>
+								<dt>건물급수 :</dt>
+								<dd>1급</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>요율업종 :</dt>
+								<dd>123456/제철,제강 및 소재 제조</dd>
+							</dl>
+							<dl>
+								<dt>실제업종 상세 :</dt>
+								<dd>제철,제강 및 소재 제조</dd>
+							</dl>
+						</div>
+						<a href="" class="button__ btn_view bd_color02">수정</a>
+						<!--마지막일 경우에만 조회-->
+						<!--a(href="", class="button__ btn_view bd_color02") 조회-->
+					</div>
+				</div>
+				<!--인 + 물-->
+				<div class="step">
+					<strong>2. 피보험자/목적물 정보</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>피보험자 :</dt>
+								<dd>김동부 / 소재지 가입</dd>
+							</dl>
+							<dl>
+								<dt>생년월일 :</dt>
+								<dd>YYYY.MM.DD</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>가입설계동의 :</dt>
+								<dd>모바일 / YYYY.MM.DD</dd>
+							</dl>
+							<dl>
+								<dt>보험연령 / 상령일 :</dt>
+								<dd>30세 / YYYY.MM.DD</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>직업 :</dt>
+								<dd>B6100/그 외 금속/재료공학 개발자 및 연구원/2급</dd>
+							</dl>
+							<dl>
+								<dt>합계보험료 / 받을보험료 :</dt>
+								<dd>100,000원 / 100,000원</dd>
+							</dl>
+						</div>
+						<!--a(href="", class="button__ btn_view bd_color02") 수정-->
+						<!--마지막일 경우에만 조회-->
+						<a href="" class="button__ btn_view bd_color02">조회</a>
+					</div>
+				</div>
+				<!--물 + 인-->
+				<div class="step">
+					<strong>2. 피보험자/목적물 정보</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>소재지 :</dt>
+								<dd>서울 강남구 테헤란로 432 / 김동부</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>실제업종 :</dt>
+								<dd>123456/제철,제강 및 소재 제조</dd>
+							</dl>
+							<dl>
+								<dt>건물급수 / 상령일 :</dt>
+								<dd>1급</dd>
+							</dl>
+						</div>
+						<div class="flex_box">
+							<dl>
+								<dt>요율업종 :</dt>
+								<dd>123456/제철,제강 및 소재 제조</dd>
+							</dl>
+							<dl>
+								<dt>실제업종 상세 :</dt>
+								<dd>제철,제강 및 소재 제조</dd>
+							</dl>
+						</div>
+						<!--a(href="", class="button__ btn_view bd_color02") 수정-->
+						<!--마지막일 경우에만 조회-->
+						<a href="" class="button__ btn_view bd_color02">조회</a>
+					</div>
+				</div>
+				<div class="step">
+					<strong>3. 계약전알릴의무 (인수심사 신청중)</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>피보험자１:</dt>
+								<dd>김동부 / 인수심사여부 / 승인</dd>
+							</dl>
+						</div>
+						<!--a(href="", class="button__ btn_view bd_color02") 수정-->
+						<!--마지막일 경우에만 조회-->
+						<a href="" class="button__ btn_view bd_color02">조회</a>
+					</div>
+				</div>
+				<div class="step">
+					<strong>4. 계약자정보</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>계약자 :</dt>
+								<dd>이화재 / YYYY.MM.DD / 여</dd>
+							</dl>
+							<dl>
+								<dt>만기수익자 :</dt>
+								<dd>이화재 / YYYY.MM.DD / 여</dd>
+							</dl>
+						</div>
+						<!--a(href="", class="button__ btn_view bd_color02") 수정-->
+						<!--마지막일 경우에만 조회-->
+						<a href="" class="button__ btn_view bd_color02">조회</a>
+					</div>
+				</div>
+				<div class="step on">
+					<strong>5. 수익자 정보</strong>
+					<div class="flex_box_area">
+						<div class="flex_box">
+							<dl>
+								<dt>김동부 :</dt>
+								<dd>(사망)김동부, 이화재 / (생존)본인 / (지정)미지정</dd>
+							</dl>
+						</div>
+						<!--a(href="", class="button__ btn_view bd_color02") 수정-->
+						<!--마지막일 경우에만 조회-->
+						<a href="" class="button__ btn_view bd_color02">조회</a>
+					</div>
+				</div>
+				<div class="bd_line"></div>
+			</div>
+		</div>
+	</div>
+	<!--//20170817 수정(스탭수정)-->
+</div>

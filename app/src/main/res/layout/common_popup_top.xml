@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/common_bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45_dp"
+        android:background="@color/color_ffffff">
+
+        <ImageButton
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/_62_dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/btn_delete_01" />
+
+        <TextView
+            android:id="@+id/common_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_ac66bc"
+            android:textSize="@dimen/_19_dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

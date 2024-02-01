@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.5015384615384615" />
+        <entry key="app/src/main/res/layout-land/activity_login_new.xml" value="0.31613756613756616" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_login.xml" value="0.315234375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_login_new.xml" value="0.55" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_login_new_tmp.xml" value="0.315234375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_portal_main.xml" value="0.315234375" />
+        <entry key="app/src/main/res/layout-sw600dp/intro_activity.xml" value="0.315234375" />
+        <entry key="app/src/main/res/layout-sw600dp/portal_app_item.xml" value="0.315234375" />
+        <entry key="app/src/main/res/layout-v26/popup_dialog_a_type.xml" value="0.3921875" />
+        <entry key="app/src/main/res/layout-v26/popup_dialog_a_type_.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.4203125" />
+        <entry key="app/src/main/res/layout/activity_login_const.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_login_new.xml" value="1.0" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4203125" />
+        <entry key="app/src/main/res/layout/activity_null.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/activity_portal_main.xml" value="0.4203125" />
+        <entry key="app/src/main/res/layout/activity_push_item_detail.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/activity_push_list_item.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/activity_push_login.xml" value="0.3921875" />
+        <entry key="app/src/main/res/layout/activity_push_message_list.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/activity_push_register.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/agent_webview_activity.xml" value="0.4203125" />
+        <entry key="app/src/main/res/layout/common_popup_top.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/dialog_progress_layout.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/dialog_webview.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/dsm_progress_dialog.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/intro_activity.xml" value="0.4203125" />
+        <entry key="app/src/main/res/layout/popup_dialog_a_type.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/popup_dialog_a_type_.xml" value="0.3921875" />
+        <entry key="app/src/main/res/layout/popup_dialog_b_type.xml" value="0.3921875" />
+        <entry key="app/src/main/res/layout/popup_dialog_b_type_.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/popup_dialog_c_type.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/popup_dialog_c_type_.xml" value="0.2708333333333333" />
+        <entry key="app/src/main/res/layout/popup_event_web_activity.xml" value="0.319140625" />
+        <entry key="app/src/main/res/layout/popup_notice_activity.xml" value="0.15627390971690897" />
+        <entry key="app/src/main/res/layout/popup_webview_activity.xml" value="0.15627390971690897" />
+        <entry key="app/src/main/res/layout/stopdialog.xml" value="0.2469770253929867" />
+        <entry key="app/src/main/res/layout/webview_activity.xml" value="0.373046875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

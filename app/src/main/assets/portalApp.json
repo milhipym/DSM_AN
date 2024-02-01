@@ -1,0 +1,35 @@
+[
+  {
+    "installPlayStore": "false",
+    "fileHash": "7535a4ba00593b97000bd02380496d0380ca18a001edc82449d35df42b5a2691",
+    "appNm": "영업용모바일",
+    "appVer": "1.0",
+    "iconFileUrl": "http://mguarddev.raonsecure.co.kr:8807/file/image/icon.do?fileKey=20",
+    "appInstallUrl": "http://mguarddev.raonsecure.co.kr:8807/device/app/iosAppInstall.do?appStoreKey=4&deviceKey=4",
+    "deviceType": "A",
+    "osType": "1",
+    "appPackage": "com.dongbu.dsm"
+  },
+{
+"installPlayStore": "false",
+"fileHash": "7535a4ba00593b97000bd02380496d0380ca18a001edc82449d35df42b5a2691",
+"appNm": "mTransKey",
+"appVer": "1.0",
+"iconFileUrl": "http://mguarddev.raonsecure.co.kr:8807/file/image/icon.do?fileKey=20",
+"appInstallUrl": "http://mguarddev.raonsecure.co.kr:8807/device/app/iosAppInstall.do?appStoreKey=4&deviceKey=4",
+"deviceType": "A",
+"osType": "1",
+"appPackage": "com.raonsecure.mobileoffice"
+},
+{
+"installPlayStore": "false",
+"fileHash": "9c3c11e659ecc734d7b4bf33cee83c89a8fbafebfd0810ae49af75340ffb52c1",
+"appNm": "라온인 - Raonsecure2.2.1.1",
+"appVer": "2.2.1.1",
+"iconFileUrl": "http://mguarddev.raonsecure.co.kr:8807/file/image/icon.do?fileKey=17",
+"appInstallUrl": "http://mguarddev.raonsecure.co.kr:8807/device/app/iosAppInstall.do?appStoreKey=3&deviceKey=4",
+"deviceType": "A",
+"osType": "1",
+"appPackage": "com.raoningroupware.daouoffice"
+}
+]

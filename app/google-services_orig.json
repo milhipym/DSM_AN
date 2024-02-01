@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "490779213321",
+    "firebase_url": "https://dsm-5f1da.firebaseio.com",
+    "project_id": "dsm-5f1da",
+    "storage_bucket": "dsm-5f1da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490779213321:android:175322bc241b999a",
+        "android_client_info": {
+          "package_name": "com.dongbu.dsm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490779213321-95m0jlee6b9rmnnt05mpao4l3m7hliiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoGumIxLH5ChHXbj_XbsdmVT0Giv3X_zE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490779213321-95m0jlee6b9rmnnt05mpao4l3m7hliiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490779213321:android:e190a013aee01be9",
+        "android_client_info": {
+          "package_name": "com.donghu.dsm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490779213321-95m0jlee6b9rmnnt05mpao4l3m7hliiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoGumIxLH5ChHXbj_XbsdmVT0Giv3X_zE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490779213321-95m0jlee6b9rmnnt05mpao4l3m7hliiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

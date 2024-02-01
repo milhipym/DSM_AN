@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kakao.sdk:kakaolink:1.30.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9d1acf1ede2a0ffc43f0a8989462920/jetified-kakaolink-1.30.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9d1acf1ede2a0ffc43f0a8989462920/jetified-kakaolink-1.30.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9d1acf1ede2a0ffc43f0a8989462920/jetified-kakaolink-1.30.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kakao.sdk/kakaolink/1.30.6/180e1c2864d2bbfa0aabf2584b609863738bbbd4/kakaolink-1.30.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

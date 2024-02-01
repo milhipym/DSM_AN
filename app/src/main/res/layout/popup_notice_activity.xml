@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/common_popup_top"
+        layout="@layout/common_popup_top" />
+    <!-- 백그라운드 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_popup_top"
+        android:background="@color/color_f1f0eb">
+
+        <ImageView
+            android:id="@+id/notice_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <CheckBox
+            android:id="@+id/web_check"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_27_dp"
+            android:button="@drawable/cb_popup_info"
+            android:paddingLeft="@dimen/_13_dp"
+            android:text="@string/not_look_a_day"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/_14_dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

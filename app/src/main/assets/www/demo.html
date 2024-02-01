@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+	<title></title>
+	<link rel="stylesheet" href="css/nface_style.css">
+
+	<script>
+    function init() {
+      enableVideoClicks();
+    }
+
+    function enableVideoClicks() {
+      var videos = document.getElementsByTagName('video') || [];
+
+      for (var i = 0; i < videos.length; i++) {
+        // TODO: use attachEvent in IE
+        videos[i].addEventListener('click', function(videoNode) {
+          return function() {
+            videoNode.play();
+            if (typeof(videoNode.webkitEnterFullscreen) != "undefined") {
+				// This is for Android Stock.
+				videoNode.webkitEnterFullscreen();
+			} else if (typeof(videoNode.webkitRequestFullscreen)  != "undefined") {
+				// This is for Chrome.
+				videoNode.webkitRequestFullscreen();
+			} else if (typeof(videoNode.mozRequestFullScreen)  != "undefined") {
+				videoNode.mozRequestFullScreen();
+			}
+          };
+        }(videos[i]));
+      }
+    }
+  </script>
+
+</head>
+<body onload="init()">
+<!-- layout -->
+<div id="wrap">
+	<!-- header -->
+	<header id="header" class="bg_header">
+		<h1 id="headerTitle" class="scn">동부화재 영업용모바일 앱<->웹 연동</h1>
+	</header>
+	<!-- //header -->
+	<!-- content -->
+	<div id="container">
+		<section id="content">
+			<article class="clear">				
+				<div class="content_inner">
+					<h3 style="text-align:center">이 페이지는 HTML (demo.html) 입니다.</h3>
+					<h3 >웹<->앱 연동 가이드는 </h3>
+					<h4 style="text-align:center">------------------------------------------------------------------------</h4>
+					<h3>파일서버\TFT_영업용 모바일시스템 구축 프로젝트\Z.시스템공통(AA) 개인폴더\정길호\005.인터페이스\영업모바일_웹앱_연동_인터페이스.xlsx</h3>
+					<h4 style="text-align:center">------------------------------------------------------------------------</h4>
+					<h3>를 참고해 주세요.</h3>
+					<h4 style="text-align:center">로그(연동 결과값-JSON) 영역.</h4>
+					<xmp id="log"></xmp>
+					<pre><xmp id="resultStr"></xmp></pre>
+					<h4 style="text-align:center">------------------------------------------------------------------------</h4>
+
+					<!--<h2>진행사항</h2>-->
+					<!--<h4 style="color:#0f0">- 백신 : MDM</h4>-->
+					<!--<h4 style="color:#0f0">- 앱아이언 위변조방지 : MDM </h4>-->
+
+					<!--<video src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" width="400" height="300" controls></video>-->
+					<video src="http://dsm-test.dbins.net/dsm/images/dvcpad/activity/testVideo.mp4" width="400" height="300" controls></video>
+
+					<h2>디바이스 및 앱 정보</h2>
+					<!--<h4 style="color:#0f0">- </h4>-->
+					<div class="BtnArea">
+						<button type="button" id="getInfoBtn" onclick="getInfoBtnClick();" class="btn-style-type102 width49 xlarge">디바이스 및 앱 정보</button>
+					</div>
+
+					<h2>외부 앱 실행</h2>
+					<!--<h4 style="color:#0f0">- .</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="startExtAppBtn1" onclick="doStartExternalAppBtnClick('com.in.or.kr.kii');" class="btn-style-type102 width49 xlarge">보험연수원</button>
+						<button type="button" id="startExtAppBtn2" onclick="doStartExternalAppBtnClick('pktest');" class="btn-style-type102 width49 xlarge">PK시험</button>
+					</div>
+
+					<h2>세션관리</h2>
+					<!--<h4 style="color:#0f0">- 기능 : 연동 개발 진행 중 (~9/)</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="updateSessionTimeBtn" onclick="doUpdateSessionTimeBtnClick();" class="btn-style-type102 width49 xlarge">세션시간 업데이트</button>
+						<button type="button" id="sessionTime" onclick="doCryptNumberCallBtnClick('');" class="btn-style-type101 width49 xlarge">세션시간 업데이트 버튼 클릭 시 시작</button>
+					</div>
+
+					<h2>촬영</h2>
+					<!--<h4 style="color:#0f0">- 기능 : 연동 개발 진행 중 (~9/)</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="ocrCallBtn" onclick="doOcrCallBtnClick();" class="btn-style-type102 width49 xlarge">신분증 촬영</button>
+						<button type="button" id="idCallBtn" onclick="doIdCallBtnClick();" class="btn-style-type102 width49 xlarge">명함 촬영</button>
+						<button type="button" id="paperCallBtn" onclick="doPaperCallBtnClick();" class="btn-style-type102 width49 xlarge">A4 촬영</button>
+					</div>
+
+					<h2>카메라 / 갤러리</h2>
+					<!--<h4 style="color:#0f0">- 기능 : 연동 개발 진행 중 (~9/)</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="doCameraCallBtn" onclick="doCameraGalleryCallBtnClick('1');" class="btn-style-type102 width49 xlarge">카메라 호출</button>
+						<button type="button" id="doGalleryCallBtn" onclick="doCameraGalleryCallBtnClick('2');" class="btn-style-type102 width49 xlarge">갤러리 호출</button>
+						<button type="button" id="doCameraGalleryCallBtn" onclick="doCameraGalleryCallBtnClick('3');" class="btn-style-type102 width49 xlarge">카메라 / 갤러리 팝업 호출</button>
+					</div>
+
+					<h2>로딩바</h2>
+					<!--<h4 style="color:#0f0">- .</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="startProgressBtn" onclick="doStartProgressBtnClick();" class="btn-style-type102 width49 xlarge">시작</button>
+						<button type="button" id="stopProgressBtn" onclick="doStopProgressBtnClick();" class="btn-style-type102 width49 xlarge">종료</button>
+					</div>
+
+					<h2>파라메터</h2>
+					<!--<h4 style="color:#0f0">- .</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="setValueCallBtn" onclick="setValueCallBtnClick('aaaaa','bbbbb');" class="btn-style-type102 width49 xlarge">setValue</button>
+						<button type="button" id="getValueCallBtn" onclick="getValueCallBtnClick('aaaaa');" class="btn-style-type102 width49 xlarge">getValue</button>
+					</div>
+
+					<h2>공유</h2>
+					<!--<h4 style="color:#0f0">- .</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="doSendSMSBtn" onclick="doSMSCallBtnClick('01090587521', '문자 보내기 테스트입니다.');" class="btn-style-type102 width49 xlarge">문자보내기</button>
+						<!--<button type="button" id="doShareKakaoBtn" onclick="doShareKakaoCallBtnClick('동부화재 영업용 모바일 시스템\nhttp://www.idongbu.com', '');" class="btn-style-type102 width49 xlarge">카톡공유</button>-->
+						<button type="button" id="doShareKakaoBtn" onclick="doShareKakaoCallBtnClick('DB손해보험 - 정영주 과장\n\nMobile-활동시스템 구축\n\n전자명함 보기', 'https://www.idbins.com', 'http://img.tf.co.kr/article/home/2017/08/22/201776881503385283.jpg', '정길호 님 전자명함입니다.');" class="btn-style-type102 width49 xlarge">카톡공유</button>
+						<button type="button" id="getContractBtn" onclick="getContractCallBtnClick();" class="btn-style-type102 width49 xlarge">연락처</button>
+						<button type="button" id="doSendEmailBtn" onclick="doSendEmailCallBtnClick('joongkh@gmail.com', '이메일 보내기 제목', '이메일 보내기 테스트 입니다.');" class="btn-style-type102 width49 xlarge">이메일보내기</button>
+					</div>
+
+					<h2>로그아웃</h2>
+					<!--<h4 style="color:#0f0">- 기능 : 연동 개발 진행 중 (~9/)</h4>-->
+					<div class="BtnArea">
+						<button type="button" id="logoutCallBtn" onclick="doLogoutBtnClick();" class="btn-style-type102 width49 xlarge">로그아웃</button>
+					</div>
+
+					<h2>새창(팝업) 테스트</h2>
+					<!--<h4 style="color:#0f0">- 기능 : 연동 개발 진행 중 (~9/)</h4>-->
+					<div class="BtnArea">
+						<h2><a href="https://www.google.co.kr" target="_blank">새창(팝업)으로 열기 target=_blank</a></h2>
+					</div>
+
+					<a href="javascript:window.open('http://www.google.co.kr','_blank','location=yes');" target="_blank">#=test 1#</a><br /><br /><br />
+
+					<a href="http://www.google.co.kr" data-rel="external" >#=test 2#</a><br /><br /><br />
+
+					<a href="http://www.google.co.kr" data-rel="external" target="_blank" >#=test 3#</a><br /><br /><br />
+
+					<a href="http://www.google.co.kr" data-rel="external" target="_system" >#=test 4#</a><br /><br /><br />
+
+ 					<a href="http://www.google.co.kr" target="_system" >#=test 5#</a><br /><br /><br />
+
+					<a  onclick="window.open('http://www.google.co.kr', '_system');"> #=test 6#</a><br /><br />
+
+					<a href="tel:01062307521"> 전화번호 테스트</a><br /><br />
+
+					<a href="MPortalP://"> 앱 호출</a><br /><br />
+
+					<input id="m_uploadFile" type="file" accept="image/*;capture=camera" >
+					<input id="m_uploadFile2" type="file" >
+					<input id="m_uploadFile3" type="file" accept="image/*">
+
+
+				</div>
+
+				<div class="btnArea">
+
+					<form name="loginForm" onsubmit="return document.loginForm.user.value != '' && document.loginForm.pass.value != ''">
+						<input type="email" name="user" value="asfdsadfadsf">
+						<input type="password" name="pass">
+						<input type="number" name="pass1" value="Login">
+						<input type="number" name="pass2" value="Login">
+						<input type="number" name="pass3" value="Login">
+					</form>
+				</div>
+
+				<div class="btnArea fixed">
+					<button type="button" id="toExit" onclick="doAppFinishBtnClick();" class="btn-style-arrow_l width49 xlarge">종료</button>
+					<button type="button" id="toMain" onclick="doGoMainBtnClick();" class="btn-style-arrow_r width49 xlarge">메인으로</button>
+				</div>
+
+
+			</article>
+		</section>
+	</div>
+
+
+
+	<!-- //content -->	
+</div>
+<!-- //layout -->
+</body>
+
+<script type="text/javascript" src="js/demo.js"></script>
+
+</html>

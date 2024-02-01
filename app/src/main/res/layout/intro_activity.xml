@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e2e2e2"
+    android:orientation="vertical"
+    tools:context=".intro.IntroActivity">
+
+    <ImageView
+        android:id="@+id/intro_top_logo"
+        android:layout_width="@dimen/_400_dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_40_dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/t_ci" />
+
+    <ImageView
+        android:id="@+id/intro_center_logo"
+        android:layout_width="@dimen/_200_dp"
+        android:layout_height="@dimen/_33_dp"
+        android:layout_marginTop="@dimen/_180_dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/m_db_title_gr" />
+
+    <ImageView
+        android:id="@+id/intro_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30_dp"
+        android:layout_centerInParent="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_170_dp"
+        app:srcCompat="@drawable/m_copyright" />
+
+</RelativeLayout>

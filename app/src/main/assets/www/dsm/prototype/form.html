@@ -1,0 +1,465 @@
+<div id="form">
+	<div id="wrap_proto" class="prototype">
+		<h1 id="go_form" class="tit_guide">FORM</h1>
+		<div class="section_bx">
+			<div class="section">
+				<h2 class="tit_guide">input(숫자 : number)</h2>
+				<div class="guide">
+					<input type="text" placeholder="placeholder" class="ipt_txt" />
+					<input type="text" placeholder="" style="" value="" class="ipt_txt" />
+				</div>
+				<h2 class="tit_guide">value 컬러값</h2>
+				<div class="guide">
+					<input type="text" placeholder="" style="" value="컬러값 그린" class="ipt_txt ft_green" />
+				</div>
+				<h2 class="tit_guide">textarea(wrap_tb안에 서는 margin:5px 0)</h2>
+				<div class="guide">
+					<textarea style="width:835px;height:105px" class="txt_area"></textarea>
+					<textarea style="width:835px;height:105px" disabled="disabled" class="txt_area"></textarea>
+				</div>
+				<h2 class="tit_guide">네추럴 JS 폼요소 Checkbox</h2>
+				<div class="guide">
+					<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" class="select__ btn_rdo" />
+					<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" disabled="disabled" class="select__ btn_rdo" />
+				</div>
+				<div class="guide">
+					<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" class="select__ btn_chk" />
+					<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" disabled="disabled" class="select__ btn_chk" />
+				</div>
+				<h2 class="tit_guide">하드코딩 폼요소</h2>
+				<div class="guide">
+					<span class="input_radio">
+						<input type="radio" id="ra01" name="ra" />
+						<label for="ra01">갱신</label>
+						<input type="radio" id="ra02" name="ra" />
+						<label for="ra02">비갱신</label>
+						<input type="radio" id="ra01" name="ra" disabled="disabled" />
+						<label for="ra01">갱신</label>
+						<input type="radio" id="ra02" name="ra" disabled="disabled" />
+						<label for="ra02">비갱신</label>
+					</span>
+				</div>
+				<div class="guide">
+					<span class="input_checkbox">
+						<input type="checkbox" id="chk01" />
+						<label for="chk01">갱신<em class="color02">(402원)</em></label>
+						<input type="checkbox" id="chk02" />
+						<label for="chk02">비갱신<em class="color02">(402원)</em></label>
+						<input type="checkbox" id="chk03" disabled="disabled" />
+						<label for="chk03">갱신<em class="color02">(402원)</em></label>
+						<input type="checkbox" id="chk04" disabled="disabled" />
+						<label for="chk04">비갱신<em class="color02">(402원)</em></label>
+					</span>
+				</div>
+				<h2 class="tit_guide">input + 텍스트(display:block)</h2>
+				<div class="guide">
+					<span class="txt_won">
+						<input type="text" placeholder="" style="width:100%" value="강북사업본부 / 중앙사업단 / 중앙강북파트너지점" disabled="disabled" class="ipt_txt" />
+						<span class="txt">팀</span>
+					</span>
+				</div>
+				<h2 class="tit_guide">input + 텍스트(display:inline-block)</h2>
+				<div class="guide">
+					<span class="txt_won multi">
+						<input type="text" placeholder="" style="width:200px" value="강북사업본부 / 중앙사업단 / 중앙강북파트너지점" disabled="disabled" class="ipt_txt" />
+						<span class="txt">팀</span>
+					</span>
+				</div>
+				<h2 class="tit_guide">input + disabled Color</h2>
+				<div class="guide">
+					<input type="text" placeholder="" style="width:200px" value="컬러값01" disabled="disabled" class="ipt_txt color02" />
+					<input type="text" placeholder="" style="width:200px" value="컬러값02" disabled="disabled" class="ipt_txt color03" />
+				</div>
+				<h2 class="tit_guide">검색(기본)</h2>
+				<div class="guide">
+					<span class="inp_search">
+						<input type="text" placeholder="" style="width:96px" class="ipt_txt" />
+						<a href="" class="btn_sch">검색</a>
+					</span>
+				</div>
+				<h2 class="tit_guide">검색(disabled)</h2>
+				<div class="guide">
+					<span class="inp_search">
+						<input type="text" placeholder="" style="width:96px" disabled="disabled" class="ipt_txt" />
+						<a href="" class="btn_sch">검색</a>
+					</span>
+				</div>
+				<h2 class="tit_guide">검색(readonly)</h2>
+				<div class="guide">
+					<span class="inp_search">
+						<input type="text" placeholder="" style="width:96px" readonly="readonly" class="ipt_txt" />
+						<a href="" class="btn_sch">검색</a>
+					</span>
+				</div>
+				<h2 class="tit_guide">검색(disabled) + 버튼 활성화</h2>
+				<div class="guide">
+					<span class="inp_search">
+						<input type="text" placeholder="" style="width:96px" readonly="readonly" class="ipt_txt" />
+						<a href="" class="btn_sch on">검색</a>
+					</span>
+				</div>
+				<h2 class="tit_guide">달력(기본)</h2>
+				<div class="guide form__">
+					<span class="inp_search">
+						<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:112px" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+					<span class="tb_cld_txt">~</span>
+					<span class="inp_search">
+						<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:112px" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+				</div>
+				<h2 class="tit_guide">달력(disabled)</h2>
+				<div class="guide form__">
+					<span class="inp_search">
+						<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:112px" readonly="readonly" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+					<span class="tb_cld_txt">~</span>
+					<span class="inp_search">
+						<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:112px" readonly="readonly" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+				</div>
+				<h2 class="tit_guide">달력(readonly)</h2>
+				<div class="guide form__">
+					<span class="inp_search">
+						<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:112px" readonly="readonly" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+					<span class="tb_cld_txt">~</span>
+					<span class="inp_search">
+						<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:112px" readonly="readonly" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+				</div>
+				<div class="guide">
+					<div style="background:#13756f; padding:10px; ">
+						<p style="margin-bottom:10px; color:#fff">border없는 검색, 예)메인-통합검색</p>
+						<span class="inp_search bgfff">
+							<input type="text" placeholder="검색어를 입력하세요." style="width:240px" class="ipt_txt" />
+							<a href="" class="btn_sch">검색</a>
+						</span>
+					</div>
+				</div>
+				<h2 class="tit_guide">조건에 따라 바뀌는 input group (.field_group)</h2>
+				<div class="guide">
+					<span class="field_group">
+						<select style="width:125px" data-data="[{ &quot;cd_nm&quot; : &quot;증권사명&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__"></select>
+						<input type="text" placeholder="" style="width:105px" value="" class="ipt_txt" />
+					</span>
+				</div>
+				<h2 class="tit_guide">input 오른쪽 정렬 (.input_group)</h2>
+				<div class="guide">
+					<div class="input_group">
+						<select style="width:100px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+						<span class="inp_search">
+							<input type="text" placeholder="" style="width:150px" class="ipt_txt" />
+							<a href="" class="btn_sch">검색</a>
+						</span>
+					</div>
+				</div>
+				<h2 class="tit_guide">Design Radio</h2>
+				<div class="guide">
+					<span class="design_radio">
+						<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" class="select__" />
+					</span>
+					<span class="design_radio">
+						<input type="radio" disabled="disabled" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" class="select__" />
+					</span>
+				</div>
+				<h2 class="tit_guide">Design Radio - a링크 형식
+					<span class="design_radio">
+						<a href="" class="on">갱신</a>
+						<a href="">비갱신</a>
+					</span>
+				</h2>
+				<h2 class="tit_guide">테이블 컨텐츠 기간 ( 테이블 컨텐츠 패딩 0 12px 공통 )</h2>
+				<span class="design_radio slt_data">
+					<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;입력&quot; }, { &quot;cd_nm&quot; : &quot;7일&quot; }, { &quot;cd_nm&quot; : &quot;1개월&quot; }, { &quot;cd_nm&quot; : &quot;3개월&quot; }, { &quot;cd_nm&quot; : &quot;6개월&quot; }, { &quot;cd_nm&quot; : &quot;1년&quot; }]"
+							class="select__" />
+				</span>
+				<h2 class="tit_guide">form_group ( margin-left:40px / rabel input 간격 10 )</h2>
+				<span class="form_group">
+					<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;자기신체사고&quot; }, { &quot;cd_nm&quot; : &quot;자동차 상해&quot; }, { &quot;cd_nm&quot; : &quot;자상&quot; }]" class="select__ btn_rdo" />
+				</span>
+				<h2 class="tit_guide">form_group ( margin-left:40px / rabel input 간격 10 )</h2>
+				<span class="form_group">
+					<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" class="select__ btn_chk" />
+				</span>
+				<h2 class="tit_guide">form_group.space20 ( margin-left:20px / rabel input 간격 10 )</h2>
+				<span class="form_group space20">
+					<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;자기신체사고&quot; }, { &quot;cd_nm&quot; : &quot;자동차 상해&quot; }, { &quot;cd_nm&quot; : &quot;자상&quot; }]" class="select__ btn_rdo" />
+				</span>
+				<h2 class="tit_guide">form_group.space20 ( margin-left:20px / rabel input 간격 10 )</h2>
+				<span class="form_group space20">
+					<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" class="select__ btn_chk" />
+				</span>
+				<h2 class="tit_guide">Input File</h2>
+				<!-- input file-->
+				<div class="guide">
+					<span class="btn_file">
+						<span class="button__ btn_tb_line gray">사진등록/수정</span>
+						<input type="file" value="" class="btn_tb_line" />
+					</span>
+				</div>
+				<h2 class="tit_guide">Select</h2>
+				<div class="guide">
+					<select style="width:150px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+				</div>
+				<h2 class="tit_guide">checkbox 하단 타입</h2>
+				<div class="check_area right">
+					<strong class="txt01">증권, 약관 및 계약 안내자료 받기</strong>
+					<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;휴대폰으로 받기&quot; },{ &quot;cd_nm&quot; : &quot;이메일로 받기&quot; }]" class="select__ btn_chk" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	N("#form").cont(
+	{
+		init: function(view, request) {}
+	});
+</script>
+<style type="text/css">
+	/* h1.tit_guide {padding:50px 0 18px 20px;border-bottom:1px solid #000000;font-size:30px;color:#2a2a2a;font-weight:bold}
+h2.tit_guide {margin:20px 0 20px 20px;font-size:14px;color:#666;font-weight:bold}
+.noti {margin:10px 0;color:red;font-size:12px} */
+	
+	.prototype {
+		padding: 30px 0 0 0
+	}
+	
+	.prototype .go_menu {
+		padding: 0 15px;
+	}
+	
+	.prototype .go_menu li {
+		float: left;
+		margin: 2px
+	}
+	
+	.prototype .go_menu li a {
+		display: inline-block;
+		padding: 10px 20px;
+		border: 1px solid #333;
+		border-radius: 6px;
+		background: #333;
+		color: #fff
+	}
+	
+	.prototype .top {
+		display: block;
+		width: 50px;
+		height: 35px;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		padding: 15px 0 0 0;
+		border: 1px solid;
+		text-align: center;
+		z-index: 100;
+		color: #fff;
+		background: #000
+	}
+	
+	.prototype h1 {
+		margin: 50px 0 0;
+		padding: 8px 0 8px 15px;
+		border-bottom: 2px solid #000;
+		font-size: 30px;
+		color: #2a2a2a;
+		font-weight: bold;
+		background: #eee
+	}
+	
+	.prototype h2.tit_guide {
+		margin: 40px 0 20px;
+		font-size: 16px;
+		color: #ff5722;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype h2.tit_guide span {
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
+		color: #000
+	}
+	
+	.prototype h3.tit_guide {
+		margin: 20px 0 10px;
+		font-size: 14px;
+		color: #252525;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype .section h2.tit_guide:first-child {
+		margin-top: 20px
+	}
+	
+	.prototype .guide {
+		position: relative;
+		padding: 0 0 20px 0;
+		margin: 0
+	}
+	
+	.prototype .guide .txt_color .over {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		margin: 0 0 15px 0;
+		background: #ff3091
+	}
+	
+	.prototype .guide .txt_color .txt {
+		display: block;
+		width: 80px;
+		margin: 90px 0 0 0;
+		font-size: 12px;
+		color: #797d84;
+		text-align: center
+	}
+	
+	.prototype .guide .con {
+		margin-bottom: 50px
+	}
+	
+	.prototype .tip_guide {
+		margin: 30px 0 10px 0;
+		font-weight: bold
+	}
+	
+	.code {
+		padding: 20px 10px;
+		background: #e1fcff;
+		font-size: 14px;
+		border-left: 3px solid #cae7ea;
+		line-height: 1.7
+	}
+	
+	.guide_codelist li {
+		margin: 0 0 10px 0
+	}
+	
+	.coding_info li {
+		margin: 0 0 30px 0;
+		line-height: 1.7
+	}
+	
+	.coding_info li strong {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: 18px;
+		color: #673AB7
+	}
+	
+	.coding_info li p {
+		margin: 0 0 10px 0;
+		font-weight: 700
+	}
+	
+	.coding_info li p span {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #666
+	}
+	
+	.section_bx {
+		padding: 17px
+	}
+	
+	.coding_info02 li {
+		margin: 0 0 10px 0;
+		font-weight: 700;
+		line-height: 1.5;
+		font-size: 16px;
+	}
+	
+	.coding_info02 li span {
+		display: block;
+		position: relative;
+		margin: 0 0 0 50px;
+		padding: 0 0 0 12px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	
+	.coding_info02 li span:before {
+		display: block;
+		content: '-';
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.memo {
+		background: #ffe0b9;
+		padding: 10px;
+		font-size: 12px;
+		color: #461b0c
+	}
+	
+	.memo+.tit_guide {
+		margin-top: 20px !important
+	}
+	
+	.color_type {
+		width: 50%
+	}
+	
+	.color_type li {
+		position: relative;
+		margin: 30px 0
+	}
+	
+	.color_type li span {
+		position: absolute;
+		right: -60px;
+		top: -10px
+	}
+	
+	.color_type li.s1 {
+		height: 2px;
+		background: #009881
+	}
+	
+	.color_type li.s2 {
+		height: 2px;
+		background: #666666
+	}
+	
+	.color_type li.s3 {
+		height: 2px;
+		background: #bbbbbb
+	}
+	
+	.color_type li.s4 {
+		height: 2px;
+		background: #e5e5e5
+	}
+	
+	.color_type li.s5 {
+		height: 2px;
+		background: #eeeeee
+	}
+	
+	.color_zone {
+		overflow: hidden
+	}
+	
+	.color_zone li {
+		float: left
+	}
+	
+	.color_zone li strong {
+		display: block;
+		width: 80px;
+		height: 80px
+	}
+</style>

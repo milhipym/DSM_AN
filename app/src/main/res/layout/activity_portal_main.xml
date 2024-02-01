@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 백그라운드 -->
+    <RelativeLayout
+        android:id="@+id/portal_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/m_login_bg">
+
+        <RelativeLayout
+            android:id="@+id/out_portal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/portal_scroll_top_margin"
+            android:layout_marginLeft="@dimen/_20_dp"
+            android:layout_marginRight="@dimen/_20_dp"
+            android:layout_centerInParent="true"
+            android:background="@null">
+
+
+            <RelativeLayout
+                android:id="@+id/login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_top_layout"
+                android:layout_marginTop="@dimen/_1_dp"
+                android:background="@drawable/border_shadow_round"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5_dp"
+                android:paddingBottom="@dimen/_5_dp"
+                android:paddingRight="@dimen/_5_dp"
+                >
+
+                <ImageView
+                    android:id="@+id/top_portal_logo_tv"
+                    android:layout_width="@dimen/_130_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10_dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/m_db_title" />
+
+                <RelativeLayout
+                    android:id="@+id/portal_icon_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10_dp"
+                    android:layout_marginBottom="@dimen/_30_dp"
+                    android:layout_below="@+id/top_portal_logo_tv"
+                    android:background="@drawable/border_shadow_round"
+                    >
+
+                    <GridView
+                        android:id="@+id/gridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:clickable="true"
+                        android:columnWidth="100dp"
+                        android:drawSelectorOnTop="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:numColumns="3"
+                        android:padding="@dimen/_10_dp"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/intro_top_logo"
+            android:layout_width="@dimen/_400_dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_40_dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/t_ci" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

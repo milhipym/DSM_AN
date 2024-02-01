@@ -1,0 +1,34 @@
+﻿윈도우에서
+
+1. Openssl 설치
+
+c:\openssl
+
+2. JDK 폴더에 keystore 파일 복사
+
+- debug.keystore
+- 앱용 keystore
+
+3. keytool 실행
+
+cd D:\002.Program\dsm_dev\Java\jdk1.7.0_67\bin
+
+- 디버깅용
+keytool -exportcert -alias androiddebugkey -keystore debug.keystore > c:\openssl\bin\debug.txt
+
+- 앱용
+keytool -exportcert -alias dsmmobile -keystore keystore_release.jks > c:\openssl\bin\dsm.txt
+
+4. openssl 로 감
+
+openssl sha1 -binary debug.txt > debug_sha.txt
+
+openssl base64 -in debug_sha.txt > debug_base64.txt
+
+debug_base64.txt 안에 있는 내용을 카카오 개발 콘솔에 복사
+
+openssl sha1 -binary dsm.txt > dsm_sha.txt
+
+openssl base64 -in dsm_sha.txt > dsm_base64.txt
+
+dsm_base64.txt 안에 있는 내용을 카카오 개발 콘솔에 복사

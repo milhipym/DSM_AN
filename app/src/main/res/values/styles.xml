@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!-- toolbar 사용시 actionbar 비활성화 -->
+    <style name="AppTheme.NoActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- 웹뷰 테마 -->
+    <style name="AppTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/color_009881</item>
+        <item name="colorPrimaryDark">@color/color_009881</item>
+        <item name="colorAccent">@color/color_009881</item>
+    </style>
+
+    <!-- 로그인 테마 -->
+    <style name="AppTheme.LOGIN" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/color_009881</item>
+        <item name="colorPrimaryDark">@color/color_009881</item>
+        <item name="colorAccent">@color/color_009881</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Log" parent="AppTheme">
+        <item name="android:typeface">monospace</item>
+
+        <item name="android:padding">@dimen/margin_medium</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <!-- 팝업 다이얼로그 테마 -->
+    <style name="popup_custom_theme" parent="AppTheme">
+        <item name="android:windowBackground">@color/color_20000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- 반투명한 배경 -->
+    <style name="Theme.Opacity" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- 투명한 배경 -->
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- AlertDialog 전체화면 -->
+    <style name="DialogTheme_FullScreen" parent="android:Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <item name="android:padding">0dip</item>
+        <item name="android:layout_margin">0dip</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/color_ffffff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!-- 백신 -->
+
+    <!-- Base application theme. -->
+
+    <style name="fontindex01">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex02">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="fontindex03">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffd6d6d6</item>
+    </style>
+    <style name="fontindex04">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex05">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex06">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex07">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffd6d6d6</item>
+    </style>
+    <style name="fontindex08">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ffcccccc</item>
+    </style>
+    <style name="fontindex09">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+    <style name="fontindex10">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex11">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="fontindex12">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffd6d6d6</item>
+    </style>
+    <style name="fontindex13">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex14">
+        <item name="android:textSize">29.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex15">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex16">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textColor">#ffd6d6d6</item>
+    </style>
+    <style name="fontindex17">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+    <style name="fontindex18">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="fontindex19">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="fontindex20">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+    <style name="fontindex21">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex22">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex23">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffc6e4ff</item>
+    </style>
+    <style name="fontindex24">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex25">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffd34545</item>
+    </style>
+    <style name="fontindex26">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ffacd8ff</item>
+    </style>
+    <style name="fontindex27">
+        <item name="android:textSize">21.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="fontindex28">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ffd34545</item>
+    </style>
+    <style name="fontindex29">
+        <item name="android:textSize">7.0dip</item>
+        <item name="android:textColor">#ffc8d7e3</item>
+    </style>
+    <style name="fontindex30">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffc8d7e3</item>
+    </style>
+    <style name="alert_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.mVaccine.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.mVaccine.Transparent2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.mVaccine.NoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="actionActivity" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
+</resources>

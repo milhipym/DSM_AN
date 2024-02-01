@@ -1,0 +1,4768 @@
+<div id="table">
+	<div id="wrap_proto" class="prototype">
+		<h1 id="go_table" class="tit_guide">TABLE</h1>
+		<div class="section_bx">
+			<div class="section">
+				<p class="mgb5">half 에 이중 클래스로 넓이를 정합니다. wid70, wid60, wid40, wid30</p>
+				<div class="wrap_tb">
+					<table class="form__ tb_search">
+						<colgroup>
+							<col style="width:100px" />
+							<col style="width:250px" />
+							<col style="width:100px" />
+							<col style="width:270px" />
+							<col style="width:100px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>반반</th>
+								<td>
+									<div class="form_txt_arae half_both">
+										<span class="half">
+											<input type="text" placeholder="" class="ipt_txt" />
+										</span>
+										<span class="half">
+											<input type="text" placeholder="" class="ipt_txt" />
+											<span style="z-index:100000000" class="msg__ alert_after_show__ orgin_left__ alert__ alert_tooltip__ vsisible__">
+												<ul class="msg_line_box__">
+													<li>필수입력 필드입니다.</li>
+													<li>숫자(정수)만 입력 할 수 있습니다.</li>
+												</ul>
+												<a title="colse" class="msg_close__"></a>
+											</span>
+										</span>
+									</div>
+								</td>
+								<th>검색<em class="ico_mandator"></em></th>
+								<td>
+									<div class="sch_iptbtn">
+										<input type="text" placeholder="" class="ipt_txt" />
+										<a href="" class="btn_sch">검색</a>
+									</div>
+									<div class="cal_iptbtn">
+										<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;month&quot;]]" placeholder="YYYY.MM" class="ipt_txt" />
+										<a href="" class="btn_cal">달력</a>
+									</div>
+									<div class="cal_iptbtn">
+										<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" class="ipt_txt" />
+										<a href="" class="btn_cal">달력</a>
+									</div>
+								</td>
+								<th>검색혼합 70/30<em class="ico_mandator"></em></th>
+								<td>
+									<div class="form_txt_arae half_both">
+										<span class="half wid70">
+											<div class="sch_iptbtn">
+												<input type="text" placeholder="" class="ipt_txt" />
+												<a href="" class="btn_sch">검색</a>
+											</div>
+										</span>
+										<span class="half wid30">
+											<input type="text" placeholder="" class="ipt_txt" />
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>반반</th>
+								<td>
+									<div class="form_txt_arae half_both">
+										<span class="half">
+											<input type="text" placeholder="" class="ipt_txt" />
+										</span>
+										<span class="half">
+											<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+										</span>
+									</div>
+								</td>
+								<th>60/40</th>
+								<td>
+									<div class="form_txt_arae half_both">
+										<span class="half wid60">
+											<input type="text" placeholder="" class="ipt_txt" />
+										</span>
+										<span class="half wid40">
+											<input type="text" placeholder="" class="ipt_txt" />
+											<span style="z-index:100000000" class="msg__ alert_after_show__ orgin_left__ alert__ alert_tooltip__ vsisible__">
+												<ul class="msg_line_box__">
+													<li>필수입력 필드입니다.</li>
+													<li>숫자(정수)만 입력 할 수 있습니다.</li>
+												</ul>
+												<a title="colse" class="msg_close__"></a>
+											</span>
+										</span>
+									</div>
+								</td>
+								<th>70/30</th>
+								<td>
+									<div class="form_txt_arae half_both">
+										<span class="half wid70">
+											<input type="text" placeholder="" class="ipt_txt" />
+										</span>
+										<span class="half wid30">
+											<input type="text" placeholder="" class="ipt_txt" />
+										</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<h2 class="tit_guide">조회테이블 (.ui_tb_acc .ui_acc_cont .wrap_tb .tb_search)</h2>
+				<div class="ui_tb_acc">
+					<div class="ui_acc_cont">
+						<div class="wrap_tb form__">
+							<table class="tb_search">
+								<colgroup>
+									<col style="width:100px" />
+									<col style="width:200px" />
+									<col style="width:100px" />
+									<col/>
+									<col style="width:130px" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>조회구분<em class="ico_mandator"></em></th>
+										<td>
+											<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__"></select>
+										</td>
+										<th>기준일<em class="ico_mandator"></em></th>
+										<td>
+											<span class="inp_search">
+												<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;month&quot;]]" placeholder="YYYY.MM" style="width:124px" disabled="disabled" class="ipt_txt" />
+												<a href="" class="btn_cal">달력</a>
+											</span>
+											<span class="tb_cld_txt">~</span>
+											<span class="inp_search">
+												<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:124px" readonly="readonly" class="ipt_txt" />
+												<a href="" class="btn_cal">달력</a>
+											</span>
+										</td>
+										<td class="l_line">td왼쪽라인추가</td>
+									</tr>
+								</tbody>
+							</table>
+							<table style="display:none" class="tb_search">
+								<colgroup>
+									<col style="width:128px" />
+									<col style="width:326px" />
+									<col style="width:129px" />
+									<col/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>소속<em class="ico_mandator"></em></th>
+										<td>
+											<span class="inp_search">
+												<input type="text" placeholder="" style="width:96px" class="ipt_txt" />
+												<a href="" class="btn_sch">검색</a>
+											</span>
+											<input type="text" placeholder="" style="width:164px" class="ipt_txt" />
+										</td>
+										<th>취급자<em class="ico_mandator"></em></th>
+										<td>
+											<span class="inp_search">
+												<input type="text" placeholder="" style="width:87px" class="ipt_txt" />
+												<a href="" class="btn_sch">검색</a>
+											</span>
+											<input type="text" placeholder="" style="width:98px" class="ipt_txt" />
+											<select style="width:95px" data-data="[{ &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }]"
+													class="select__"></select>
+										</td>
+									</tr>
+									<tr>
+										<th>납입여부/방법<em class="ico_mandator"></em></th>
+										<td>
+											<select style="width:150px" data-data="[{ &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }]" class="select__"></select>
+											<select style="width:150px" data-data="[{ &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }]" class="select__"></select>
+										</td>
+										<th>허용/예측손해<em class="ico_mandator"></em></th>
+										<td>
+											<select style="width:162px" data-data="[{ &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }]" class="select__"></select>
+											<select style="width:163px" data-data="[{ &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }]" class="select__"></select>
+										</td>
+									</tr>
+									<tr>
+										<th>고객속성<em class="ico_mandator"></em></th>
+										<td colspan="3">
+											<select style="width:150px" data-data="[{ &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }]" class="select__"></select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="ui_btn_area">
+						<!-- script on 적용-->
+						<a href="#" class="btn_ctr">열기</a>
+					</div>
+					<div class="btn_area right">
+						<a href="" class="button__ btn_mid">조회</a>
+					</div>
+				</div>
+				<div class="wrap_tb tb_scroll">
+					<table data-opts="{ &quot;fixedcol&quot; : 2 }" class="grid__ form__ tb_list">
+						<colgroup>
+							<col style="width:50px" />
+							<col style="width:100px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순번</th>
+								<th>취급자</th>
+								<th>구분</th>
+								<th>대상건수</th>
+								<th>납입(갱신건수)</th>
+								<th>납입(갱신)율</th>
+								<th>대상보험료(원)</th>
+								<th>납입보험료(원)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">탭안에 조회테이블 (.ui_tb_acc.basic .ui_acc_cont .wrap_tb .tb_search)</h2>
+				<div class="ui_tb_acc basic">
+					<div class="ui_acc_cont">
+						<div class="wrap_tb form__">
+							<table class="tb_search">
+								<colgroup>
+									<col style="width:128px" />
+									<col style="width:171px" />
+									<col style="width:100px" />
+									<col/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>조회구분<em class="ico_mandator"></em></th>
+										<td>
+											<select style="width:151px" data-data="[{ &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__"></select>
+										</td>
+										<th>기준일<em class="ico_mandator"></em></th>
+										<td>
+											<select style="width:161px" data-data="[{ &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__"></select>
+											<span class="inp_search">
+												<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:124px" class="ipt_txt" />
+												<a href="" class="btn_cal">달력</a>
+											</span>
+											<span class="tb_cld_txt">~</span>
+											<span class="inp_search">
+												<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:124px" class="ipt_txt" />
+												<a href="" class="btn_cal">달력</a>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table style="display:none" class="tb_search">
+								<colgroup>
+									<col style="width:128px" />
+									<col style="width:326px" />
+									<col style="width:129px" />
+									<col/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>소속<em class="ico_mandator"></em></th>
+										<td>
+											<span class="inp_search">
+												<input type="text" placeholder="" style="width:96px" class="ipt_txt" />
+												<a href="" class="btn_sch">검색</a>
+											</span>
+											<input type="text" placeholder="" style="width:164px" class="ipt_txt" />
+										</td>
+										<th>취급자<em class="ico_mandator"></em></th>
+										<td>
+											<span class="inp_search">
+												<input type="text" placeholder="" style="width:87px" class="ipt_txt" />
+												<a href="" class="btn_sch">검색</a>
+											</span>
+											<input type="text" placeholder="" style="width:98px" class="ipt_txt" />
+											<select style="width:95px" data-data="[{ &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;본인&quot; }]" class="select__"></select>
+										</td>
+									</tr>
+									<tr>
+										<th>고객속성<em class="ico_mandator"></em></th>
+										<td colspan="3">
+											<select style="width:150px" data-data="[{ &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }, { &quot;cd_nm&quot; : &quot;전체&quot; }]" class="select__"></select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="ui_btn_area">
+						<!-- script on 적용-->
+						<a href="#" class="btn_ctr">열기</a>
+					</div>
+					<div class="btn_area right">
+						<a href="" class="button__ btn_mid">조회</a>
+					</div>
+				</div>
+				<h2 class="tit_guide">조회테이블 (.wrap_tb .tb_search)</h2>
+				<div class="wrap_tb">
+					<table class="form__ tb_search">
+						<colgroup>
+							<col style="width:115px" />
+							<col style="width:241px" />
+							<col style="width:152px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>설계번호</th>
+								<td>
+									<span class="inp_search">
+										<input type="number" placeholder="" style="width:181px" value="1111" class="ipt_txt" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<th>보험종목 / 플랜</th>
+								<td>
+									<select size="2" style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; } , { &quot;cd_nm&quot; : &quot;베이직&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]"
+											class="select__"></select>
+										<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" class="select__"></select>
+										<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" class="select__"></select>
+								</td>
+							</tr>
+							<tr>
+								<th>설계번호</th>
+								<td>
+									<span class="inp_search">
+										<input type="number" placeholder="" style="width:181px" disabled="disabled" class="ipt_txt" />
+										<a href="" class="btn_sch dis">검색</a>
+									</span>
+								</td>
+								<th>보험종목 / 플랜</th>
+								<td>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" disabled="disabled" class="select__"></select>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" disabled="disabled" class="select__"></select>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" disabled="disabled" class="select__"></select>
+								</td>
+							</tr>
+							<tr>
+								<th>설계번호</th>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol03" type="number" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:181px" class="ipt_txt" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+								<th>보험종목 / 플랜</th>
+								<td>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" class="select__"></select>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" class="select__"></select>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" class="select__"></select>
+								</td>
+							</tr>
+							<tr>
+								<th>설계번호</th>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol04" type="number" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:181px" disabled="disabled" class="ipt_txt" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+								<th>보험종목 / 플랜</th>
+								<td>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" disabled="disabled" class="select__"></select>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" disabled="disabled" class="select__"></select>
+									<select style="width:134px" data-data="[{ &quot;cd_nm&quot; : &quot;프로미카개인용&quot; }, { &quot;cd_nm&quot; : &quot;일반&quot; }, { &quot;cd_nm&quot; : &quot;베이직&quot; }]" disabled="disabled" class="select__"></select>
+								</td>
+							</tr>
+							<tr>
+								<th>취급자</th>
+								<td colspan="3">
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:104px" class="ipt_txt" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+									<input type="text" placeholder="" style="width:108px" value="정우성" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>인증번호</th>
+								<td colspan="3">
+									<input type="number" placeholder="" style="width:166px" value="012345" class="ipt_txt" />
+									<a href="" class="button__ btn_tb">인증번호받기</a>
+								</td>
+							</tr>
+							<tr>
+								<th>인증번호</th>
+								<td colspan="3">
+									<input type="number" placeholder="" style="width:166px" value="012345" disabled="disabled" class="ipt_txt" />
+									<a href="" class="button__ btn_tb dis">인증번호받기</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">조회테이블 버튼 있을경우 (.wrap_tb .tb_search)</h2>
+				<div class="tb_btn_add clfix">
+					<div class="wrap_tb">
+						<table class="form__ tb_search">
+							<colgroup>
+								<col style="width:115px" />
+								<col style="width:140px" />
+								<col style="width:115px" />
+								<col style="width:239px" />
+								<col style="width:115px" />
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>증권번호<em class="ico_mandator"></em></th>
+									<td>
+										<input type="number" placeholder="숫자 12자리" style="width:100%" class="ipt_txt" />
+									</td>
+									<th>정렬<em class="ico_mandator"></em></th>
+									<td>
+										<span class="inp_search">
+											<input type="text" placeholder="" style="width:92px" value="12345678" disabled="disabled" class="ipt_txt" />
+											<a href="" class="btn_sch">검색</a>
+										</span>
+										<input type="text" placeholder="" style="width:82px" value="홍길동" disabled="disabled" class="ipt_txt" />
+									</td>
+									<th>처리구분<em class="ico_mandator"></em></th>
+									<td>
+										<select style="width:87px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn_zone">
+						<a href="" class="button__ btn_large">조회</a>
+					</div>
+				</div>
+				<h2 class="tit_guide">조회테이블 버튼이 실명확인 있을경우 (.wrap_tb .tb_search) + btn_zone.w136 추가</h2>
+				<div class="tb_btn_add clfix">
+					<div class="wrap_tb">
+						<table class="form__ tb_search w136">
+							<colgroup>
+								<col style="width:115px" />
+								<col style="width:140px" />
+								<col style="width:115px" />
+								<col style="width:239px" />
+								<col style="width:115px" />
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>증권번호<em class="ico_mandator"></em></th>
+									<td>
+										<input type="number" placeholder="숫자 12자리" style="width:100%" class="ipt_txt" />
+									</td>
+									<th>정렬<em class="ico_mandator"></em></th>
+									<td>
+										<span class="inp_search">
+											<input type="text" placeholder="" style="width:92px" value="12345678" class="ipt_txt" />
+											<a href="" class="btn_sch">검색</a>
+										</span>
+										<input type="text" placeholder="" style="width:77px" value="홍길동" disabled="disabled" class="ipt_txt" />
+									</td>
+									<th>처리구분<em class="ico_mandator"></em></th>
+									<td>
+										<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn_zone w136">
+						<a href="" class="button__ btn_large gray6">실명확인</a>
+					</div>
+				</div>
+				<h2 class="tit_guide">조회테이블 버튼 있을경우 기본스타일 (.wrap_tb .top_basic)</h2>
+				<div class="tb_btn_add clfix">
+					<div class="wrap_tb bd_none">
+						<table class="form__ tb_search top_basic">
+							<colgroup>
+								<col style="width:115px" />
+								<col style="width:152px" />
+								<col style="width:115px" />
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>입출금 구분<em class="ico_mandator"></em></th>
+									<td>
+										<select style="width:132px" data-data="[{ &quot;cd_nm&quot; : &quot;배당금&quot; }, { &quot;cd_nm&quot; : &quot;배당금&quot; }, { &quot;cd_nm&quot; : &quot;배당금&quot; }]" class="select__"></select>
+									</td>
+									<th>조회기준월<em class="ico_mandator"></em></th>
+									<td>
+										<span class="inp_search">
+											<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:162px" class="ipt_txt" />
+											<a href="" class="btn_cal">달력</a>
+										</span>
+										<span class="tb_cld_txt">~</span>
+										<span class="inp_search">
+											<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:162px" class="ipt_txt" />
+											<a href="" class="btn_cal">달력</a>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn_zone">
+						<a href="" class="button__ btn_large">조회</a>
+					</div>
+				</div>
+				<h2 class="tit_guide">라디오 테이블 (.radio_sel)</h2>
+				<div class="wrap_tb">
+					<table class="form__ tb_search top_gray radio_sel">
+						<colgroup>
+							<col style="width:100%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>
+									<span class="form_group">
+										<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;기지급계좌&quot; }, { &quot;cd_nm&quot; : &quot;자동이체계좌&quot; }, { &quot;cd_nm&quot; : &quot;기타계좌&quot; }, { &quot;cd_nm&quot; : &quot;모름&quot; }]" class="select__ btn_rdo" />
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">Top border 회색 (.wrap_tb.tb_scroll .tb_list .top_gray) 텍스트 유형 ALL</h2>
+				<div class="wrap_tb">
+					<table class="form__ tb_search top_gray">
+						<colgroup>
+							<col style="width:150px" />
+							<col style="width:318px" />
+							<col style="width:150px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>보험종목</th>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:95px" class="ipt_txt" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+									<span class="tb_cld_txt">~</span>
+									<span class="inp_search">
+										<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:95px" class="ipt_txt" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+								<th>보험기간</th>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:92px" value="12345678" class="ipt_txt" />
+										<a href="" class="btn_sch">검색</a>
+										<input type="text" placeholder="" style="width:77px" value="홍길동" disabled="disabled" class="ipt_txt" />
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>계약자</th>
+								<td>
+									<span class="form_group">
+										<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;본인&quot; }, { &quot;cd_nm&quot; : &quot;세대&quot; }]" class="select__ btn_rdo" />
+									</span>
+									<span class="form_group">
+										<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;전체(퇴직 제외)&quot; }, { &quot;cd_nm&quot; : &quot;자동차&quot; }]" class="select__ btn_chk" />
+									</span>
+									<span class="form_group">
+										<span class="input_radio">
+											<input type="radio" id="ra01" name="test" />
+											<label for="ra01">하드코딩 라디오</label>
+										</span>
+										<span class="input_radio">
+											<input type="radio" id="ra02" name="test" />
+											<label for="ra02">하드코딩 라디오</label>
+										</span>
+									</span>
+								</td>
+								<th>피보험자</th>
+								<td>
+									<input type="text" placeholder="장*건" style="width:100%" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>계약상태</th>
+								<td>
+									<input type="text" placeholder="정상 (YYYY.MM.DD)" style="width:100%" class="ipt_txt" />
+								</td>
+								<th>피보험자</th>
+								<td>
+									<input type="text" placeholder="YYYY년 MM월 / 240회 중 120회 / 월납" style="width:100%" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>질권/가압류</th>
+								<td>
+									<input type="text" placeholder="없음" style="width:100%" class="ipt_txt" />
+								</td>
+								<th>납입총액</th>
+								<td>
+									<span class="txt_won">
+										<input type="number" placeholder="###,###,###" style="width:100%" class="ipt_txt right" />
+										<span class="txt">원</span>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>계약담당자</th>
+								<td>
+									<input type="text" placeholder="홍길동 / 12345678 / 010-1111-1234" style="width:100%" class="ipt_txt" />
+								</td>
+								<th>환급률</th>
+								<td>
+									<input type="number" placeholder="65.1" style="width:156px" class="ipt_txt right" />
+									<span class="txt">%</span>
+									<a href="" class="button__ btn_tb">환급률내역조회</a>
+								</td>
+							</tr>
+							<tr>
+								<th>갱신선택
+									<span class="ico_mantator"></span>
+								</th>
+								<td colspan="3">
+									<span class="design_radio">
+										<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;갱신&quot; }, { &quot;cd_nm&quot; : &quot;비갱신&quot; }]" class="select__" />
+									</span>
+									<span class="txt_tip">갱신여부 선택 후 환급금 산출하시면 됩니다.</span>
+								</td>
+							</tr>
+							<tr>
+								<th>직업</th>
+								<td>
+									<div class="line">
+										<span class="inp_search">
+											<input type="text" placeholder="" style="width:257px" value="B6100" class="ipt_txt" />
+											<a href="" class="btn_sch">검색</a>
+										</span>
+									</div>
+									<div class="line">
+										<input type="text" placeholder="" style="width:100%" value="그 외 금속/재료공학 개발자 및 연구원" class="ipt_txt" />
+									</div>
+								</td>
+								<th>설계구분</th>
+								<td>
+									<span class="design_radio">
+										<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;정규&quot; }, { &quot;cd_nm&quot; : &quot;간편&quot; }]" class="select__" />
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn_area right">
+					<span class="left">
+						<a href="" class="button__ btn_sm_line">계약조회</a>
+						<a href="" class="button__ btn_sm_line">구비서류</a>
+					</span>
+					<a href="" class="button__ btn_mid orange">환급금 산출</a>
+				</div>
+				<h2 class="tit_guide">Top border 회색 tfoot 버튼그룹 유형 (.wrap_tb.tb_scroll .tb_list .top_gray)</h2>
+				<div class="wrap_tb">
+					<table class="form__ tb_search top_gray">
+						<colgroup>
+							<col style="width:100px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>접촉내역</th>
+								<td>
+									<div class="line">
+										<select style="width:372px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+									</div>
+									<div class="line">
+										<textarea style="width:100%;height:70px" class="txt_area"></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2" class="bg_gray_line">
+									<div class="btn_area left">
+										<a href="" class="button__ btn_sm">저장</a>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<h2 class="tit_guide">Top border 회색 tbody th 구조 (.wrap_tb.dnm_form)</h2>
+				<div class="wrap_tb dnm_form">
+					<table class="form__ tb_search top_gray">
+						<colgroup>
+							<col style="width:155px" />
+							<col style="width:157px" />
+							<col style="width:157px" />
+							<col style="width:156px" />
+							<col style="width:157px" />
+							<col style="width:*" />
+						</colgroup>
+						<thead>
+							<tr class="line_bot">
+								<th colspan="3">실적항목</th>
+								<th>현재실적</th>
+								<th>예측실적</th>
+								<th>성적환산</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>
+									<span class="pst_box">자동차
+										<span class="question_bx">
+											<a href="" class="button__ ico_question"></a>
+											<span class="grid_layer_tooltip right bot">
+												<span class="bg_mid">내용</span>
+												<span class="bg_bot"></span>
+											</span>
+										</span>
+									</span>
+								</th>
+								<th colspan="2">신규비사업용</th>
+								<td class="right">0</td>
+								<td>&nbsp;</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>
+									<span class="pst_box">자동차
+										<span class="question_bx">
+											<a href="" class="button__ ico_question"></a>
+											<span class="grid_layer_tooltip right bot">
+												<span class="bg_mid">내용</span>
+												<span class="bg_bot"></span>
+											</span>
+										</span>
+									</span>
+								</th>
+								<th colspan="2">신규비사업용</th>
+								<td class="right">0</td>
+								<td>&nbsp;</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">Form 레이어팝업 (.wrap_tb.tb_scroll .tb_list .top_gray)</h2>
+				<div class="wrap_tb">
+					<table class="form__ tb_search top_gray">
+						<colgroup>
+							<col style="width:133px" />
+							<col style="width:336px" />
+							<col style="width:135px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>설계번호</th>
+								<td>
+									<input type="number" placeholder="" style="width:229px" class="ipt_txt" />
+									<a href="" class="button__ btn_tb">계약조회</a>
+								</td>
+								<th>피보험자</th>
+								<td>
+									<input type="number" placeholder="" style="width:182px" class="ipt_txt" />
+									<input type="text" placeholder="" style="width:128px" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>상품/플랜</th>
+								<td>
+									<input type="text" placeholder="" style="width:182px" class="ipt_txt" />
+									<input type="text" placeholder="" style="width:129px" class="ipt_txt" />
+								</td>
+								<th>계약자</th>
+								<td>
+									<input type="number" placeholder="" style="width:182px" class="ipt_txt" />
+									<input type="text" placeholder="" style="width:128px" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>차량/차대번호</th>
+								<td>
+									<input type="text" placeholder="" style="width:182px" class="ipt_txt" />
+									<input type="text" placeholder="" style="width:129px" class="ipt_txt" />
+								</td>
+								<th>보험기간</th>
+								<td>
+									<input type="number" placeholder="" style="width:148px" class="ipt_txt" />
+									<span class="tb_cld_txt">~</span>
+									<input type="number" placeholder="" style="width:149px" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>차명</th>
+								<td>
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+								</td>
+								<th>납입기한</th>
+								<td>
+									<input type="number" placeholder="" style="width:100%" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>특약사항</th>
+								<td class="td_btn">
+									<span class="ipt_layer01">
+										<a href="#" class="btn_more">기명피보험자 1일 한정<em class="hide_txt">더보기</em><em class="ico"></em></a>
+										<span class="ipt_ct_layer">
+											<ul>
+												<li>기명피보험자 1일 한정</li>
+												<li>만 35세이상 한정</li>
+												<li>자동생성특약</li>
+												<li>다른자동차운전</li>
+												<li>대물가입금액확장</li>
+											</ul>
+											<a href="#" class="btn_close"><em class="hide_txt">닫기</em></a>
+										</span>
+									</span>
+								</td>
+								<th>특별요율</th>
+								<td>
+									<!-- disabled - class 추가 필요 "dis"-->
+									<span class="ipt_layer01">
+										<a href="#" class="btn_more dis">기명피보험자 1일 한정<em class="hide_txt">더보기</em><em class="ico"></em></a>
+										<span class="ipt_ct_layer">
+											<ul>
+												<li>기명피보험자 1일 한정</li>
+												<li>만 35세이상 한정</li>
+												<li>자동생성특약</li>
+												<li>다른자동차운전</li>
+												<li>대물가입금액확장</li>
+											</ul>
+											<a href="#" class="btn_close"><em class="hide_txt">닫기</em></a>
+										</span>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>계약자주소</th>
+								<td colspan="3">
+									<input type="number" placeholder="" style="width:124px" class="ipt_txt" />
+									<input type="text" placeholder="" style="width:434px" class="ipt_txt" />
+									<input type="text" placeholder="" style="width:219px" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>계약자연락처</th>
+								<td>
+									<input type="number" placeholder="" style="width:100%" class="ipt_txt" />
+								</td>
+								<th>취급자</th>
+								<td>
+									<input type="number" placeholder="" style="width:104px" class="ipt_txt" />
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:166px" class="ipt_txt" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>할인할증률</th>
+								<td>
+									<span class="ipt_layer01">
+										<a href="#" class="btn_more">84.6 %<em class="hide_txt">더보기</em><em class="ico"></em></a>
+										<span class="ipt_ct_layer">
+											<ul>
+												<li>기명피보험자 1일 한정</li>
+												<li>만 35세이상 한정</li>
+												<li>자동생성특약</li>
+												<li>다른자동차운전</li>
+												<li>대물가입금액확장</li>
+											</ul>
+											<a href="#" class="btn_close"><em class="hide_txt">닫기</em></a>
+										</span>
+									</span>
+								</td>
+								<th>가입자특성률</th>
+								<td>
+									<span class="ipt_layer01">
+										<a href="#" class="btn_more">100 %<em class="hide_txt">더보기</em><em class="ico"></em></a>
+										<span class="ipt_ct_layer">
+											<ul>
+												<li>기명피보험자 1일 한정</li>
+												<li>만 35세이상 한정</li>
+												<li>자동생성특약</li>
+												<li>다른자동차운전</li>
+												<li>대물가입금액확장</li>
+											</ul>
+											<a href="#" class="btn_close"><em class="hide_txt">닫기</em></a>
+										</span>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>평가기간사고점수</th>
+								<td>
+									<input type="number" placeholder="" style="width:100%" class="ipt_txt" />
+								</td>
+								<th>사고건수</th>
+								<td>
+									<input type="number" placeholder="" style="width:100%" class="ipt_txt" />
+								</td>
+							</tr>
+							<tr>
+								<th>3년간사고</th>
+								<td colspan="3">
+									<input type="text" placeholder="" style="width:316px" class="ipt_txt" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">금액테이블 (.wrap_tb .tb_total)</h2>
+				<div class="wrap_tb">
+					<table class="form__ tb_total">
+						<colgroup>
+							<col style="width:115px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>총 합계</th>
+								<td>
+									<span class="money">9,545,280</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">아코디언 안에 테이블</h2>
+				<div class="acc_noti">
+					<div class="ccl_insul_prd ui_acc_type01">
+						<ul class="prd_list">
+							<li>
+								<a href="#" class="btn_acc">
+									<strong class="txt_list">SRP 활동 현황/ 모집질서 이력관리</strong><em class="ico"></em></a>
+								<div class="acc_cont">
+									<div class="wrap_tb acc_tb">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:120px" />
+												<col style="width:342px" />
+												<col style="width:120px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>유치자번호</th>
+													<td>
+														<span class="inp_search">
+															<input type="text" placeholder="" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_sch">검색</a>
+														</span>
+													</td>
+													<th>유치자 성명</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+												</tr>
+												<tr>
+													<th>유치구분</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+													<th>유치자관계</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>소속</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+													<th>CIS1/CIS2/인터뷰</th>
+													<td>
+														<input type="text" placeholder="" style="width:90px" value="N" class="ipt_txt" />
+														<span class="tb_cld_txt">/</span>
+														<input type="text" placeholder="" style="width:91px" value="Y" class="ipt_txt" />
+														<span class="tb_cld_txt">/</span>
+														<input type="text" placeholder="" style="width:91px" value="N" class="ipt_txt" />
+													</td>
+												</tr>
+												<tr>
+													<th>육성 멘토</th>
+													<td>
+														<span class="inp_search">
+															<input type="text" placeholder="" style="width:117px" class="ipt_txt" />
+															<a href="" class="btn_sch">검색</a>
+														</span>
+														<input type="text" placeholder="" style="width:161px" class="ipt_txt" />
+													</td>
+													<th>변경일자</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol07" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:277px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="wrap_tb acc_tb line_top">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:120px" />
+												<col style="width:342px" />
+												<col style="width:120px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>모집질서 위반여부</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+													<th>유형</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+												</tr>
+												<tr>
+													<th>조치</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+													<th>조치기간</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol08" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:107px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+														<span class="tb_cld_txt">/</span>
+														<span class="inp_search">
+															<input id="dateCol09" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:107px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btn_acc">
+									<strong class="txt_list">인사정보</strong><em class="ico"></em></a>
+								<div class="acc_cont">
+									<div class="wrap_tb acc_tb">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:120px" />
+												<col style="width:342px" />
+												<col style="width:120px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>PA 구분(현재)</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+													<th>위임일자</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol10" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:277px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th>직위/직무/직책</th>
+													<td colspan="3">
+														<select style="width:255px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+														<select style="width:255px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+														<select style="width:255px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>PA 구분(현재)</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+													<th>위임일자</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol11" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:277px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th>DBRT 회원</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+													<th>이전조직원번호</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+												</tr>
+												<tr>
+													<th>가위촉일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol12" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>실위촉일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol13" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:277px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th>재위촉일자</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol14" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>해촉일자</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol15" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:277px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th>계좌번호</th>
+													<td>
+														<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+													</td>
+													<th>해촉일자</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol16" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:115px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+														<input type="text" placeholder="" style="width:158px" class="ipt_txt" />
+													</td>
+												</tr>
+												<tr>
+													<th>특별조직</th>
+													<td>
+														<select style="width:155px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+														<span class="inp_search">
+															<input id="dateCol17" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:123px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>도입유형</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>도입유형변경일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol18" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>수수료유형</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>수수료유형변경일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol18" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>영업형태</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>영업형태변경일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol18" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>장기판매권한</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>분쟁유발횟수</th>
+													<td colspan="3">
+														<select style="width:322px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="indent_zone">
+										<div class="wrap_tb acc_tb">
+											<table class="form__ tb_list">
+												<colgroup>
+													<col style="width:120px" />
+													<col style="width:195px" />
+													<col style="width:193px" />
+													<col style="width:193px" />
+													<col/>
+												</colgroup>
+												<thead>
+													<tr>
+														<th>등록정보</th>
+														<th colspan="2">등록번호</th>
+														<th>등록일자</th>
+														<th>말소일자</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>손해보험</th>
+														<td>
+															<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+														</td>
+														<td>
+															<input type="text" placeholder="" style="width:100%" value="01035221" class="ipt_txt" />
+														</td>
+														<td>
+															<span class="inp_search">
+																<input id="dateCol19" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:132px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+														</td>
+														<td>
+															<span class="inp_search">
+																<input id="dateCol20" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:132px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<th>제 3보험</th>
+														<td>
+															<input type="text" placeholder="" style="width:100%" class="ipt_txt" />
+														</td>
+														<td>
+															<input type="text" placeholder="" style="width:100%" value="01035221" class="ipt_txt" />
+														</td>
+														<td>
+															<span class="inp_search">
+																<input id="dateCol21" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:132px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+														</td>
+														<td>
+															<span class="inp_search">
+																<input id="dateCol22" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:132px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="wrap_tb acc_tb">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:120px" />
+												<col style="width:342px" />
+												<col style="width:120px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>교차판매유형</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+													<th>교차판매회사</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>교차판매유형</th>
+													<td colspan="3">
+														<select style="width:146px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+														<span class="inp_search">
+															<input id="dateCol23" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:132px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th>AFPK 합격일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol23" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>등록일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol24" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:279px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th>IFP 합격일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol25" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:282px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>등록일</th>
+													<td>
+														<span class="inp_search">
+															<input id="dateCol26" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:279px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th>준법서약서
+														<br>작성여부</th>
+													<td>
+														<input type="text" placeholder="" style="width:146px" class="ipt_txt" />
+														<span class="inp_search">
+															<input id="dateCol27" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:132px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+													<th>등록일</th>
+													<td>
+														<input type="text" placeholder="" style="width:146px" class="ipt_txt" />
+														<span class="inp_search">
+															<input id="dateCol28" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:129px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btn_acc">
+									<strong class="txt_list">보증사항/산재보험</strong><em class="ico"></em></a>
+								<div class="acc_cont">
+									<div class="wrap_tb acc_tb">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:120px" />
+												<col style="width:342px" />
+												<col style="width:120px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>수수료반환
+														<br>채무보증</th>
+													<td colspan="3">
+														<div class="wrap_tb acc_tb">
+															<table class="form__ tb_form">
+																<colgroup>
+																	<col style="width:135px" />
+																	<col style="width:195px" />
+																	<col style="width:135px" />
+																	<col/>
+																</colgroup>
+																<tbody>
+																	<tr>
+																		<th>가입급액</th>
+																		<td>
+																			<span class="txt_won">
+																				<input type="number" placeholder="###,###,###" style="width:136px" class="ipt_txt right" />
+																				<span class="txt">만 원</span>
+																			</span>
+																		</td>
+																		<th>주계약기간</th>
+																		<td>
+																			<span class="inp_search">
+																				<input id="dateCol28" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt" />
+																				<a href="" class="btn_cal">달력</a>
+																			</span>
+																			<span class="tb_cld_txt">-</span>
+																			<span class="inp_search">
+																				<input id="dateCol29" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt" />
+																				<a href="" class="btn_cal">달력</a>
+																			</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<th>증권번호</th>
+																		<td>
+																			<input type="number" placeholder="" style="width:100%" class="ipt_txt" />
+																		</td>
+																		<th>주계약기간</th>
+																		<td>
+																			<span class="inp_search">
+																				<input id="dateCol28" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt" />
+																				<a href="" class="btn_cal">달력</a>
+																			</span>
+																			<span class="tb_cld_txt">-</span>
+																			<span class="inp_search">
+																				<input id="dateCol29" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt" />
+																				<a href="" class="btn_cal">달력</a>
+																			</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<th>수수료반환
+																			<br>채무보증입력일자</th>
+																		<td>
+																			<span class="inp_search">
+																				<input id="dateCol30" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:134px" class="ipt_txt" />
+																				<a href="" class="btn_cal">달력</a>
+																			</span>
+																		</td>
+																		<th>&nbsp;</th>
+																		<td>&nbsp;</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div class="btn_area left mgt0">
+															<a href="" class="button__ btn_tb">영업보증보험이력</a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="wrap_tb acc_tb line_top">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:120px" />
+												<col style="width:342px" />
+												<col style="width:120px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>산재보험 가입의사</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;Y&quot; }, { &quot;cd_nm&quot; : &quot;Y&quot; }, { &quot;cd_nm&quot; : &quot;Y&quot; }]" class="select__"></select>
+													</td>
+													<th>산재보험 가입유무</th>
+													<td>
+														<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;N&quot; }, { &quot;cd_nm&quot; : &quot;N&quot; }, { &quot;cd_nm&quot; : &quot;N&quot; }]" class="select__"></select>
+													</td>
+												</tr>
+												<tr>
+													<th>보험기간</th>
+													<td colspan="3">
+														<span class="inp_search">
+															<input id="dateCol31" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:109px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+														<span class="tb_cld_txt">-</span>
+														<span class="inp_search">
+															<input id="dateCol32" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:109px" class="ipt_txt" />
+															<a href="" class="btn_cal">달력</a>
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btn_acc">
+									<strong class="txt_list">계약인수심사 정보</strong><em class="ico"></em></a>
+								<div class="acc_cont">
+									<div class="wrap_tb acc_tb">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:120px" />
+												<col style="width:342px" />
+												<col style="width:120px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>자동차</th>
+													<td>
+														<input type="number" placeholder="" style="width:158px" class="ipt_txt" />
+														<input type="number" placeholder="" style="width:158px" class="ipt_txt" />
+													</td>
+													<th>장기보험</th>
+													<td>
+														<input type="number" placeholder="" style="width:156px" class="ipt_txt" />
+														<input type="number" placeholder="" style="width:156px" class="ipt_txt" />
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btn_acc">
+									<strong class="txt_list">경력사항</strong><em class="ico"></em></a>
+								<div class="acc_cont">
+									<h2 class="tit_guide">아코디언 안에 그리드 테이블 th 흰색 (.wrap_tb.acc_tb.th_white)</h2>
+									<div class="indent_zone">
+										<div class="wrap_tb acc_tb th_white">
+											<table class="grid__ tb_list no_pattern">
+												<colgroup>
+													<col style="width:72px" />
+													<col style="width:340px" />
+													<col style="width:145px" />
+													<col/>
+												</colgroup>
+												<thead>
+													<tr>
+														<th>
+															<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;&quot; }]" class="select__ btn_chk" />
+														</th>
+														<th>기간</th>
+														<th>근무기관</th>
+														<th>내용</th>
+													</tr>
+												</thead>
+												<!-- 10줄-->
+												<tbody>
+													<tr>
+														<td>
+															<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;&quot; }]" class="select__ btn_chk" />
+														</td>
+														<td>
+															<span class="inp_search">
+																<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:100px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+															<span class="tb_cld_txt">~</span>
+															<span class="inp_search">
+																<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:100px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+														</td>
+														<td>&nbsp;</td>
+														<td>&nbsp;</td>
+													</tr>
+												</tbody>
+												<tbody>
+													<tr>
+														<td>
+															<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;&quot; }]" class="select__ btn_chk" />
+														</td>
+														<td>
+															<span class="inp_search">
+																<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:100px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+															<span class="tb_cld_txt">~</span>
+															<span class="inp_search">
+																<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:100px" class="ipt_txt" />
+																<a href="" class="btn_cal">달력</a>
+															</span>
+														</td>
+														<td>&nbsp;</td>
+														<td>&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btn_acc">
+									<strong class="txt_list">차량정보</strong><em class="ico"></em></a>
+								<div class="acc_cont">
+									<h2 class="tit_guide">아코디언 안에 테이블 안에 그리드 테이블 border 추가</h2>
+									<div class="wrap_tb acc_tb">
+										<table class="form__ tb_search">
+											<colgroup>
+												<col style="width:86px" />
+												<col style="width:382px" />
+												<col style="width:106px" />
+												<col/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>운행차량<em class="ico_mandator"></em></th>
+													<td>
+														<span class="form_group">
+															<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;없음&quot; }, { &quot;cd_nm&quot; : &quot;자가용&quot; }, { &quot;cd_nm&quot; : &quot;영업용&quot; }]" class="select__ btn_rdo" />
+														</span>
+													</td>
+													<th>자녀운전여부</th>
+													<td>
+														<span class="form_group">
+															<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;예&quot; }, { &quot;cd_nm&quot; : &quot;아니오&quot; }]" class="select__ btn_rdo" />
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="indent_zone mgt0 mgt0 pd0">
+										<div class="wrap_tb acc_tb mgt0">
+											<table class="form__ tb_search">
+												<colgroup>
+													<col style="width:86px" />
+													<col style="width:382px" />
+													<col style="width:106px" />
+													<col/>
+												</colgroup>
+												<tbody>
+													<tr>
+														<th class="th_vtc_top">차량정보</th>
+														<td colspan="3">
+															<div class="wrap_tb acc_tb th_white td_border">
+																<table class="grid__ tb_list no_pattern">
+																	<colgroup>
+																		<col style="width:190px" />
+																		<col style="width:205px" />
+																		<col style="width:210px" />
+																		<col/>
+																	</colgroup>
+																	<thead>
+																		<tr>
+																			<th>차량번호</th>
+																			<th>만기일</th>
+																			<th>가입사</th>
+																			<th>차량검사일</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																		</tr>
+																	</tbody>
+																	<tbody>
+																		<tr>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																		</tr>
+																	</tbody>
+																	<tbody>
+																		<tr>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																		</tr>
+																	</tbody>
+																	<tbody>
+																		<tr>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																			<td>&nbsp;</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<div class="btn_area left mgt0">
+																<a href="" class="button__ btn_tb mgt10">차량정보등록</a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="tit_guide">리스트테이블 (.wrap_tb .tb_list)</h2>
+				<div class="wrap_tb">
+					<table class="grid__ tb_list">
+						<colgroup>
+							<col style="width:109px" />
+							<col style="width:45px" />
+							<col style="width:126px" />
+							<col style="width:77px" />
+							<col style="width:106px" />
+							<col style="width:112px" />
+							<col style="width:78px" />
+							<col style="width:78px" />
+							<col style="width:79px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>증권번호</th>
+								<th>NO</th>
+								<th>계약자/피보험자</th>
+								<th>이체일자</th>
+								<th>이체처리일자</th>
+								<th>납입년월/회차</th>
+								<th>합산청구</th>
+								<th>이체금액</th>
+								<th>은행명</th>
+								<th>계좌번호</th>
+							</tr>
+						</thead>
+						<tbody class="selected">
+							<tr>
+								<td class="link_point">994140764395</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+						<tbody class="selected02">
+							<tr>
+								<td>
+									<a href="" class="link_point">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<a href="" class="link_point">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<a href="" class="link_point">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">리스트테이블 th 화이트 (.wrap_tb .tb_list.th_white)</h2>
+				<div class="wrap_tb">
+					<table class="grid__ tb_list th_white">
+						<colgroup>
+							<col style="width:55px" />
+							<col style="width:60px" />
+							<col style="width:100px" />
+							<col style="width:55px" />
+							<col style="width:100px" />
+							<col style="width:60px" />
+							<col style="width:100px" />
+							<col style="width:88px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>선택</th>
+								<th>카드사</th>
+								<th>카드번호</th>
+								<th>할부</th>
+								<th>금액</th>
+								<th>인증</th>
+								<th>승인시간</th>
+								<th>특인상태</th>
+								<th>SAVE</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td class="td_btn">
+									<a href="" class="button__ btn_sm dis">심사신청</a>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">리스트테이블 + tfoot(행추가 행삭제 BTN)</h2>
+				<div class="wrap_tb bd_none">
+					<table class="grid__ tb_list">
+						<colgroup>
+							<col style="width:54px" />
+							<col style="width:55px" />
+							<col style="width:111px" />
+							<col style="width:105px" />
+							<col style="width:95px" />
+							<col style="width:85px" />
+							<col style="width:68px" />
+							<col style="width:102px" />
+							<col style="width:112px" />
+							<col style="width:86px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									<input type="checkbox" />
+								</th>
+								<th>번호</th>
+								<th>상품명</th>
+								<th>간사사</th>
+								<th>보험료</th>
+								<th>총보험료</th>
+								<th>M/S</th>
+								<th>예상만기일자</th>
+								<th>보험사선정기준</th>
+								<th>공략가능성</th>
+								<th>비고</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="11" class="bg_gray_line pd5">
+									<div class="btn_area left">
+										<a href="" class="btn_line_minus">행삭제</a>
+										<a href="" class="btn_line_plus">행추가</a>
+										<a href="" class="button__ btn_sm_line">취소</a>
+										<a href="" class="button__ btn_sm">저장</a>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:84px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" disabled="disabled" class="select__ line_hidden"></select>
+								</td>
+								<td class="right">
+									<a href="" class="button__ btn_bg btn_sm btn_bg_search"></a>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:90px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:65px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">리스트테이블 + div.foot_area(tfoot 스타일)</h2>
+				<div class="wrap_tb bd_none tb_scroll">
+					<table data-opts="{ &quot;height&quot; : 220 }" class="grid__ tb_list">
+						<colgroup>
+							<col style="width:54px" />
+							<col style="width:55px" />
+							<col style="width:111px" />
+							<col style="width:105px" />
+							<col style="width:95px" />
+							<col style="width:85px" />
+							<col style="width:68px" />
+							<col style="width:102px" />
+							<col style="width:112px" />
+							<col style="width:86px" />
+							<col style="width:186px" />
+							<col style="width:300px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									<input type="checkbox" />
+								</th>
+								<th>번호</th>
+								<th>상품명</th>
+								<th>간사사</th>
+								<th>보험료</th>
+								<th>총보험료</th>
+								<th>M/S</th>
+								<th>예상만기일자</th>
+								<th>보험사선정기준</th>
+								<th>공략가능성</th>
+								<th>비고</th>
+								<th>테스트</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:84px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" disabled="disabled" class="select__ line_hidden"></select>
+								</td>
+								<td class="right">
+									<a href="" class="button__ btn_bg btn_sm btn_bg_search"></a>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:90px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:65px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:84px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" disabled="disabled" class="select__ line_hidden"></select>
+								</td>
+								<td class="right">
+									<a href="" class="button__ btn_bg btn_sm btn_bg_search"></a>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:90px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:65px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:84px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" disabled="disabled" class="select__ line_hidden"></select>
+								</td>
+								<td class="right">
+									<a href="" class="button__ btn_bg btn_sm btn_bg_search"></a>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>
+									<select style="width:90px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:65px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }, { &quot;cd_nm&quot; : &quot;만기&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="foot_area">
+					<a href="" class="btn_line_minus">행삭제</a>
+					<a href="" class="btn_line_plus">행추가</a>
+					<a href="" class="button__ btn_sm_line">취소</a>
+					<a href="" class="button__ btn_sm">저장</a>
+				</div>
+				<h2 class="tit_guide">- 리스트테이블 tbody에 rowspan이 있을경우 no grid__
+					<br> - tbody th 있을 경우 .no_pattern 클래스 추가</h2>
+				<div class="wrap_tb">
+					<table class="tb_list no_pattern">
+						<colgroup>
+							<col style="width:160" />
+							<col style="width:88px" />
+							<col style="width:87px" />
+							<col style="width:105px" />
+							<col style="width:77px" />
+							<col style="width:117px" />
+							<col style="width:158px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>구분</th>
+								<th>모집계약</th>
+								<th>유지계약</th>
+								<th>현실적유지율</th>
+								<th>추가실적</th>
+								<th>합산실적유지율</th>
+								<th>합산평균유지율(12+24)</th>
+								<th>유지율적용률</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>직전6개월(2~7회차)</th>
+								<td class="right">1,784,121</td>
+								<td class="right">1,668,540</td>
+								<td class="right">93%</td>
+								<td class="right">0</td>
+								<td class="right">93%</td>
+								<td rowspan="4" class="right">87%</td>
+								<td rowspan="4" class="right">90%</td>
+							</tr>
+							<tr>
+								<th>직전6개월(2~7회차)</th>
+								<td class="right">1,784,121</td>
+								<td class="right">1,668,540</td>
+								<td class="right">93%</td>
+								<td class="right">0</td>
+								<td class="right">93%</td>
+							</tr>
+							<tr>
+								<th>직전6개월(2~7회차)</th>
+								<td class="right">1,784,121</td>
+								<td class="right">1,668,540</td>
+								<td class="right">93%</td>
+								<td class="right">0</td>
+								<td class="right">93%</td>
+							</tr>
+							<tr>
+								<th>직전6개월(2~7회차)</th>
+								<td class="right">1,784,121</td>
+								<td class="right">1,668,540</td>
+								<td class="right">93%</td>
+								<td class="right">0</td>
+								<td class="right">93%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">다중그리드</h2>
+				<div class="cpd_tb">
+					<div style="width:107px" class="wrap_tb">
+						<table data-opts="{ &quot;height&quot; : 420 }" class="grid__ tb_list">
+							<thead>
+								<tr>
+									<th>상품군</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">신/개정상품</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">운전자</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">상해</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">질병</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#" class="on">의료시설</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">저축</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">저축</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">저축</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">저축</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">저축</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">저축</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div style="width:274px" class="wrap_tb">
+						<table data-opts="{ &quot;height&quot; : 420 }" class="grid__ tb_list">
+							<thead>
+								<tr>
+									<th>판매플랜</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#" class="on">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>소견서/TI플랜(갱신형)(고혈압/고지혈증)</span>
+											<div class="td_bl">
+												<span>최소 : 18세</span>
+												<span>최대 : (100세만기_(800 납입기간)</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div style="width:255px" class="wrap_tb">
+						<table data-opts="{ &quot;height&quot; : 420 }" class="grid__ tb_list">
+							<thead>
+								<tr>
+									<th>설계플랜</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#" class="on">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td class="left">
+										<a href="#">
+											<span>[MY플랜] 플랜명출력플랜출력플랜명출력플랜출력</span>
+											<div class="td_bl">
+												<span>실속형(보장P 5만원이하)실속 5만원이하)실속</span>
+												<span>30대</span>
+											</div>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="wrap_tb">
+					<table data-opts="{ &quot;height&quot; : 420 }" class="grid__ tb_list">
+						<thead>
+							<tr>
+								<th>상품명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3057000) 내인생플러스종합보험1704(생활약속)</span><em class="ico_new">NEW</em></a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3057000) 내인생플러스종합보험1704(생활약속)</span><em class="ico_new">NEW</em></a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#" class="on">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="left">
+									<a href="#">
+										<span>(3094500) 참좋은오토바이운전자보험1707_TM</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">테이블 유형01</h2>
+				<div class="etc_prd_box">
+					<div class="subtit_wrap">
+						<div class="tit_area">
+							<p class="tit mgb0">추가부속</p>
+						</div>
+						<div class="area_r">
+							<a href="" class="button__ btn_tb">항목추가</a>
+						</div>
+					</div>
+					<div class="th_zone_del">
+						<div class="wrap_tb">
+							<table class="form__ tb_search">
+								<colgroup>
+									<col style="width:50%" />
+									<col/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<td>
+											<span class="inp_search">
+												<select style="width:295px" data-data="[{ &quot;cd_nm&quot; : &quot;블랙박스&quot; }]" class="select__"></select>
+												<a href="" class="button__ btn_sch">검색</a>
+											</span>
+											<span class="txt_won multi">
+												<input type="text" placeholder="" style="width:75px" value="15" class="ipt_txt right" />
+												<span class="txt">만 원</span>
+											</span>
+										</td>
+										<td>
+											<input type="text" placeholder="" style="width:323px" value="네비게이션시스템" class="ipt_txt" />
+											<span class="txt_won multi">
+												<input type="text" placeholder="" style="width:75px" value="15" class="ipt_txt right" />
+												<span class="txt">만 원</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="inp_search">
+												<select style="width:295px" data-data="[{ &quot;cd_nm&quot; : &quot;오디오시스템(CDP,MP3,AV시스템)&quot; }]" class="select__"></select>
+												<a href="" class="button__ btn_sch">검색</a>
+											</span>
+											<span class="txt_won multi">
+												<input type="text" placeholder="" style="width:75px" value="45" class="ipt_txt right" />
+												<span class="txt">만 원</span>
+											</span>
+										</td>
+										<td>
+											<input type="text" placeholder="" style="width:323px" value="하이패스" class="ipt_txt" />
+											<span class="txt_won multi">
+												<input type="text" placeholder="" style="width:75px" value="15" class="ipt_txt right" />
+												<span class="txt">만 원</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="inp_search">
+												<select style="width:295px" data-data="[{ &quot;cd_nm&quot; : &quot;오디오시스템(CDP,MP3,AV시스템)&quot; }]" class="select__"></select>
+												<a href="" class="button__ btn_sch">검색</a>
+											</span>
+											<span class="txt_won multi">
+												<input type="text" placeholder="" style="width:75px" value="45" class="ipt_txt right" />
+												<span class="txt">만 원</span>
+											</span>
+										</td>
+										<td>
+											<input type="text" placeholder="" style="width:323px" value="하이패스" class="ipt_txt" />
+											<span class="txt_won multi">
+												<input type="text" placeholder="" style="width:75px" value="15" class="ipt_txt right" />
+												<span class="txt">만 원</span>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<th>합계</th>
+									<td>90 만 원</td>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<p class="txt_tip bg_none">※ 첨단안전장치 명칭 및 해설
+						<a href="" class="ico_question"></a>
+					</p>
+					<p class="tit mgt30">기계장치</p>
+					<div class="th_zone_del">
+						<div class="wrap_tb">
+							<table class="form__ tb_search">
+								<colgroup>
+									<col style="width:50%" />
+									<col/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<td colspan="2">
+											<span class="form_group">
+												<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;방송기계류&quot; }, { &quot;cd_nm&quot; : &quot;녹음기계종류&quot; }, { &quot;cd_nm&quot; : &quot;정밀의료기계종류&quot; }, { &quot;cd_nm&quot; : &quot;영상기계종류&quot; }, { &quot;cd_nm&quot; : &quot;기타정밀기계종류&quot; }]"
+														class="select__ btn_rdo" />
+											</span>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<th>합계</th>
+									<td>0 만 원</td>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+				<h2 class="tit_guide">테이블 유형02</h2>
+				<div class="etc_prd_box">
+					<h4 class="tit14">사고내역</h4>
+					<div class="box_list_zone">
+						<div class="wrap_tb th_white">
+							<table data-opts="{ &quot;height&quot; : 109 }" class="grid__ tb_list">
+								<colgroup>
+									<col style="width:63px" />
+									<col style="width:176px" />
+									<col style="width:175px" />
+									<col style="width:175px" />
+									<col style="width:175px" />
+									<col/>
+								</colgroup>
+								<thead>
+									<th>NO</th>
+									<th>사고일시</th>
+									<th>증권번호</th>
+									<th>과실/무과실</th>
+									<th>사고내용</th>
+									<th>사고점수</th>
+								</thead>
+								<tbody>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tbody>
+								<tbody>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tbody>
+								<tbody>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tbody>
+								<tbody>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<h2 class="tit_guide">체크박스, 라디오 폼요소 있어도 grid__ 보기에 리스트 roof형식이면 형식이면 grid__
+					<br>grid__ 에서는 datepicker 동작 x grid__ form__ 같이 사용해야 동작
+					<br>(class="grid__ form__ tb_list")</h2>
+				<div class="wrap_tb tb_scroll">
+					<table data-opts="{ &quot;fixedcol&quot; : 3 }" class="grid__ form__ tb_list">
+						<colgroup>
+							<col style="width:50px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									<input type="checkbox" />
+								</th>
+								<th>피보험자/계약자</th>
+								<th>고객번호</th>
+								<th>연락처</th>
+								<th>보험종목</th>
+								<th>증권번호</th>
+								<th>만기일자</th>
+								<th>납입방법</th>
+								<th>전계약보험료</th>
+								<th>갱신보험료</th>
+								<th>송금대상</th>
+								<th>비고</th>
+								<th>이관여부</th>
+								<th>사용인코드</th>
+								<th>사용인명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>삼신중</td>
+								<td>
+									<a href="" class="link_point">790804-1******</a>
+								</td>
+								<td>010-****-1111</td>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol99" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+								<td>
+									<a href="" class="link_point">22016159326100</a>
+								</td>
+								<td>2017.06.09</td>
+								<td>일시납</td>
+								<td>728,090</td>
+								<td>66거6197</td>
+								<td>&nbsp;</td>
+								<td>미체결</td>
+								<td>Y</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>삼신중</td>
+								<td>
+									<a href="" class="link_point">790804-1******</a>
+								</td>
+								<td>010-****-1111</td>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol991" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+								<td>
+									<a href="" class="link_point">22016159326100</a>
+								</td>
+								<td>2017.06.09</td>
+								<td>일시납</td>
+								<td>728,090</td>
+								<td>66거6197</td>
+								<td>&nbsp;</td>
+								<td>미체결</td>
+								<td>Y</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">리스트테이블 가로 틀고정</h2>
+				<div class="wrap_tb bd_none">
+					<table data-opts="{ &quot;height&quot; : 200 }" class="grid__ tb_list">
+						<colgroup>
+							<col style="width:68px" />
+							<col style="width:136px" />
+							<col style="width:100px" />
+							<col style="width:95px" />
+							<col style="width:121px" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순번</th>
+								<th>취급자</th>
+								<th>구분</th>
+								<th>대상건수</th>
+								<th>납입(갱신건수)</th>
+								<th>납입(갱신)율</th>
+								<th>대상보험료(원)</th>
+								<th>납입보험료(원)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3">합계</td>
+								<td class="right">18건</td>
+								<td class="right">0건</td>
+								<td class="right">0</td>
+								<td class="right">164,200 원</td>
+								<td class="right">0 원</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<h2 class="tit_guide">리스트테이블 세로 틀고정</h2>
+				<div class="wrap_tb tb_scroll">
+					<table data-opts="{ &quot;fixedcol&quot; : 2 }" class="grid__ form__ tb_list">
+						<colgroup>
+							<col style="width:50px" />
+							<col style="width:100px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+							<col style="width:206px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순번</th>
+								<th>취급자</th>
+								<th>구분</th>
+								<th>대상건수</th>
+								<th>납입(갱신건수)</th>
+								<th>납입(갱신)율</th>
+								<th>대상보험료(원)</th>
+								<th>납입보험료(원)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>81700545 / 홍길동</td>
+								<td>분납</td>
+								<td class="right">1</td>
+								<td class="right">0</td>
+								<td class="right">0.0%</td>
+								<td class="right">164,200원</td>
+								<td class="right">0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">스크롤되는 리스트테이블에 thead가 없는 경우(.wrap_tb.scroll_top_bd .tb_list)</h2>
+				<div class="wrap_tb scroll_top_bd">
+					<table data-opts="{ &quot;height&quot; : 200 }" class="grid__ tb_list no_pattern">
+						<colgroup>
+							<col style="width:148px" />
+							<col style="width:205px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>구분</th>
+								<td>text</td>
+								<td>text</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>전체</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>VIP서비스</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>헬스케어</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>오토라이프</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th>가족사랑</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">스크롤되는 리스트테이블에 thead가 없고 tfoot이 있는 경우(.wrap_tb.scroll_tfoot_bd .tb_list)</h2>
+				<div class="wrap_tb scroll_tfoot_bd">
+					<table data-opts="{ &quot;height&quot; : 200 }" class="grid__ tb_list no_pattern">
+						<colgroup>
+							<col style="width:148px" />
+							<col style="width:205px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>구분</th>
+								<td>text</td>
+								<td>text</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>전체</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>VIP서비스</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>헬스케어</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>오토라이프</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>가족사랑</th>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3" class="bg_gray_line">
+									<div class="btn_area left">
+										<a href="" class="btn_line_minus">행삭제</a>
+										<a href="" class="btn_line_plus">행추가</a>
+										<a href="" class="button__ btn_sm_line">삭제</a>
+										<a href="" class="button__ btn_sm">저장</a>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="btn_more_area">
+					<!-- 더보기 내용이 있을때 a.on 클레스 추가 ( 마지막에 on 클레스 삭제 및 이벤트 off 필요 )-->
+					<a href="" class="button__ btn_more on">더보기
+						<span>(20/30)</span>
+					</a>
+				</div>
+				<div class="paging_wrap">
+					<div class="pagination__">
+						<ul class="prev_bd">
+							<li class="prev_more">
+								<a href="" title="첫페이지">first</a>
+							</li>
+							<li class="prev">
+								<a href="" title="이전">prev</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="on">
+								<a href="">
+									<span>1</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="next_bd">
+							<li class="next">
+								<a href="" title="다음페이지">next</a>
+							</li>
+							<li class="next_more">
+								<a href="" title="마지막페이지">last</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="tit_guide">- 리스트 다중 th 테이블
+					<br> - td overflow 제거 버전 (.wrap_tb .tb_list.mt_th.ofl_del)
+					<br> - .mt_th는 th수대로 td가 루프 컬러색 적용 필요 tr.td_bg 적용 필요</h2>
+				<div class="wrap_tb ui_grid_layer">
+					<table class="grid__ tb_list mt_th ofl_del">
+						<colgroup>
+							<col style="width:55px" />
+							<col style="width:156px" />
+							<col style="width:95px" />
+							<col style="width:94px" />
+							<col style="width:95px" />
+							<col style="width:106px" />
+							<col style="width:86px" />
+							<col style="width:54px" />
+							<col style="width:55px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2">순번</th>
+								<th>증권/설계번호</th>
+								<th>차량(차대번호)</th>
+								<th colspan="2">보험기간</th>
+								<th>보험료(원)</th>
+								<th>안내구분</th>
+								<th>변경</th>
+								<th>예측손해율</th>
+								<th>고객속성</th>
+							</tr>
+							<tr>
+								<th>증권번호</th>
+								<th>피보험자</th>
+								<th>만기/분납일</th>
+								<th>해지예정일</th>
+								<th>분납회차</th>
+								<th>납입여부</th>
+								<th>사고</th>
+								<th>가격비교</th>
+								<th>비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="pst_rel">
+									<a href="#" class="btn_layer link_point">81700545-7-B5-0005</a>
+								</td>
+								<td>24가2939</td>
+								<td colspan="2">2017.06.15 ~ 2018.06.15</td>
+								<td>700,120 원</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>82.0</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>81700545 / 홍길동</td>
+								<td>김차주</td>
+								<td colspan="2" class="left">2017.06.15</td>
+								<td>1 회중 1회</td>
+								<td>&nbsp;</td>
+								<td>무</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="pst_rel">
+									<a href="#" class="btn_layer link_point">81700545-7-B5-0005</a>
+								</td>
+								<td>24가2939</td>
+								<td colspan="2">2017.06.15 ~ 2018.06.15</td>
+								<td>700,120 원</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>82.0</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>81700545 / 홍길동</td>
+								<td>김차주</td>
+								<td colspan="2" class="left">2017.06.15</td>
+								<td>1 회중 1회</td>
+								<td>&nbsp;</td>
+								<td>무</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="pst_rel">
+									<a href="#" class="btn_layer link_point">81700545-7-B5-0005</a>
+								</td>
+								<td>24가2939</td>
+								<td colspan="2">2017.06.15 ~ 2018.06.15</td>
+								<td>700,120 원</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>82.0</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>81700545 / 홍길동</td>
+								<td>김차주</td>
+								<td colspan="2" class="left">2017.06.15</td>
+								<td>1 회중 1회</td>
+								<td>&nbsp;</td>
+								<td>무</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="pst_rel">
+									<a href="#" class="btn_layer link_point">81700545-7-B5-0005</a>
+								</td>
+								<td>24가2939</td>
+								<td colspan="2">2017.06.15 ~ 2018.06.15</td>
+								<td>700,120 원</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>82.0</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr class="td_bg">
+								<td>&nbsp;</td>
+								<td>81700545 / 홍길동</td>
+								<td>김차주</td>
+								<td colspan="2" class="left">2017.06.15</td>
+								<td>1 회중 1회</td>
+								<td>&nbsp;</td>
+								<td>무</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="pst_rel">
+									<a href="#" class="btn_layer link_point">81700545-7-B5-0005</a>
+								</td>
+								<td>24가2939</td>
+								<td colspan="2">2017.06.15 ~ 2018.06.15</td>
+								<td>700,120 원</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>82.0</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>81700545 / 홍길동</td>
+								<td>김차주</td>
+								<td colspan="2" class="left">2017.06.15</td>
+								<td>1 회중 1회</td>
+								<td>&nbsp;</td>
+								<td>무</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">리스트 좌우스크롤시 (.wrap_tb.tb_scroll .tb_list)</h2>
+				<div class="wrap_tb tb_scroll">
+					<table data-opts="{ &quot;height&quot; : 152 }" class="grid__ tb_list">
+						<colgroup>
+							<col style="width:101px" />
+							<col style="width:42px" />
+							<col style="width:117px" />
+							<col style="width:72px" />
+							<col style="width:98px" />
+							<col style="width:104px" />
+							<col style="width:72px" />
+							<col style="width:72px" />
+							<col style="width:73px" />
+							<col style="width:118px" />
+							<col style="width:73px" />
+							<col style="width:118px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>증권번호</th>
+								<th>NO</th>
+								<th>계약자/피보험자</th>
+								<th>이체일자</th>
+								<th>이체처리일자</th>
+								<th>납입년월/회차</th>
+								<th>합산청구</th>
+								<th>이체금액</th>
+								<th>은행명</th>
+								<th>계좌번호</th>
+								<th>은행명</th>
+								<th>계좌번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<a href="">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<a href="">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<a href="">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<a href="">994140764395</a>
+								</td>
+								<td>000</td>
+								<td>박*현/박*현</td>
+								<td>11</td>
+								<td>2017.06.12</td>
+								<td>2017.06/35</td>
+								<td>-</td>
+								<td class="right">10,000</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+								<td>하나은행</td>
+								<td>391-9100912*-***</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">tb_list 테이블 나누기 (tbl_division)</h2>
+				<div class="tbl_division clfix">
+					<div class="wrap_tb">
+						<table class="form__ tb_list">
+							<colgroup>
+								<col style="width:65px" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="2">구분</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th colspan="2">전종목합계</th>
+								</tr>
+								<tr>
+									<th colspan="2">순외형합계</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="wrap_tb">
+						<table class="form__ tb_list no_pattern">
+							<colgroup>
+								<col style="width:115px" />
+								<col style="width:95px" />
+								<col style="width:93px" />
+								<col style="width:69px" />
+								<col style="width:73px" />
+								<col style="width:72px" />
+								<col style="width:150px" />
+								<col style="width:107px" />
+								<col/>
+							</colgroup>
+							<thead>
+								<tr>
+									<th>목표</th>
+									<th>실적</th>
+									<th>달성률</th>
+									<th>전월
+										<br>달성률</th>
+									<th>전월말
+										<br>달성률</th>
+									<th class="pst_rel">전월비실적증감
+										<span class="question_bx">
+											<a href="" class="button__ ico_question"></a>
+											<span class="grid_layer_tooltip right">
+												<span class="bg_mid">전월비 실적증감은 전월1일부터 전월현재일까지 기준임.</span>
+												<span class="bg_bot"></span>
+											</span>
+										</span>
+									</th>
+									<th>지로실적</th>
+									<th>자동이체</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="right">&nbsp;</td>
+									<td class="right">&nbsp;</td>
+									<td class="right">&nbsp;</td>
+									<td class="right">&nbsp;</td>
+									<td class="right">&nbsp;</td>
+									<td class="right">&nbsp;</td>
+									<td class="right">&nbsp;</td>
+									<td class="right">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="right">123,123,123</td>
+									<td class="right">0</td>
+									<td class="right">0.0</td>
+									<td class="right">13.6</td>
+									<td class="right">46.1</td>
+									<td class="right">-123,123,121</td>
+									<td class="right">0</td>
+									<td class="right">0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h2 class="tit_guide">테이블안에 strong</h2>
+				<div class="wrap_tb">
+					<table data-opts="{ &quot;height&quot; : 200 }" class="grid__ tb_list">
+						<colgroup>
+							<col style="width:140px" />
+							<col style="width:145px" />
+							<col style="width:155px" />
+							<col style="width:164px" />
+							<col style="width:159px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>주주명</th>
+								<th>주별</th>
+								<th>소유주식수</th>
+								<th>지분율</th>
+								<th>대주주관계</th>
+								<th>회사관계</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="3">홍길동</td>
+								<td>보통주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+								<td rowspan="3"></td>
+							</tr>
+							<tr>
+								<td>우선주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<strong>합계</strong>
+								</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td rowspan="3">홍길동</td>
+								<td>보통주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+								<td rowspan="3"></td>
+							</tr>
+							<tr>
+								<td>우선주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<strong>합계</strong>
+								</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td rowspan="3">홍길동</td>
+								<td>보통주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+								<td rowspan="3"></td>
+							</tr>
+							<tr>
+								<td>우선주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<strong>합계</strong>
+								</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td rowspan="3">홍길동</td>
+								<td>보통주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+								<td rowspan="3"></td>
+							</tr>
+							<tr>
+								<td>우선주</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<strong>합계</strong>
+								</td>
+								<td>0</td>
+								<td>0.00</td>
+								<td></td>
+							</tr>
+						</tbody>
+						<!--1 페이지 당 10줄 공통 적용-->
+					</table>
+				</div>
+				<h2 class="tit_guide">2depth 정보안내성 테이블(팝업에 사용) (.wrap_tb .tb_data)</h2>
+				<div class="wrap_tb">
+					<table class="tb_data">
+						<colgroup>
+							<col style="width:340px" />
+							<col style="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>구분</th>
+								<th>구비서류</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>피보험자 동의</th>
+								<td>신분증, 도장(서명으로 대체가능), 피보험자 내방(피보험자 유선동의는 콜센터를 통한 녹취로만 진행)
+									<br> ※ 미성년자가 피보험자일 경우 친권자 2명의 동의필요
+									<br> ※ 부득이하게 피보험자의 동의를 얻지 못하는 경우 보험증권 소지로 해지 가능</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="wrap_tb">
+					<table class="tb_data">
+						<colgroup>
+							<col style="width:90px" />
+							<col style="width:110px" />
+							<col style="width:140px" />
+							<col style="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th colspan="3">구분</th>
+								<th>구비서류</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th rowspan="7">본인방문</th>
+							</tr>
+							<tr>
+								<th colspan="2">개인(계약자)</th>
+								<td>신분증, 도장(서명으로 대체가능)</td>
+							</tr>
+							<tr>
+								<th colspan="2">법인(대표자)</th>
+								<td>신분증, 도장(서명으로 대체가능)324324324</td>
+							</tr>
+							<tr>
+								<th colspan="2">개인</th>
+								<td>신분증, 도장(서명으로 대체가능)3243243243243243243</td>
+							</tr>
+							<tr>
+								<th colspan="2">법인</th>
+								<td>신분증, 도장(서명으로 대체가능)3243243243243243243
+									<br>신분증, 도장(서명으로 대체가능)3243243243243243243
+									<br>신분증, 도장(서명으로 대체가능)3243243243243243243</td>
+							</tr>
+							<tr>
+								<th rowspan="2">계약자 미성년자</th>
+								<th>친권자 내방</th>
+								<td>신분증, 도장(서명으로 대체가능)3243243243243243243
+									<br>신분증, 도장(서명으로 대체가능)3243243243243243243
+									<br>신분증, 도장(서명으로 대체가능)3243243243243243243</td>
+							</tr>
+							<tr>
+								<th>제3자 내방</th>
+								<td>테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트</td>
+							</tr>
+							<tr>
+								<th rowspan="2">&nbsp;</th>
+								<th rowspan="2">해외 거주자</th>
+								<th>영주권자
+									<br>(해외유학 등 포함)</th>
+								<td>신분증, 도장(서명으로 대체가능)3243243243243243243
+									<br>신분증, 도장(서명으로 대체가능)3243243243243243243
+									<br>신분증, 도장(서명으로 대체가능)3243243243243243243</td>
+							</tr>
+							<tr>
+								<th>시민권자(외국국적)</th>
+								<td>테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">.three_tb_bx(테이블 3라인)</h2>
+				<div class="three_tb_bx">
+					<div class="wrap_tb">
+						<table data-opts="{ &quot;height&quot; : 200 }" class="grid__ tb_list">
+							<thead>
+								<tr>
+									<th>대분류 선택</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>대분류 선택</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>대분류 선택</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>대분류 선택</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>대분류 선택</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="wrap_tb">
+						<table data-opts="{ &quot;height&quot; : 200 }" class="grid__ tb_list">
+							<thead>
+								<tr>
+									<th>세분류 선택</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>세분류 선택</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>세분류 선택</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>세분류 선택</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>세분류 선택</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="wrap_tb">
+						<table data-opts="{ &quot;height&quot; : 200 }" class="grid__ tb_list">
+							<thead>
+								<tr>
+									<th>즐겨찾는직업</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>즐겨찾는직업</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>즐겨찾는직업</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>즐겨찾는직업</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>즐겨찾는직업</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h2 class="tit_guide">border없는 form요소가 들어간 table - .wrap_tb.input_tb - (input 요소에는 line_hidden class추가), text만 들어간경우 span.input_tb_txt class안에 작성</h2>
+				<div class="wrap_tb input_tb bd_none">
+					<table class="grid__ form__ tb_list top_gray">
+						<colgroup>
+							<col style="width:50px" />
+							<col style="width:140px" />
+							<col style="width:180px" />
+							<col style="width:103px" />
+							<col style="width:103px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2">
+									<input type="checkbox" />
+								</th>
+								<th>가입시설</th>
+								<th>시설종별</th>
+								<th colspan="2">인허가기관</th>
+								<th>인허가일자</th>
+							</tr>
+							<tr>
+								<th>인허가번호</th>
+								<th>인허가구분</th>
+								<th colspan="2">인허가내용</th>
+								<th>위탁처리여부</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="6" class="bg_gray_line">
+									<div class="btn_area left mgb0">
+										<a href="" class="btn_line_minus">행삭제</a>
+										<a href="" class="btn_line_plus">행추가</a>
+										<a href="" class="button__ btn_sm_line">삭제</a>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td rowspan="2">
+									<input type="checkbox" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:53px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<td>
+									<span class="input_tb_txt">경기도 성남시</span>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<span class="input_tb_txt">시군구</span>
+								</td>
+								<td colspan="2">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td rowspan="2">
+									<input type="checkbox" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:53px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<td>
+									<span class="input_tb_txt">경기도 성남시</span>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<span class="input_tb_txt">시군구</span>
+								</td>
+								<td colspan="2">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td rowspan="2">
+									<input type="checkbox" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:53px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<td>
+									<span class="input_tb_txt">경기도 성남시</span>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<span class="input_tb_txt">시군구</span>
+								</td>
+								<td colspan="2">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td rowspan="2">
+									<input type="checkbox" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:53px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<td>
+									<span class="input_tb_txt">경기도 성남시</span>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input id="dateCol01" type="text" data-format="[[&quot;date&quot;, 8, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:94px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_cal">달력</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<span class="input_tb_txt">시군구</span>
+								</td>
+								<td colspan="2">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden" />
+								</td>
+								<td>
+									<select style="width:100%" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ line_hidden"></select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h4 class="tip_guide">테이블 상단 오른쪽</h4>
+				<div class="input_group">
+					<select style="width:100px" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+					<span class="inp_search">
+						<input type="text" placeholder="" style="width:150px" class="ipt_txt" />
+						<a href="" class="btn_sch">검색</a>
+					</span>
+				</div>
+				<h4 class="tip_guide">테이블 상단 왼쪽</h4>
+				<div class="input_group left form__">
+					<span class="txt">기준일자</span>
+					<span class="inp_search">
+						<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 11, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:140px" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+					<span class="btn_paging">
+						<a href="" class="paging_pv">이전</a>
+						<a href="" class="paging_nt">다음</a>
+					</span>
+				</div>
+				<h4 class="tip_guide">테이블 양쪽</h4>
+				<h4 class="tip_guide">테이블 양쪽</h4>
+				<div class="input_group left form__">
+					<span class="txt">기준일자</span>
+					<span class="inp_search">
+						<input id="dateCol02" type="text" data-format="[[&quot;date&quot;, 11, &quot;date&quot;]]" placeholder="YYYY.MM.DD" style="width:140px" class="ipt_txt" />
+						<a href="" class="btn_cal">달력</a>
+					</span>
+					<span class="btn_paging">
+						<a href="" class="paging_pv">이전</a>
+						<a href="" class="paging_nt">다음</a>
+					</span>
+					<span class="unit">(단위:백만원, %)</span>
+				</div>
+				<h4 class="tip_guide">타이블 양쪽</h4>
+				<div class="subtit_wrap">
+					<h3 class="tit16">실사자정보</h3>
+					<div class="area_r">
+						<span class="f_12">입력자<em>18855910   김동부</em></span>
+					</div>
+				</div>
+				<h2 class="tit_guide">tfoot 두가지 스타일 혼합사용 .tfoot_2style</h2>
+				<div class="wrap_tb input_tb bd_none tfoot_2style">
+					<table class="grid__ tb_list">
+						<colgroup>
+							<col style="width:54px" />
+							<col style="width:55px" />
+							<col style="width:166px" />
+							<col style="width:95px" />
+							<col style="width:100px" />
+							<col style="width:108px" />
+							<col style="width:152px" />
+							<col style="width:108px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									<input type="checkbox" />
+								</th>
+								<th>순번</th>
+								<th>취급자코드</th>
+								<th>취급자명</th>
+								<th>화폐</th>
+								<th>인수율(%)</th>
+								<th>인수보험료</th>
+								<th>소속팀/점</th>
+								<th>소속부서/지점</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="5">
+									<span>합계</span>
+								</td>
+								<td class="right">
+									<span>100</span>
+								</td>
+								<td class="right">
+									<span>0</span>
+								</td>
+								<td colspan="2">&nbsp;</td>
+							</tr>
+							<tr>
+								<td colspan="9" class="bg_gray_line bdb_none">
+									<div class="btn_area left">
+										<a href="" class="btn_line_minus">행삭제</a>
+										<a href="" class="btn_line_plus">행추가</a>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>
+									<span>1</span>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:114px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<td>
+									<span>홍길동</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td class="right">
+									<input type="text" placeholder="" style="width:100%" value="100" class="ipt_txt line_hidden right" />
+								</td>
+								<td class="right">
+									<input type="text" placeholder="" style="width:100%" value="0" class="ipt_txt line_hidden right" />
+								</td>
+								<td>
+									<span>중앙사업단</span>
+								</td>
+								<td>
+									<span>중앙강북파트너지점</span>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>
+									<span>2</span>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:114px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td class="right">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden right" />
+								</td>
+								<td class="right">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden right" />
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>
+									<span>2</span>
+								</td>
+								<td>
+									<span class="inp_search">
+										<input type="text" placeholder="" style="width:114px" class="ipt_txt line_hidden" />
+										<a href="" class="btn_sch">검색</a>
+									</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td class="right">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden right" />
+								</td>
+								<td class="right">
+									<input type="text" placeholder="" style="width:100%" class="ipt_txt line_hidden right" />
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td class="right">
+									<span>&nbsp;</span>
+								</td>
+								<td class="right">
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td class="right">
+									<span>&nbsp;</span>
+								</td>
+								<td class="right">
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+								<td>
+									<span>&nbsp;</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h2 class="tit_guide">팝업 형식</h2>
+				<div class="wrap_tb">
+					<table data-opts="{ &quot;height&quot; : 420 , &quot;more&quot; : true, &quot;data&quot; : [{&quot;col01&quot; : &quot;994140764395&quot;,&quot;col02&quot; : &quot;000&quot;,&quot;col03&quot; : &quot;박*현/박*현&quot;,&quot;col04&quot; : &quot;11&quot;,&quot;col05&quot; : &quot;2017.06.12&quot;,&quot;col06&quot; : &quot;2017.06/35&quot;,&quot;col07&quot; : &quot;-&quot;,&quot;col08&quot; : &quot;10,000&quot;,&quot;col09&quot; : &quot;하나은행&quot;,&quot;col10&quot; : &quot;391-9100912*-***&quot;}, {&quot;col01&quot; : &quot;994140764395&quot;,&quot;col02&quot; : &quot;000&quot;,&quot;col03&quot; : &quot;박*현/박*현&quot;,&quot;col04&quot; : &quot;11&quot;,&quot;col05&quot; : &quot;2017.06.12&quot;,&quot;col06&quot; : &quot;2017.06/35&quot;,&quot;col07&quot; : &quot;-&quot;,&quot;col08&quot; : &quot;10,000&quot;,&quot;col09&quot; : &quot;하나은행&quot;,&quot;col10&quot; : &quot;391-9100912*-***&quot;}, {&quot;col01&quot; : &quot;994140764395&quot;,&quot;col02&quot; : &quot;000&quot;,&quot;col03&quot; : &quot;박*현/박*현&quot;,&quot;col04&quot; : &quot;11&quot;,&quot;col05&quot; : &quot;2017.06.12&quot;,&quot;col06&quot; : &quot;2017.06/35&quot;,&quot;col07&quot; : &quot;-&quot;,	&quot;col08&quot; : &quot;10,000&quot;,&quot;col09&quot; : &quot;하나은행&quot;,&quot;col10&quot; : &quot;391-9100912*-***&quot;}, {&quot;col01&quot; : &quot;994140764395&quot;,&quot;col02&quot; : &quot;000&quot;,&quot;col03&quot; : &quot;박*현/박*현&quot;,&quot;col04&quot; : &quot;11&quot;,&quot;col05&quot; : &quot;2017.06.12&quot;,&quot;col06&quot; : &quot;2017.06/35&quot;,&quot;col07&quot; : &quot;-&quot;,&quot;col08&quot; : &quot;10,000&quot;,&quot;col09&quot; : &quot;하나은행&quot;,&quot;col10&quot; : &quot;391-9100912*-***&quot;}, {&quot;col01&quot; : &quot;994140764395&quot;,&quot;col02&quot; : &quot;000&quot;,&quot;col03&quot; : &quot;박*현/박*현&quot;,&quot;col04&quot; : &quot;11&quot;,&quot;col05&quot; : &quot;2017.06.12&quot;,&quot;col06&quot; : &quot;2017.06/35&quot;,&quot;col07&quot; : &quot;-&quot;,&quot;col08&quot; : &quot;10,000&quot;,&quot;col09&quot; : &quot;하나은행&quot;,&quot;col10&quot; : &quot;391-9100912*-***&quot;}]}"
+							class="grid__ tb_list">
+						<colgroup>
+							<col style="width:109px;display:none" />
+							<col style="width:45px" />
+							<col style="width:126px" />
+							<col style="width:77px" />
+							<col style="width:106px" />
+							<col style="width:112px" />
+							<col style="width:78px" />
+							<col style="width:78px" />
+							<col style="width:79px" />
+							<col/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th style="display:none;">증권번호</th>
+								<th>NO</th>
+								<th>계약자/피보험자</th>
+								<th>이체일자</th>
+								<th>이체처리일자</th>
+								<th>납입년월/회차</th>
+								<th>합산청구</th>
+								<th>이체금액</th>
+								<th>은행명</th>
+								<th>계좌번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="display:none;">
+									<a href="" id="col01" class="link_point"></a>
+								</td>
+								<td id="col02"> </td>
+								<td id="col03"> </td>
+								<td id="col04"> </td>
+								<td id="col05"> </td>
+								<td id="col06"></td>
+								<td id="col07"> </td>
+								<td id="col08"> </td>
+								<td id="col09" class="right"> </td>
+								<td id="col10"> </td>
+							</tr>
+						</tbody>
+						</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	N("#table").cont(
+	{
+		init: function(view, request) {}
+	});
+</script>
+<style type="text/css">
+	/* h1.tit_guide {padding:50px 0 18px 20px;border-bottom:1px solid #000000;font-size:30px;color:#2a2a2a;font-weight:bold}
+h2.tit_guide {margin:20px 0 20px 20px;font-size:14px;color:#666;font-weight:bold}
+.noti {margin:10px 0;color:red;font-size:12px} */
+	
+	.prototype {
+		padding: 30px 0 0 0
+	}
+	
+	.prototype .go_menu {
+		padding: 0 15px;
+	}
+	
+	.prototype .go_menu li {
+		float: left;
+		margin: 2px
+	}
+	
+	.prototype .go_menu li a {
+		display: inline-block;
+		padding: 10px 20px;
+		border: 1px solid #333;
+		border-radius: 6px;
+		background: #333;
+		color: #fff
+	}
+	
+	.prototype .top {
+		display: block;
+		width: 50px;
+		height: 35px;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		padding: 15px 0 0 0;
+		border: 1px solid;
+		text-align: center;
+		z-index: 100;
+		color: #fff;
+		background: #000
+	}
+	
+	.prototype h1 {
+		margin: 50px 0 0;
+		padding: 8px 0 8px 15px;
+		border-bottom: 2px solid #000;
+		font-size: 30px;
+		color: #2a2a2a;
+		font-weight: bold;
+		background: #eee
+	}
+	
+	.prototype h2.tit_guide {
+		margin: 40px 0 20px;
+		font-size: 16px;
+		color: #ff5722;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype h2.tit_guide span {
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
+		color: #000
+	}
+	
+	.prototype h3.tit_guide {
+		margin: 20px 0 10px;
+		font-size: 14px;
+		color: #252525;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype .section h2.tit_guide:first-child {
+		margin-top: 20px
+	}
+	
+	.prototype .guide {
+		position: relative;
+		padding: 0 0 20px 0;
+		margin: 0
+	}
+	
+	.prototype .guide .txt_color .over {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		margin: 0 0 15px 0;
+		background: #ff3091
+	}
+	
+	.prototype .guide .txt_color .txt {
+		display: block;
+		width: 80px;
+		margin: 90px 0 0 0;
+		font-size: 12px;
+		color: #797d84;
+		text-align: center
+	}
+	
+	.prototype .guide .con {
+		margin-bottom: 50px
+	}
+	
+	.prototype .tip_guide {
+		margin: 30px 0 10px 0;
+		font-weight: bold
+	}
+	
+	.code {
+		padding: 20px 10px;
+		background: #e1fcff;
+		font-size: 14px;
+		border-left: 3px solid #cae7ea;
+		line-height: 1.7
+	}
+	
+	.guide_codelist li {
+		margin: 0 0 10px 0
+	}
+	
+	.coding_info li {
+		margin: 0 0 30px 0;
+		line-height: 1.7
+	}
+	
+	.coding_info li strong {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: 18px;
+		color: #673AB7
+	}
+	
+	.coding_info li p {
+		margin: 0 0 10px 0;
+		font-weight: 700
+	}
+	
+	.coding_info li p span {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #666
+	}
+	
+	.coding_info02 li {
+		margin: 0 0 10px 0;
+		font-weight: 700;
+		line-height: 1.5;
+		font-size: 16px;
+	}
+	
+	.coding_info02 li span {
+		display: block;
+		position: relative;
+		margin: 0 0 0 50px;
+		padding: 0 0 0 12px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	
+	.coding_info02 li span:before {
+		display: block;
+		content: '-';
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.section_bx {
+		padding: 17px
+	}
+	
+	.memo {
+		background: #ffe0b9;
+		padding: 10px;
+		font-size: 12px;
+		color: #461b0c
+	}
+	
+	.memo+.tit_guide {
+		margin-top: 20px !important
+	}
+	
+	.color_type {
+		width: 50%
+	}
+	
+	.color_type li {
+		position: relative;
+		margin: 30px 0
+	}
+	
+	.color_type li span {
+		position: absolute;
+		right: -60px;
+		top: -10px
+	}
+	
+	.color_type li.s1 {
+		height: 2px;
+		background: #009881
+	}
+	
+	.color_type li.s2 {
+		height: 2px;
+		background: #666666
+	}
+	
+	.color_type li.s3 {
+		height: 2px;
+		background: #bbbbbb
+	}
+	
+	.color_type li.s4 {
+		height: 2px;
+		background: #e5e5e5
+	}
+	
+	.color_type li.s5 {
+		height: 2px;
+		background: #eeeeee
+	}
+	
+	.color_zone {
+		overflow: hidden
+	}
+	
+	.color_zone li {
+		float: left
+	}
+	
+	.color_zone li strong {
+		display: block;
+		width: 80px;
+		height: 80px
+	}
+</style>

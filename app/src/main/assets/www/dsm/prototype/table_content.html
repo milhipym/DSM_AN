@@ -1,0 +1,293 @@
+<div id="table_content">
+	<div id="wrap_proto" class="prototype">
+		<h1 id="go_table" class="tit_guide">TABLE_CONTENT</h1>
+		<div class="section_bx">
+			<h2 class="tit_guide">middle section 테이블 하단의 버튼 영역 ( .section .btn_area ) margin-top:15 / .section으로 감쌋을 때만 성립</h2>
+			<div class="section">
+				<div class="title_combin type03">
+					<h3 class="tit16">SMS 발송
+						<span class="form_group">
+							<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;회신결과수신 알림 신청&quot; }]" class="select__ btn_chk" />
+						</span>
+					</h3>
+					<div class="right">
+						<span class="txt_tip">고객이 전송 &apm; 당사 보관시 입력요청자에게 발송</span>
+					</div>
+				</div>
+				<div class="wrap_tb">
+					<table class="form__ tb_search top_gray">
+						<colgroup>
+							<col style="width:150px" />
+							<col style="width:342px" />
+							<col style="width:150px" />
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>요청자</th>
+								<td>
+									<input type="text" placeholder="" style="width:180px" value="" class="ipt_txt" />
+									<input type="text" placeholder="" style="width:132px" value="" class="ipt_txt" />
+								</td>
+								<th>휴대폰</th>
+								<td>
+									<input type="text" placeholder="“ - ” 없이 숫자만 입력하세요." style="width:100%" value="" class="ipt_txt" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn_area right">
+					<a href="" class="button__ btn_sm">사서함으로 전송</a>
+					<a href="" class="button__ btn_sm">모바일web으로 전송</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	N("#table_content").cont(
+	{
+		init: function(view, request) {}
+	});
+</script>
+<style type="text/css">
+	/* h1.tit_guide {padding:50px 0 18px 20px;border-bottom:1px solid #000000;font-size:30px;color:#2a2a2a;font-weight:bold}
+h2.tit_guide {margin:20px 0 20px 20px;font-size:14px;color:#666;font-weight:bold}
+.noti {margin:10px 0;color:red;font-size:12px} */
+	
+	.prototype {
+		padding: 30px 0 0 0
+	}
+	
+	.prototype .go_menu {
+		padding: 0 15px;
+	}
+	
+	.prototype .go_menu li {
+		float: left;
+		margin: 2px
+	}
+	
+	.prototype .go_menu li a {
+		display: inline-block;
+		padding: 10px 20px;
+		border: 1px solid #333;
+		border-radius: 6px;
+		background: #333;
+		color: #fff
+	}
+	
+	.prototype .top {
+		display: block;
+		width: 50px;
+		height: 35px;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		padding: 15px 0 0 0;
+		border: 1px solid;
+		text-align: center;
+		z-index: 100;
+		color: #fff;
+		background: #000
+	}
+	
+	.prototype h1 {
+		margin: 50px 0 0;
+		padding: 8px 0 8px 15px;
+		border-bottom: 2px solid #000;
+		font-size: 30px;
+		color: #2a2a2a;
+		font-weight: bold;
+		background: #eee
+	}
+	
+	.prototype h2.tit_guide {
+		margin: 40px 0 20px;
+		font-size: 16px;
+		color: #ff5722;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype h2.tit_guide span {
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
+		color: #000
+	}
+	
+	.prototype h3.tit_guide {
+		margin: 20px 0 10px;
+		font-size: 14px;
+		color: #252525;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype .section h2.tit_guide:first-child {
+		margin-top: 20px
+	}
+	
+	.prototype .guide {
+		position: relative;
+		padding: 0 0 20px 0;
+		margin: 0
+	}
+	
+	.prototype .guide .txt_color .over {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		margin: 0 0 15px 0;
+		background: #ff3091
+	}
+	
+	.prototype .guide .txt_color .txt {
+		display: block;
+		width: 80px;
+		margin: 90px 0 0 0;
+		font-size: 12px;
+		color: #797d84;
+		text-align: center
+	}
+	
+	.prototype .guide .con {
+		margin-bottom: 50px
+	}
+	
+	.prototype .tip_guide {
+		margin: 30px 0 10px 0;
+		font-weight: bold
+	}
+	
+	.code {
+		padding: 20px 10px;
+		background: #e1fcff;
+		font-size: 14px;
+		border-left: 3px solid #cae7ea;
+		line-height: 1.7
+	}
+	
+	.guide_codelist li {
+		margin: 0 0 10px 0
+	}
+	
+	.coding_info li {
+		margin: 0 0 30px 0;
+		line-height: 1.7
+	}
+	
+	.coding_info li strong {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: 18px;
+		color: #673AB7
+	}
+	
+	.coding_info li p {
+		margin: 0 0 10px 0;
+		font-weight: 700
+	}
+	
+	.coding_info li p span {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #666
+	}
+	
+	.coding_info02 li {
+		margin: 0 0 10px 0;
+		font-weight: 700;
+		line-height: 1.5;
+		font-size: 16px;
+	}
+	
+	.coding_info02 li span {
+		display: block;
+		position: relative;
+		margin: 0 0 0 50px;
+		padding: 0 0 0 12px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	
+	.coding_info02 li span:before {
+		display: block;
+		content: '-';
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.section_bx {
+		padding: 17px
+	}
+	
+	.memo {
+		background: #ffe0b9;
+		padding: 10px;
+		font-size: 12px;
+		color: #461b0c
+	}
+	
+	.memo+.tit_guide {
+		margin-top: 20px !important
+	}
+	
+	.color_type {
+		width: 50%
+	}
+	
+	.color_type li {
+		position: relative;
+		margin: 30px 0
+	}
+	
+	.color_type li span {
+		position: absolute;
+		right: -60px;
+		top: -10px
+	}
+	
+	.color_type li.s1 {
+		height: 2px;
+		background: #009881
+	}
+	
+	.color_type li.s2 {
+		height: 2px;
+		background: #666666
+	}
+	
+	.color_type li.s3 {
+		height: 2px;
+		background: #bbbbbb
+	}
+	
+	.color_type li.s4 {
+		height: 2px;
+		background: #e5e5e5
+	}
+	
+	.color_type li.s5 {
+		height: 2px;
+		background: #eeeeee
+	}
+	
+	.color_zone {
+		overflow: hidden
+	}
+	
+	.color_zone li {
+		float: left
+	}
+	
+	.color_zone li strong {
+		display: block;
+		width: 80px;
+		height: 80px
+	}
+</style>

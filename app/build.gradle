@@ -1,0 +1,198 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
+
+File signPropertiesFile = rootProject.file('sign/keystore.properties')
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'aars' //this way we can find the .aar file in libs folder
+    }
+}
+
+android {
+    compileOptions.encoding = 'UTF-8'
+                compileSdkVersion 29
+                useLibrary 'org.apache.http.legacy' // 23버전부터 없어진 클래스 사용하기 위함
+
+    defaultConfig {
+            applicationId "com.dongbu.dsm"
+            minSdkVersion 17
+            targetSdkVersion 29
+            versionCode 35
+            versionName "1.0.35"
+            testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+            // method id 65536 에러해결
+            multiDexEnabled true
+
+            javaCompileOptions {
+                annotationProcessorOptions {
+            includeCompileClasspath false
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    if (signPropertiesFile.exists()) {
+        Properties properties = new Properties()
+        properties.load(new FileInputStream(signPropertiesFile))
+        signingConfigs {
+            release {
+                storeFile rootProject.file(properties['keystore'])
+                storePassword properties['storePassword']
+                keyAlias properties['keyAlias']
+                keyPassword properties['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            if (signPropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    // multidex
+    dexOptions {
+        // jumbo 에러해결
+        jumboMode true
+        // method ID 65536 에러해결
+        // incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res',
+                    ]
+
+            //jniLibs.srcDir('jniLibs')
+            jniLibs.srcDir('libs')
+        }
+    }
+
+    // duplicate file during packaging 에러해결
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/mGuardSDK_v1.1.26.jar')
+    implementation files('libs/core_b2b2c_3.6.9.2297_200723v2_bd32.jar')
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //testCompile 'junit:junit:4.12'
+    implementation files('libs/junit-4.12.jar')
+    // multidex 라이브러리
+    // UI 매핑 라이브러리
+    //compile 'com.jakewharton:butterknife:7.0.1'
+    implementation files('libs/butterknife-7.0.1.jar')
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:7.0.1'
+    // 권한 처리 라이브러리
+    //compile 'gun0912.ted:tedpermission:1.0.3'
+    implementation(name: 'tedpermission-1.0.3', ext: 'aar')
+    // google gcm 라이브러리
+    //compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    implementation files('libs/google-services-1.3.0.jar')
+    // 메테리얼 progressbar
+    //compile 'com.pnikosis:materialish-progress:1.7'
+    implementation(name: 'materialish-progress-1.7', ext: 'aar')
+    // 유틸 라이브러리
+    //implementation 'com.blankj:utilcode:1.8.1'
+    implementation(name: 'utilcode-1.8.1', ext: 'aar')
+    // JSON Parse 라이브러리
+    implementation files('libs/gson-2.3.1.jar')
+    // WebView Agent 라이브러리
+    //compile 'com.just.agentweb:agentweb:1.2.6'
+    //compile(name: 'agentweb-2.0.0', ext: 'aar')
+    // JSON Util 라이브러리
+    //    compile 'com.sh.zsh.code:shjson:1.2.3'
+    //compile('com.kakao.sdk:usermgmt:1.1.7') {   // 카카오톡 SDK
+    implementation('com.kakao.sdk:usermgmt:1.30.6') {   // 카카오톡 SDK
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    //compile('com.kakao.sdk:kakaolink:1.1.7') {  // 카카오톡 링크
+    implementation('com.kakao.sdk:kakaolink:1.30.6') {  // 카카오톡 링크
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    implementation files('libs/javawriter-2.1.1.jar')
+    implementation files('libs/annotations-25.2.3.jar')
+    implementation files('libs/jsr305-2.0.1.jar')
+    implementation files('libs/javax.annotation-api-1.2.jar')
+    /*implementation files('libs/javax.inject-1.jar')*/
+    implementation files('libs/hamcrest-core-1.3.jar')
+    implementation files('libs/hamcrest-integration-1.3.jar')
+    implementation files('libs/hamcrest-library-1.3.jar')
+    implementation files('libs/otto-1.3.7.jar')
+    // 미네르바 라이브러리
+    // 명함인식기 라이브러리
+    implementation(name: 'MagicBCReaderLib', ext: 'aar')
+    // A4 처리 라이브러리
+    implementation(name: 'MagicIDRLib', ext: 'aar')
+    // 신분증 인식 라이브러리
+    implementation(name: 'MagicIDReaderLib', ext: 'aar')
+    // 보안키보드 라이브러리
+    implementation files('libs/mtk_v4.6.0.26.jar')
+    // 백신 라이브러리
+    implementation files('libs/mVaccine-commons.jar')
+    // 푸시 MTCOM 라이브러리
+    implementation(name: 'smartmessage', ext: 'aar')
+    //compile 'cz.msebera.android:httpclient:4.4.1.1'
+    implementation files('libs/httpclient-4.4.1.1.jar')
+    //compile 'com.loopj.android:android-async-http:1.4.9'
+    implementation files('libs/android-async-http-1.4.9.jar')
+    // 라이브러리 파일 추가
+    implementation files('libs/hzgraperlibrary_v1.0.0.jar')
+    implementation files('libs/httpmime-4.0.1.jar')
+    implementation files('libs/json-simple-1.1.1.jar')
+    implementation files('libs/universal-image-loader-1.9.4.jar')
+    implementation files('libs/3rdparty_login_library_android_4.1.4.jar')
+    implementation files('libs/gcm.jar')
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    // Check for v11.4.2 or higher
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.3.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    implementation 'com.google.firebase:firebase-perf:19.0.10'
+    implementation files('libs/m2soft-formfield-bridge.jar')   // yeom: 네이티브 서명창 라이브러리 추가*/
+}
+
+apply plugin: 'com.google.gms.google-services'

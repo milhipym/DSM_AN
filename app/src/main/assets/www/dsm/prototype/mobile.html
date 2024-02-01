@@ -1,0 +1,967 @@
+<div id="mobile">
+	<div id="wrap_proto" style="margin-top:0;padding-top:0;" class="prototype">
+		<div class="line_box">
+			<ul class="guide">
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<div class="inner">left,right padding15px
+							<br>흰색배경</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">.inner</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<div class="inner_box bg_f2">
+							<div class="bg_fff">padding15px
+								<br>회색배경안 흰색배경</div>
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">.inner_box.bg_f2
+	.bg_fff</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<p>
+							<span class="btn_file">
+								<span href="" class="button__ btn_mid">파일올리기</span>
+								<input type="file" placeholder="" value="" />
+							</span>
+						</p>
+						<p>
+							<input type="text" placeholder="" value="default" class="ipt_txt" />
+						</p>
+						<p class="mgt5">
+							<input type="text" placeholder="" value="right" class="ipt_txt right" />
+						</p>
+						<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택1&quot; }]" class="select__ mgt5"></select>
+						<div class="form_half mgt5">
+							<div class="half">
+								<input type="text" placeholder="" value="default" class="ipt_txt" />
+							</div>
+							<div class="half">
+								<input type="text" placeholder="" value="default" class="ipt_txt" />
+							</div>
+						</div>
+						<div class="form_half mgt5">
+							<div class="half">
+								<input type="text" placeholder="" value="default" class="ipt_txt" />
+							</div>
+							<div class="half">
+								<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택1&quot; }]" class="select__"></select>
+							</div>
+						</div>
+						<div class="ipt_btn mgt5">
+							<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }, { &quot;cd_nm&quot; : &quot;선택1&quot; }]" class="select__ left_form"></select>
+							<a href="" class="btn btn_sch">검색</a>
+						</div>
+						<div class="ipt_btn mgt5">
+							<input type="text" placeholder="" class="ipt_txt" />
+							<a href="" class="btn btn_sch">검색</a>
+						</div>
+						<div class="ipt_btn mgt5">
+							<a href="" class="btn btn_sch fl">검색</a>
+							<input type="text" placeholder="" class="ipt_txt fr" />
+						</div>
+						<div class="ipt_btn txt_won mgt5">
+							<input type="text" placeholder="" class="ipt_txt right" />
+							<span class="txt">만원</span>
+							<a href="" class="btn btn_sch">검색</a>
+						</div>
+						<div class="ipt_btn mgt5">
+							<input type="text" placeholder="" class="ipt_txt" />
+							<a href="" class="btn btn_cal">달력</a>
+						</div>
+						<div class="form_half mgt5">
+							<span class="half wid70">
+								<div class="ipt_btn">
+									<input type="text" placeholder="" class="ipt_txt" />
+									<a href="" class="btn btn_sch">검색</a>
+								</div>
+							</span>
+							<span class="half wid30">
+								<input type="text" placeholder="" class="ipt_txt" />
+							</span>
+						</div>
+						<div class="form_half txt_dashed type02 mgt5">
+							<div class="form_inner">
+								<span class="half">
+									<div class="side_txt">
+										<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ left_form"></select>
+										<div class="txt">시</div>
+									</div>
+								</span>
+								<span class="half">
+									<div class="side_txt">
+										<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ left_form"></select>
+										<div class="txt">시</div>
+									</div>
+								</span>
+							</div>
+						</div>
+						<p>
+							<strong>.half의 왼쪽에만 .wid* 를 넣어주면 오른쪽 wid값은 css로 정의되어있음
+								<br>(오른쪽에 .wid*다르게 넣거나 비율맞게 넣어도 무관)</strong>
+						</p>
+						<div>
+							<pre class="code_view"> 
+.form_half.txt_dashed.type02
+	.form_inner
+		span.half
+			.side_txt
+				select(class="select__ left_form", data-data='[{ "cd_nm" : "선택" }]')
+				.txt 시
+		span.half
+			.side_txt
+				select(class="select__ left_form", data-data='[{ "cd_nm" : "선택" }]')
+				.txt 시
+.form_half
+	span.half.wid70
+		.ipt_btn
+			input.ipt_txt(type="text", placeholder="")
+			a.btn.btn_sch(href="") 검색
+	span.half.wid30
+		input.ipt_txt(type="text", placeholder="")
+  
+.form_half
+	span.half.wid70
+		.ipt_btn
+			input.ipt_txt(type="text", placeholder="")
+			a.btn.btn_sch(href="") 검색
+	span.half
+		input.ipt_txt(type="text", placeholder="")</pre>
+						</div>
+						<div class="form_half mgt5">
+							<span class="half wid40">
+								<div class="ipt_btn">
+									<input type="text" placeholder="" class="ipt_txt" />
+									<a href="" class="btn btn_cal">달력</a>
+								</div>
+							</span>
+							<span class="half wid60">
+								<input type="text" placeholder="" class="ipt_txt" />
+							</span>
+						</div>
+						<div class="form_half mgt5">
+							<div class="form_inner">
+								<span class="half wid33">
+									<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+								</span>
+								<span class="half wid33">
+									<input type="tel" placeholder="" class="ipt_txt" />
+								</span>
+								<span class="half wid33">
+									<input type="tel" placeholder="" class="ipt_txt" />
+								</span>
+							</div>
+						</div>
+						<div class="form_half mgt5">
+							<span class="half wid25">
+								<input type="text" placeholder="4자리" class="ipt_txt" />
+							</span>
+							<span class="half wid25">
+								<input type="text" placeholder="4자리" class="ipt_txt" />
+							</span>
+							<span class="half wid25">
+								<input type="tel" placeholder="4자리" class="ipt_txt" />
+							</span>
+							<span class="half wid25">
+								<input type="tel" placeholder="4자리" class="ipt_txt" />
+							</span>
+						</div>
+						<div class="form_half txt_dashed mgt5">
+							<div class="form_inner">
+								<span class="half wid33">
+									<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__"></select>
+								</span>
+								<span class="half wid33">
+									<input type="tel" placeholder="" class="ipt_txt" />
+								</span>
+								<span class="half wid33">
+									<input type="tel" placeholder="" class="ipt_txt" />
+								</span>
+							</div>
+						</div>
+						<div class="form_half txt_slash mgt5">
+							<div class="form_inner">
+								<span class="half">
+									<input type="text" placeholder="" class="ipt_txt" />
+								</span>
+								<span class="half">
+									<input type="text" placeholder="" class="ipt_txt" />
+								</span>
+							</div>
+						</div>
+						<div class="form_half txt_at mgt5">
+							<div class="form_inner">
+								<span class="half">
+									<input type="text" placeholder="" class="ipt_txt" />
+								</span>
+								<span class="half">
+									<input type="text" placeholder="" class="ipt_txt" />
+								</span>
+							</div>
+						</div>
+						<div class="form_half check_type mgt5">
+							<span class="half">
+								<div class="ipt_btn">
+									<input type="text" placeholder="" class="ipt_txt" />
+									<a href="" class="btn btn_cal">달력</a>
+								</div>
+							</span>
+							<span class="ab_right">
+								<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;음력&quot; }]" class="select__" />
+							</span>
+						</div>
+						<p class="mgt10"><b>▼ 테이블 안 버튼에만 적용된 케이스 기본 네글자 02,03,05 적용(왼쪽 폼엔 .left_form)</b></p>
+						<table>
+							<tbody>
+								<td>
+									<div class="side_btn mgt5">
+										<select data-data="[{ &quot;cd_nm&quot; : &quot;홍길동(900122)&quot; }, { &quot;cd_nm&quot; : &quot;선택1&quot; }]" class="select__ left_form"></select>
+										<a href="" class="button__ btn_mid">주소변환</a>
+									</div>
+									<div class="side_btn type03 mgt5">
+										<input type="text" placeholder="" class="ipt_txt left_form" />
+										<a href="" class="button__ btn_mid">주소변</a>
+									</div>
+									<div class="side_btn type02 mgt5">
+										<select data-data="[{ &quot;cd_nm&quot; : &quot;홍길동(900122)&quot; }, { &quot;cd_nm&quot; : &quot;선택1&quot; }]" class="select__ left_form"></select>
+										<a href="" class="button__ btn_mid">주소</a>
+									</div>
+									<div class="side_btn type05 mgt5">
+										<input type="text" placeholder="" class="ipt_txt left_form" />
+										<a href="" class="button__ btn_mid">새주소적용</a>
+									</div>
+									<div class="side_btn type06 mgt5">
+										<input type="text" placeholder="" class="ipt_txt left_form" />
+										<a href="" class="button__ btn_mid">우편번호 찾기</a>
+									</div>
+									<div class="side_txt mgt5">
+										<select data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ left_form"></select>
+										<div class="txt">시</div>
+									</div>
+									<div class="side_txt txt_2ea mgt5">
+										<input type="text" placeholder="" class="ipt_txt" />
+										<div class="txt">만원</div>
+									</div>
+									<div class="side_txt txt_5ea mgt5">
+										<span class="txt_l">가입경력</span>
+										<input type="text" placeholder="" class="ipt_txt" />
+										<div class="txt">%</div>
+									</div>
+								</td>
+							</tbody>
+						</table>
+						<textarea class="mgt5"></textarea>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">input(type="text", class="ipt_txt", placeholder="", value="default")
+input(type="text", class="ipt_txt right", placeholder="", value="right")
+select(class="select__", data-data='[{ "cd_nm" : "선택" }, { "cd_nm" : "선택1" }]')
+.form_half
+	.wid_half
+		input(type="text", class="ipt_txt", placeholder="", value="default")
+	.wid_half
+		input(type="text", class="ipt_txt", placeholder="", value="default")
+ 
+.form_half
+	.wid_half
+		input(type="text", class="ipt_txt", placeholder="", value="default")
+	.wid_half
+		select(class="select__", data-data='[{ "cd_nm" : "선택" }, { "cd_nm" : "선택1" }]')
+.ipt_btn
+	input.ipt_txt(type="text", placeholder="")
+	a.btn.btn_sch(href="") 검색
+.ipt_btn
+	select(class="select__ left_form", data-data='[{ "cd_nm" : "선택" }, { "cd_nm" : "선택1" }]')
+	a.btn.btn_sch(href="") 검색
+.ipt_btn
+	input.ipt_txt(type="text", placeholder="")
+	a.btn.btn_cal(href="") 달력
+.form_half
+	span.half.wid70
+		.ipt_btn
+			input.ipt_txt(type="text", placeholder="")
+			a.btn.btn_sch(href="") 검색
+	span.half.wid30
+		input.ipt_txt(type="text", placeholder="")
+.form_half
+	span.half.wid40
+		.ipt_btn
+			input.ipt_txt(type="text", placeholder="")
+			a.btn.btn_cal(href="") 달력
+	span.half.wid60
+		input.ipt_txt(type="text", placeholder="")
+.side_btn
+	select(class="select__ left_form", data-data='[{ "cd_nm" : "홍길동(900122)" }, { "cd_nm" : "선택1" }]')
+	a(href="", class="button__ btn_mid") 주소변환
+.side_btn.type03
+	input.ipt_txt.left_form(type="text", placeholder="")
+	a(href="", class="button__ btn_mid") 주소변
+.side_btn.type02
+	select(class="select__ left_form", data-data='[{ "cd_nm" : "홍길동(900122)" }, { "cd_nm" : "선택1" }]')
+	a(href="", class="button__ btn_mid") 주소
+.side_btn.type05
+	input.ipt_txt.left_form(type="text", placeholder="")
+	a(href="", class="button__ btn_mid") 새주소적용
+.side_btn.type06.mgt5
+	input.ipt_txt.left_form(type="text", placeholder="")
+	a(href="", class="button__ btn_mid") 우편번호 찾기
+textarea
+.form_half
+	.form_inner
+		span.half.wid33
+			select(class="select__", data-data='[{ "cd_nm" : "선택" }]')
+		span.half.wid33
+			input.ipt_txt(type="tel", placeholder="")
+		span.half.wid33
+			input.ipt_txt(type="tel", placeholder="")
+.form_half.txt_dashed
+	.form_inner
+		span.half.wid33
+			select(class="select__", data-data='[{ "cd_nm" : "선택" }]')
+		span.half.wid33
+			input.ipt_txt(type="tel", placeholder="")
+		span.half.wid33
+			input.ipt_txt(type="tel", placeholder="")
+.form_half.txt_slash.mgt5
+	.form_inner
+		span.half
+			input.ipt_txt(type="text", placeholder="")
+		span.half
+			input.ipt_txt(type="text", placeholder="")
+.form_half.txt_at
+	.form_inner
+		span.half
+			input.ipt_txt(type="text", placeholder="")
+		span.half
+			input.ipt_txt(type="text", placeholder="")</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<div class="design_radio">
+							<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;예&quot; }, { &quot;cd_nm&quot; : &quot;아니오&quot; }]" class="select__" />
+						</div>
+						<div class="input_btn_type mgt5">
+							<a href="" class="button__ btn_bg btn_sm btn_bg_arrow2 prev"></a>
+							<input type="text" placeholder="" class="ipt_txt" />
+							<input type="text" placeholder="" class="ipt_txt" />
+							<a href="" class="button__ btn_bg btn_sm btn_bg_arrow2 next"></a>
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">.design_radio
+	input(type="radio", class="select__", data-data='[{ "cd_nm" : "예" }, { "cd_nm" : "아니오" }]')</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ btn_chk" />
+						<div class="form_group mgt5">
+							<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;선택1&quot; }, { &quot;cd_nm&quot; : &quot;선택2&quot; }]" class="select__ btn_chk" />
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">input(type="checkbox", class="select__ btn_chk", data-data='[{ "cd_nm" : "선택" }]')
+.form_group
+	input(type="checkbox", class="select__ btn_chk", data-data='[{ "cd_nm" : "선택1" }, { "cd_nm" : "선택2" }]')</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ btn_rdo" />
+						<div class="form_group mgt5">
+							<input type="radio" data-data="[{ &quot;cd_nm&quot; : &quot;선택1&quot; }, { &quot;cd_nm&quot; : &quot;선택2&quot; }]" class="select__ btn_rdo" />
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">input(type="radio", class="select__ btn_rdo", data-data='[{ "cd_nm" : "선택" }]')
+.form_group
+	input(type="radio", class="select__ btn_rdo", data-data='[{ "cd_nm" : "선택1" }, { "cd_nm" : "선택2" }]')</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<div class="btn_area">
+							<a href="" class="button__ btn_lg spr_img_ab prev">이전</a>
+							<a href="" class="button__ btn_lg spr_img_ab next ">다음</a>
+						</div>
+						<div class="btn_area">
+							<a href="" class="button__ btn_lg">취소</a>
+							<a href="" class="button__ btn_lg orange">확인</a>
+							<a href="" class="button__ btn_lg gray">사업장추가</a>
+							<a href="" class="button__ btn_lg line">삭제</a>
+						</div>
+						<div class="btn_area left">
+							<a href="" class="button__ btn_lg">취소</a>
+							<a href="" class="button__ btn_lg orange">확인</a>
+						</div>
+						<div class="btn_area right">
+							<a href="" class="button__ btn_lg">취소</a>
+							<button href="" class="button__ btn_lg orange">확인</button>
+						</div>
+						<div class="btn_area">
+							<div class="fl">
+								<a href="" class="button__ btn_lg">취소</a>
+								<a href="" class="button__ btn_lg orange">확인</a>
+							</div>
+							<div class="fr">
+								<a href="" class="button__ btn_lg">취소</a>
+								<a href="" class="button__ btn_lg orange">확인</a>
+							</div>
+						</div>
+						<div class="btn_area">
+							<a href="" class="button__ btn_mid line_green">차량번호</a>
+							<a href="" class="button__ btn_mid line">그룹삭제</a>
+							<a href="" class="button__ btn_mid">그룹저장</a>
+						</div>
+						<div class="table_wrap green">
+							<table class="form__">
+								<colgroup>
+									<col style="width:100px;" />
+									<col/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>고객등록
+											<span class="org">*</span>
+										</th>
+										<td>
+											<a href="" class="button__ btn_mid">고객등록</a>
+											<a href="" class="button__ btn_mid line">차량번호</a>
+											<a href="" class="button__ btn_mid line_green">차량번호</a>
+											<a href="" class="button__ btn_mid line check">방문</a>
+											<p>테이블안,밖 버튼 동일 클래스명 사용 (.btn_mid)</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btn_area">
+							<a href="" class="button__ btn_mid32">취소</a>
+							<a href="" class="button__ btn_mid32 green">확인</a>
+							<a href="" class="button__ btn_mid32 gray">수정</a>
+						</div>
+						<div class="btn_area center">
+							<a href="" class="button__ btn_mid line dis_bk">프로스펙팅 입력</a>
+							<a href="" class="button__ btn_mid line dis_bk mgt10">활동명세</a>
+							<a href="" class="button__ btn_lg orange dis_bk mgt10">등록</a>
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">.btn_area
+	a(href="", class="button__ btn_lg spr_img_ab prev") 이전
+	a(href="", class="button__ btn_lg spr_img_ab next ") 다음
+.btn_area
+	a(href="", class="button__ btn_lg") 취소
+	a(href="", class="button__ btn_lg orange") 확인
+	a(href="", class="button__ btn_lg gray") 사업장추가
+	a(href="", class="button__ btn_lg line") 삭제
+.btn_area.left
+	
+.btn_area.right
+	
+.btn_area
+	.fl
+		a(href="", class="button__ btn_lg") 취소
+		a(href="", class="button__ btn_lg orange") 확인
+	.fr
+		a(href="", class="button__ btn_lg") 취소
+		a(href="", class="button__ btn_lg orange") 확인
+.btn_area
+	a(href="", class="button__ btn_mid line_green") 차량번호
+	a(href="", class="button__ btn_mid line") 그룹삭제
+	a(href="", class="button__ btn_mid") 그룹저장
+.btn_area
+	a(href="", class="button__ btn_mid32") 취소
+	a(href="", class="button__ btn_mid32 green") 확인
+	a(href="", class="button__ btn_mid32 gray") 수정</pre>
+				</li>
+				<li class="box">
+					<div class="btn_area form_half">
+						<div class="form_inner">
+							<span class="half wid33">
+								<a href="" class="button__ btn_lg gray">E-Mail 발송</a>
+							</span>
+							<span class="half wid33">
+								<a href="" class="button__ btn_lg gray">SMS 발송</a>
+							</span>
+							<span class="half wid33">
+								<a href="" class="button__ btn_lg gray">카카오톡</a>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">.btn_area.form_half
+	.form_inner
+		span.half.wid33
+			a(href="", class="button__ btn_lg gray") E-Mail 발송
+		span.half.wid33
+			a(href="", class="button__ btn_lg gray") SMS 발송
+		span.half.wid33
+			a(href="", class="button__ btn_lg gray") 카카오톡</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<div class="subtit_wrap">
+							<h2>개인고객등록</h2>
+						</div>
+						<div class="subtit_wrap">
+							<h2>개인고객등록
+								<span class="txt_s">추가 내용입니다.</span>
+							</h2>
+						</div>
+						<div class="subtit_wrap">
+							<h2>개인고객등록</h2>
+							<p class="txt_s">추가 내용입니다.</p>
+						</div>
+						<div class="subtit_wrap">
+							<h2 class="fl">개인고객등록</h2>
+							<div class="fr">추가 내용입니다.</div>
+						</div>
+						<div class="subtit_wrap">
+							<h2>개인고객등록
+								<span class="txt_s">
+									<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ btn_chk" />
+								</span>
+							</h2>
+						</div>
+						<div class="subtit_wrap right_btn">
+							<h2 class="fl">개인고객등록</h2>
+							<div class="btn_area">
+								<a href="" class="button__ btn_mid32 green">취소</a>
+								<a href="" class="button__ btn_mid32">확인</a>
+							</div>
+						</div>
+						<div class="subtit_wrap right_btn">
+							<h2 class="fl">개인고객등록
+								<span class="txt_s">
+									<input type="checkbox" data-data="[{ &quot;cd_nm&quot; : &quot;선택&quot; }]" class="select__ btn_chk" />
+								</span>
+							</h2>
+							<div class="btn_area">
+								<a href="" class="button__ btn_mid32 green">취소</a>
+								<a href="" class="button__ btn_mid32">확인</a>
+							</div>
+						</div>
+						<div class="subtit_wrap">
+							<h3>기본정보</h3>
+						</div>
+						<div class="subtit_wrap">
+							<h3>기본정보
+								<span class="txt_s"> 추가 내용입니다.</span>
+							</h3>
+						</div>
+						<div class="subtit_wrap">
+							<h3>기본정보</h3>
+							<div class="txt_s"> 추가 내용입니다.</div>
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">.subtit_wrap
+	h2 개인고객등록
+.subtit_wrap
+	h2 개인고객등록
+		span.txt_s 추가 내용입니다.
+.subtit_wrap
+	h2 개인고객등록
+		span.txt_s
+			input(type="checkbox", class="select__ btn_chk", data-data='[{ "cd_nm" : "선택" }]')
+.subtit_wrap
+	h2 개인고객등록
+	.txt_s 추가 내용입니다.
+.subtit_wrap.right_btn
+	h2.fl 개인고객등록
+	.btn_area
+		a(href="", class="button__ btn_mid32 green") 취소
+		a(href="", class="button__ btn_mid32") 확인
+.subtit_wrap.right_btn
+	h2.fl 개인고객등록
+		span.txt_s
+			input(type="checkbox", class="select__ btn_chk", data-data='[{ "cd_nm" : "선택" }]')
+	.btn_area
+		a(href="", class="button__ btn_mid32 green") 취소
+		a(href="", class="button__ btn_mid32") 확인
+.subtit_wrap
+	h3 기본정보
+.subtit_wrap
+	h3 기본정보
+		span.txt_s 	추가 내용입니다.
+.subtit_wrap
+	h3 기본정보
+	.txt_s 	추가 내용입니다.</pre>
+				</li>
+				<li class="box">
+					<p class="title_view">view</p>
+					<div class="view">
+						<ul class="bullet_dep01">
+							<li>분납해지대상 조회시 해지일은 해지예정일날에 표시</li>
+						</ul>
+						<ul class="bullet_dep01 mgt5">
+							<li>분납해지대상 조회시 해지일은 해지예정일날에 표시
+								<ul class="bullet_dep02">
+									<li>보험료산출기준 : 만기 = 갱신초회보험료, 분납 / 분납최고 / 분납해지 = 분할보험료</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="num_bullet_dep01 mgt5">
+							<li>1.&nbsp;법인을 신규등록 하려면 어떻게 해야되나요?
+								<ul class="num_bullet_dep02">
+									<li>사업자등록증 확인 후 사업자번호, 사업자명, 전화번호, 주소, 법인번호, 법인명을 입력하고 저장버튼을 클릭하면 됩니다.
+										<br>(이메일,영문명은 선택 입력 사항임)</li>
+								</ul>
+							</li>
+							<li>2.&nbsp;똑같은 이름의 법인이 너무 많아서 내가 찾는 기업을 검색하는데 시간이 많이 소요됩니다. 내가 원하는 기업을 쉽게 찾을 수 없나요?
+								<ul class="num_bullet_dep02">
+									<li>즐겨찾는 법인은 “관심기업”여부에 체크 후 저</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="txt_tip">간편설계는 보험료산출을 위한 화면 </div>
+						<div class="txt_tip red">간편설계는 보험료산출을 위한 화면</div>
+						<h2 class="mgt5">제목입니다.
+							<span class="txt_tip">간편설계 화면입니다.</span>
+							<span class="txt_tip red">간편설계 화면입니다.</span>
+						</h2>
+					</div>
+				</li>
+				<li class="box">
+					<p class="title">code</p>
+					<pre class="code_view">ul.bullet_dep01
+	li 
+ul.bullet_dep01
+	li 
+		ul.bullet_dep02
+			li 
+ul.num_bullet_dep01
+	li 1.&nbsp;법인을 
+		ul.num_bullet_dep02
+			li 
+	li 2.&nbsp;똑같은 
+		ul.num_bullet_dep02
+			li 즐겨찾는 
+.txt_tip 간편설계는 보험료산출을 위한 화면 
+.txt_tip.red 간편설계는 보험료산출을 위한 화면
+span.txt_tip 간편설계 화면입니다.
+span.txt_tip.red 간편설계 화면입니다.</pre>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	N("#mobile").cont(
+	{
+		init: function(view, request) {}
+	});
+</script>
+<style type="text/css">
+	/* h1.tit_guide {padding:50px 0 18px 20px;border-bottom:1px solid #000000;font-size:30px;color:#2a2a2a;font-weight:bold}
+h2.tit_guide {margin:20px 0 20px 20px;font-size:14px;color:#666;font-weight:bold}
+.noti {margin:10px 0;color:red;font-size:12px} */
+	
+	.prototype {
+		padding: 30px 0 0 0
+	}
+	
+	.prototype .go_menu {
+		padding: 0 15px;
+	}
+	
+	.prototype .go_menu li {
+		float: left;
+		margin: 2px
+	}
+	
+	.prototype .go_menu li a {
+		display: inline-block;
+		padding: 10px 20px;
+		border: 1px solid #333;
+		border-radius: 6px;
+		background: #333;
+		color: #fff
+	}
+	
+	.prototype .top {
+		display: block;
+		width: 50px;
+		height: 35px;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		padding: 15px 0 0 0;
+		border: 1px solid;
+		text-align: center;
+		z-index: 100;
+		color: #fff;
+		background: #000
+	}
+	
+	.prototype h1 {
+		margin: 50px 0 0;
+		padding: 8px 0 8px 15px;
+		border-bottom: 2px solid #000;
+		font-size: 30px;
+		color: #2a2a2a;
+		font-weight: bold;
+		background: #eee
+	}
+	
+	.prototype h2.tit_guide {
+		margin: 40px 0 20px;
+		font-size: 16px;
+		color: #ff5722;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype h2.tit_guide span {
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
+		color: #000
+	}
+	
+	.prototype h3.tit_guide {
+		margin: 20px 0 10px;
+		font-size: 14px;
+		color: #252525;
+		font-weight: bold;
+		line-height: 1.4
+	}
+	
+	.prototype .section h2.tit_guide:first-child {
+		margin-top: 20px
+	}
+	
+	.prototype .guide {
+		position: relative;
+		padding: 0 0 20px 0;
+		margin: 0
+	}
+	
+	.prototype .guide .txt_color .over {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		margin: 0 0 15px 0;
+		background: #ff3091
+	}
+	
+	.prototype .guide .txt_color .txt {
+		display: block;
+		width: 80px;
+		margin: 90px 0 0 0;
+		font-size: 12px;
+		color: #797d84;
+		text-align: center
+	}
+	
+	.prototype .guide .con {
+		margin-bottom: 50px
+	}
+	
+	.prototype .tip_guide {
+		margin: 30px 0 10px 0;
+		font-weight: bold
+	}
+	
+	.code {
+		padding: 20px 10px;
+		background: #e1fcff;
+		font-size: 14px;
+		border-left: 3px solid #cae7ea;
+		line-height: 1.7
+	}
+	
+	.guide_codelist li {
+		margin: 0 0 10px 0
+	}
+	
+	.coding_info li {
+		margin: 0 0 30px 0;
+		line-height: 1.7
+	}
+	
+	.coding_info li strong {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: 18px;
+		color: #673AB7
+	}
+	
+	.coding_info li p {
+		margin: 0 0 10px 0;
+		font-weight: 700
+	}
+	
+	.coding_info li p span {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #666
+	}
+	
+	.coding_info02 li {
+		margin: 0 0 10px 0;
+		font-weight: 700;
+		line-height: 1.5;
+		font-size: 16px;
+	}
+	
+	.coding_info02 li span {
+		display: block;
+		position: relative;
+		margin: 0 0 0 50px;
+		padding: 0 0 0 12px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	
+	.coding_info02 li span:before {
+		display: block;
+		content: '-';
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.section_bx {
+		padding: 17px
+	}
+	
+	.memo {
+		background: #ffe0b9;
+		padding: 10px;
+		font-size: 12px;
+		color: #461b0c
+	}
+	
+	.memo+.tit_guide {
+		margin-top: 20px !important
+	}
+	
+	.color_type {
+		width: 50%
+	}
+	
+	.color_type li {
+		position: relative;
+		margin: 30px 0
+	}
+	
+	.color_type li span {
+		position: absolute;
+		right: -60px;
+		top: -10px
+	}
+	
+	.color_type li.s1 {
+		height: 2px;
+		background: #009881
+	}
+	
+	.color_type li.s2 {
+		height: 2px;
+		background: #666666
+	}
+	
+	.color_type li.s3 {
+		height: 2px;
+		background: #bbbbbb
+	}
+	
+	.color_type li.s4 {
+		height: 2px;
+		background: #e5e5e5
+	}
+	
+	.color_type li.s5 {
+		height: 2px;
+		background: #eeeeee
+	}
+	
+	.color_zone {
+		overflow: hidden
+	}
+	
+	.color_zone li {
+		float: left
+	}
+	
+	.color_zone li strong {
+		display: block;
+		width: 80px;
+		height: 80px
+	}
+	
+	.line_box ul.guide {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100% !important;
+	}
+	
+	.line_box ul.guide>li {
+		padding: 0 10px 10px 10px;
+		flex: 0 0 50%;
+		box-sizing: border-box;
+	}
+	
+	.line_box ul.guide>li:nth-child(even) {
+		border-right: 0;
+	}
+	
+	.guide .box {
+		padding: 5px;
+	}
+	
+	.guide .box:first-child {
+		margin-top: 0;
+	}
+	
+	.guide .code_view {
+		padding: 10px;
+		white-space: pre-wrap;
+		line-height: 21px;
+		border: 1px solid #ccc;
+		margin: -5px 0 5px;
+	}
+	
+	.guide p.title {
+		margin: 5px 0 5px;
+		padding: 3px 7px;
+		color: #fff;
+		background: #999;
+	}
+	
+	.guide .box p.title_view {
+		margin-bottom: 5px;
+		padding: 3px 7px;
+		background: #f8f8f8;
+	}
+</style>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 백그라운드 -->
+    <RelativeLayout
+        android:id="@+id/portal_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login">
+
+        <RelativeLayout
+            android:id="@+id/out_portal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/portal_scroll_top_margin"
+            android:layout_marginLeft="@dimen/portal_scroll_left_margin"
+            android:layout_marginRight="@dimen/_120_dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@null">
+
+            <RelativeLayout
+                android:id="@+id/portal_icon_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/portal_scroll_top_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/portal_image"
+                    android:layout_width="@dimen/login_image_logo_width"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/t_db_title_wt" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/portal_icon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_50_dp"
+                android:layout_below="@+id/portal_icon_top_layout"
+                android:background="@drawable/border_shadow_round"
+                >
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10_dp"
+                    android:layout_margin="20dp"
+                    android:columnWidth="100dp"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    android:focusable="true"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/portal_top_logo"
+            android:layout_width="@dimen/_400_dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/_80_dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/t_ci" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

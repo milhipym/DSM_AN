@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dongbu.dsm">
+
+    <!-- mVaccine 권한추가 -->
+    <!-- java/net/URL;->openConnection() -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- android/net/ConnectivityManager;->getNetworkInfo(I) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- android/app/ActivityManager;->getRunningTasks(I) -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- targetSdk 28 이상에서 빌드할 경우 삭제 권한 필요 -->
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <!-- android Q에서 탐지 결과표시를 헤드업노티로 띄워주기 위해 사용 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <application
+        android:name=".app.DSMApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:hardwareAccelerated="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="whateverString"
+        android:theme="@style/Theme.AppCompat"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="p">
+
+        <activity
+            android:name=".intro.IntroActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.LOGIN">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="@string/kakaolink_host"
+                    android:scheme="@string/kakao_scheme" />
+            </intent-filter>
+</activity>
+
+<activity
+    android:name=".intro.LoginActivity"
+    android:theme="@style/AppTheme.LOGIN"
+    android:launchMode="singleTop"
+    android:configChanges="orientation|screenSize|keyboardHidden"
+    android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+<activity
+    android:name=".intro.PortalActivity"
+    android:theme="@style/AppTheme.LOGIN"
+    android:configChanges="orientation|screenSize|keyboardHidden"
+    android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+<activity
+    android:name=".main.MainBaseWebViewPadActivity"
+    android:screenOrientation="landscape"
+    android:theme="@style/AppTheme.LOGIN"
+    android:launchMode="singleTop"
+    android:configChanges="orientation|screenSize|keyboardHidden"
+    android:windowSoftInputMode="stateVisible|adjustPan|stateAlwaysHidden"
+    />
+
+<activity
+    android:name=".main.MainBaseWebViewPhoneActivity"
+    android:theme="@style/AppTheme.LOGIN"
+    android:launchMode="singleTop"
+    android:configChanges="orientation|screenSize|keyboardHidden"
+    android:windowSoftInputMode="stateVisible|adjustPan|stateAlwaysHidden">
+        <intent-filter>
+            <action android:name="android.intent.action.AVOCADO" />
+        </intent-filter>
+</activity>
+
+<!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+        <!-- 미네르바 액티비티 -->
+        <!-- 명함인식 -->
+        <activity
+            android:name="com.minerva.magicbcreaderlib.ui.activity.BCCaptureActivity"
+            android:theme="@style/AppTheme.LOGIN"
+            android:screenOrientation="landscape" />
+
+        <!-- A4 처리 -->
+        <activity android:name="kr.co.minervasoft.lib.magicidr.activity.IDRCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.LOGIN"
+            />
+        <activity android:name="kr.co.minervasoft.lib.magicidr.activity.IDRPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.LOGIN"
+            />
+        <activity android:name="kr.co.minervasoft.lib.magicidr.activity.IDRRepointActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.LOGIN"
+            />
+
+        <!-- 신분증 인식 -->
+        <activity
+            android:name="minerva.magicidreaderlib.MagicIDReaderCameraMainActivity"
+            android:theme="@style/AppTheme.LOGIN"
+            android:screenOrientation="landscape" />
+
+        <!-- 푸시 관련 액티비티 -->
+
+        <meta-data
+            android:name="kr.mtcom.appbase.debug"
+            android:value="true" />
+        <meta-data
+            android:name="kr.mtcom.smartmessage.push_sender_id"
+            android:value="@string/push_sender_id" />
+        <meta-data
+            android:name="kr.mtcom.smartmessage.company_code"
+            android:value="DBINS" />
+        <meta-data
+            android:name="kr.mtcom.smartmessage.root_activity"
+            android:value="com.dongbu.dsm.intro.IntroActivity" />
+
+        <!-- 동부 상용서버 -->
+        <!--<meta-data android:value="http://mpush.mdongbu.com:8100" android:name="kr.mtcom.smartmessage.base_url"/>-->
+        <!-- 동부 푸시 테스트 서버 -->
+        <meta-data
+            android:name="kr.mtcom.smartmessage.base_url"
+            android:value="http://10.88.23.30:8100" />
+
+        <activity
+            android:name=".push.activity.LoginActivity"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.dongbu.dsm.push.activity.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".push.activity.AddUserActivity"
+            android:theme="@style/AppTheme.LOGIN"
+            >
+            <intent-filter>
+                <action android:name="com.dongbu.dsm.push.activity.AddUserActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".push.activity.MessageListActivity"
+            android:theme="@style/AppTheme.LOGIN">
+            <intent-filter>
+                <action android:name="com.dongbu.dsm.push.activity.MessageListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".push.activity.MessageDetailActivity"
+            android:theme="@style/AppTheme.LOGIN">
+            <intent-filter>
+                <action android:name="com.dongbu.dsm.push.activity.MessageDetailActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 카메라 / 갤러리 관련 액티비티 -->
+        <activity
+            android:name=".camera.activity.CameraGalleryActivity"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+
+        <!-- 카카오톡 공유하기 -->
+        <activity
+            android:name=".share.KakaoTalkShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:theme="@style/Theme.Opacity">
+        </activity>
+
+        <!-- mVaccine Acitvity 추가  -->
+        <activity
+            android:name="com.TouchEn.mVaccine.b2b2c.activity.ScanActivity"
+            android:theme="@style/AppTheme.LOGIN"
+            android:label="@string/mv_app_name">
+        </activity>
+
+        <activity
+            android:name="com.TouchEn.mVaccine.b2b2c.activity.BackgroundScanActivity"
+            android:label="@string/mv_app_name"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+
+        <activity
+            android:name="com.TouchEn.mVaccine.b2b2c.activity.ResultLogActivity"
+            android:label="@string/mv_app_name"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name="com.TouchEn.mVaccine.b2b2c.activity.BackgroundScan"
+            android:label="@string/mv_app_name"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+
+<!--        <activity
+            android:name="com.TouchEn.mVaccine.b2b2c.activity.BackgroundRootingCheck"
+            android:label="@string/mv_app_name"
+            android:theme="@style/Theme.Transparent" >
+        </activity>-->
+
+        <!-- AgentWeb -->
+        <provider
+            android:name=".webview.agentweb.AgentWebFileProvider"
+            android:authorities="${applicationId}.AgentWebFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/web_files_paths"/>
+        </provider>
+        <activity
+            android:name=".webview.agentweb.ActionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/Theme.AppCompat"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+
+        </activity>
+
+        <activity android:name="com.softsecurity.transkey.TransKeyActivity" />
+
+        <!-- yeom: 네이티브 서명 액티비티 추가 -->
+        <activity
+            android:name="com.m2soft.view.CanvasActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            />
+
+        <receiver android:name=".webview.agentweb.RealDownLoader$NotificationBroadcastReceiver" />
+
+        <!-- mVaccine 실시간 감시용 리시버 추가 -->
+<!--        <receiver android:name="com.TouchEn.mVaccine.b2b2c.receiver.ScanReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>-->
+        <!-- mVaccine 스캔 탐지 결과를 브로드캐스트로 수신할 때 사용 -->
+        <receiver
+            android:name=".CodeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.TouchEn.mVaccine.b2b2c.FIRE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 카카오톡 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <!-- Android 운영체제에서 엠백신 스레드 종료처리 방지용 서비스 추가 -->
+        <service
+            android:name="com.TouchEn.mVaccine.b2b2c.service.OnInstallService"
+            android:process=":remote" />
+
+        <!-- Q대응 헤드업 노티를 띄워주기 위해서 사용 -->
+        <service android:name="com.TouchEn.mVaccine.b2b2c.service.DetectionResultSendService" />
+
+        <service android:name=".service.LogoutService" />
+        <service android:name="com.raonsecure.touchen_mguard_4_0.RemoteMDMServiceConn"
+            tools:ignore="Instantiatable" />
+
+        <!-- 카메라 호출 시 Android N 이상부터는 다음과 같이 써야 한다. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- MDM 다운로드 후 설치 호출 시 Android N 이상부터는 다음과 같이 써야 한다. -->
+        <provider
+            android:authorities="${applicationId}.provider.MGuardSdkFileProvider"
+            android:name="com.raonsecure.touchen_mguard_4_0.provider.MGuardSdkFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="Instantiatable">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/mguard_sdk_file_provider_paths"/>
+        </provider>
+
+        <!--프로바이더 설정 호출시 content://authorities/path -->
+        <provider android:name=".provider.AppInterfaceProvider"
+            android:authorities="com.dongbu.dsm"
+            android:exported="true"/>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+
+    <!-- CPA 권한 설정 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 구글 빌드시 패키지명 변경 -->n
+    <permission
+        android:name="com.dongbu.dsm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- 구글 빌드시 패키지명 변경 -->
+    <uses-permission android:name="com.dongbu.dsm.permission.C2D_MESSAGE" />
+    <!-- end:GCM -->
+
+    <!-- mVaccine 권한추가 -->
+    <!-- java/net/URL;->openConnection() -->
+    <!-- android/net/ConnectivityManager;->getNetworkInfo(I) -->
+
+    <!-- android/app/ActivityManager;->getRunningTasks(I) -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!--targets Android 8.0 'O' (API level 26) or higher-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+</manifest>

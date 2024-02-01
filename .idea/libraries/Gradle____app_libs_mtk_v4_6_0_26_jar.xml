@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/mtk_v4.6.0.26.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/mtk_v4.6.0.26.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

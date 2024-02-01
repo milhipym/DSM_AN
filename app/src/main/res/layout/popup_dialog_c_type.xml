@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <!-- 백그라운드 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_15_dp"
+        android:layout_marginLeft="@dimen/_15_dp"
+        android:layout_marginRight="@dimen/_15_dp"
+        android:layout_marginTop="@dimen/_15_dp"
+        android:background="@drawable/background_2_5_ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30_dp"
+            android:layout_marginRight="@dimen/_30_dp"
+            android:layout_marginTop="@dimen/_30_dp"
+            android:text="title"
+            android:textSize="@dimen/_18_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30_dp"
+            android:layout_marginRight="@dimen/_30_dp"
+            android:layout_marginTop="@dimen/_6_dp"
+            android:textSize="@dimen/_13_dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/dialog_econtent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120_dp"
+                android:layout_marginLeft="@dimen/_10_dp"
+                android:layout_marginRight="@dimen/_10_dp"
+                android:layout_marginTop="@dimen/_20_dp"
+                android:background="@null"
+                android:gravity="top"
+                android:lineSpacingExtra="@dimen/_2_dp"
+                android:textSize="@dimen/_16_dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_b_type_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_64_dp"
+            android:layout_below="@+id/dialog_content"
+            android:layout_marginTop="@dimen/_30_dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_left"
+                android:text="@string/cancel"
+                android:textColor="@color/color_f8f5f0_btn"
+                android:textSize="@dimen/_18_dp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_right"
+                android:text="@string/popup_dialog_button_confirm"
+                android:textColor="@color/color_f8f5f0_btn"
+                android:textSize="@dimen/_18_dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

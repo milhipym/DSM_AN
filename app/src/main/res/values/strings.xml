@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">DB스마트포탈</string>
+
+    <!--push -->
+    <string name="push_sender_id">36299094801</string>
+
+    <!--kakaotalk -->
+    <string name="kakao_app_key">9dd4e8a447800261ae1a3909297a6335</string>
+    <string name="kakao_scheme">kakao9dd4e8a447800261ae1a3909297a6335</string>
+    <string name="kakaolink_host">kakaolink</string>
+    <string name="kakao_button">앱으로 이동</string>
+
+    <string name="dsm_scheme">mportalp</string>
+    <string name="dsmlink_host">com.dongbu.dsm</string>
+
+    <!-- 일반계정 로그인 -->
+    <string name="login_error_id">아이디 형식이 틀립니다.</string>
+    <string name="login_error_password">비밀번호가 틀립니다.</string>
+
+    <string name="login">로그인</string>
+    <string name="find_password">비밀번호 찾기</string>
+    <string name="id">아이디</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="repassword">비밀번호 확인</string>
+    <string name="nickname">이름 또는 닉네임</string>
+    <string name="join">회원가입</string>
+    <string name="memberjoin">가입하기</string>
+    <string name="confirm">확인</string>
+    <string name="save_id">아이디 저장</string>
+    <string name="confirm_email">해당 email을 입력해 주세요.</string>
+    <string name="guide_email">회원가입 때 사용한 이메일 주소를 입력하세요.</string>
+
+    <string name="id_input_data_empty">아이디가 입력되지 않았습니다.</string>
+    <string name="pw_input_data_empty">비밀번호가 입력되지 않았습니다.</string>
+    <string name="account_input_data_empty">정보입력이 완료되지 않았어요.</string>
+    <string name="account_id_address_error">아이디 계정이 올바르지 않습니다.</string>
+    <string name="account_email_address_error">이메일 계정이 올바르지 않습니다.</string>
+    <string name="account_id_error">아이디는 8자 영문대소문자, 숫자만 입력 가능합니다.\n다시 확인해 주세요.</string>
+    <string name="account_password_error">비밀번호는 8자 영문대소문자, 숫자, 특수문자 혼합하여\n입력해 주세요.</string>
+    <string name="update_pwd_not_same">비밀번호가 동일하지 않습니다.</string>
+    <string name="account_password_not_match">비밀번호가 동일하지 않습니다.\n다시 입력해 주세요.</string>
+    <string name="account_normal_fail_verify_email">입력하신 이메일은 이미등록되어 있습니다.</string>
+    <string name="invalid_password">비밀번호가 다릅니다.</string>
+
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+    <string name="hour">시간</string>
+    <string name="hour_2">시</string>
+    <string name="minute">분</string>
+    <string name="date">날짜</string>
+    <string name="step">걸음</string>
+
+    <string name="next">다음</string>
+
+    <string name="active_home">홈으로</string>
+
+    <!-- Setting -->
+    <string name="logout">로그아웃</string>
+    <string name="verupdate">업데이트 확인</string>
+    <string name="version">Ver</string>
+    <string name="newestversion">최신버전입니다.</string>
+    <string name="notification">알림</string>
+    <string name="all_noti">전체 알림 허용</string>
+
+    <!-- CameraGallery -->
+    <string name="popup_dialog_select_camera_gallery">사진을 가져올 방법을 선택하세요.</string>
+    <string name="popup_dialog_camera">카메라</string>
+    <string name="popup_dialog_gallery">갤러리</string>
+    <string name="popup_dialog_no_sdcard">SD Card 가 필요합니다.</string>
+
+    <!-- 팝업 -->
+    <string name="popup_dialog_button_confirm">확인</string>
+    <string name="popup_dialog_button_cancel">취소</string>
+    <string name="popup_dialog_data_error_title">데이터 오류</string>
+    <string name="popup_dialog_data_error_content">일시적인 오류입니다.\n다시 한번 시도해주세요.</string>
+    <string name="popup_dialog_server_error_content">서버 데이터에 문제가 있습니다.\n다시 한번 시도해주시고\n문제가 지속될 경우\n회사로 문의해 주세요.</string>
+    <string name="popup_dialog_netword_error_title">통신 오류</string>
+    <string name="popup_dialog_netword_error_content">이동 통신망 또는 무선 네트워크\n접속이 연결되지 않았거나\n원활하지 않습니다.\n확인 후 다시 접속해주세요.</string>
+    <string name="popup_dialog_logout_title">로그아웃 안내</string>
+    <string name="popup_dialog_logout_content">오랜시간동안 이용하지 않아 로그아웃을 진행합니다.</string>
+    <string name="popup_dialog_logout_manual_content">로그아웃을 진행하시겠습니까?</string>
+    <string name="popup_dialog_update_title">업데이트 안내</string>
+    <string name="popup_dialog_update_content">더욱 향상된 서비스를 위한 쉬운방법!\n지금 바로 업데이트해주세요.</string>
+    <string name="popup_dialog_app_install_title">앱 설치 안내</string>
+    <string name="popup_dialog_app_install_content">앱이 설치되어 있지 않습니다.\n앱을 설치하시겠습니까?</string>
+    <string name="popup_dialog_app_install_content_pk_test">(!) 다운로드 화면에서 PK자격 앱을 찾아 설치하시고,\nDB스마트포털에서 PK자격 앱을 재실행 해주세요.</string>
+    <string name="popup_dialog_app_install_content_bohum">(!) 회원가입 및 수강신청은 보험연수원 PC버전(홈페이지)에서만 가능합니다.\nPC에서 회원가입, 수강신청 후 앱을 통해 학습하실 수 있습니다.</string>
+    <string name="popup_dialog_app_install_site">(!) DB러닝앱 사이트로 이동 후 다운 및 설치 부탁드립니다.</string>
+    <string name="popup_dialog_app_finish_title">앱 종료 안내</string>
+    <string name="popup_dialog_app_finish_content">앱을 종료하시겠습니까?</string>
+    <string name="popup_dialog_id_loing_error">존재하지 않는 계정의 아이디입니다.</string>
+    <string name="popup_dialog_a_type_title">안내</string>
+    <string name="popup_dialog_must_secure_keyboard_complete_content">로그인을 위해 반드시 보안키보드를 입력완료해 주세요.</string>
+    <string name="popup_dialog_permission_content">권한을 허용하지 않으면 DSM(영업용모바일)을 이용하실 수 없습니다.</string>
+    <string name="popup_dialog_c_type_title">문의하기</string>
+    <string name="popup_dialog_system_error_content">시스템 오류로 인하여 중단합니다.</string>
+    <string name="popup_dialog_input_error_content">입력 데이터가 부족하여 중단합니다.</string>
+    <string name="popup_dialog_drop_member_content">탈퇴한 회원입니다.</string>
+    <string name="popup_dialog_block_member_content">로그인이 차단된 회원입니다.</string>
+    <string name="popup_dialog_write_info_content">정보기록에 실패하였습니다.</string>
+    <string name="popup_dialog_session_content">로그인에 실패하였습니다.\n다시 시도해주시기 바랍니다.</string>
+    <string name="popup_dialog_token_content">로그인에 실패하였습니다.\n다시 시도해주시기 바랍니다.</string>
+    <string name="popup_dialog_invalid_id_content">아이디가 다릅니다.</string>
+    <string name="popup_dialog_search_passwd_desc">회원가입에 사용한 이메일 주소를 입력하세요</string>
+    <string name="popup_dialog_search_passwd_error">이메일 형식에 맞춰 다시입력해주세요.</string>
+    <string name="popup_dialog_button_retry">재요청</string>
+    <string name="popup_dialog_serucity_content">보안에 취약할 수 있습니다.그래도 계속 하시겠습니까?</string>
+
+
+    <string name="line">────────────────────────────────────────────────────────────</string>
+
+    <!-- 문구 -->
+    <string name="turn_on">켜짐</string>
+    <string name="turn_off">꺼짐</string>
+    <string name="am">am</string>
+    <string name="pm">pm</string>
+    <string name="complete">완료</string>
+    <string name="edit">게시물 수정</string>
+    <string name="delete">삭제</string>
+    <string name="upload">올리기</string>
+    <string name="male">남성</string>
+    <string name="female">여성</string>
+    <string name="cancel">취소</string>
+    <string name="default_select">선택해주세요</string>
+    <string name="year">년</string>
+    <string name="month">월</string>
+    <string name="second">초</string>
+    <string name="day">일</string>
+    <string name="week">주</string>
+    <string name="before">전</string>
+    <string name="won">원</string>
+    <string name="breakfast">#아침</string>
+    <string name="lunch">#점심</string>
+    <string name="dinner">#저녁</string>
+    <string name="latenight">#심야</string>
+    <string name="bf">아침알람</string>
+    <string name="lc">점심알람</string>
+    <string name="dn">저녁알람</string>
+    <string name="not_look_a_day">오늘 하루 보지않기</string>
+
+    <string name="sunday">일요일</string>
+    <string name="monday">월요일</string>
+    <string name="tuesday">화요일</string>
+    <string name="wednesday">수요일</string>
+    <string name="thursday">목요일</string>
+    <string name="friday">금요일</string>
+    <string name="saturday">토요일</string>
+
+    <string name="january">JAN</string>
+    <string name="february">FEB</string>
+    <string name="march">MAR</string>
+    <string name="april">APR</string>
+    <string name="may">MAY</string>
+    <string name="june">JUN</string>
+    <string name="july">JUL</string>
+    <string name="august">AUG</string>
+    <string name="september">SEP</string>
+    <string name="october">OCT</string>
+    <string name="november">NOV</string>
+    <string name="december">DEC</string>
+
+    <!-- Toast -->
+    <string name="toast_app_exit">"뒤로"버튼을 한 번 더 누르시면 종료됩니다.</string>
+
+    <!-- 백신 -->
+    <string name="mv_app_name">TouchEn mVaccine</string>
+
+    <string name="mv_mVaccineScanning">TouchEn mVaccine이 구동 중입니다.</string>
+    <string name="mv_COMMON_COPYRIGHT">© 2013 RAONSECURE,Inc. All rights reserved.</string>
+    <string name="mv_dialog_stopdialog_textview">초후에 시간이 많이 걸리는 검사를 백그라운드 작업으로 변경합니다.</string>
+    <string name="mv_no">아니요</string>
+    <string name="mv_yes">예</string>
+    <string name="mv_msg_rootingexitapp">루팅폰에서는 서비스를 이용하실 수 없습니다.</string>
+    <string name="mv_msg_rootingyesorno">루팅폰입니다. 검사를 중지하실려면 예를  검사를 계속 진행하실려면 아니오를 누르세요</string>
+    <string name="mv_msg_rootingyes">루팅폰입니다. 스마트폰 보안에 영향을 주는 구조변경(탈옥,루팅)을 한폰에서 발생한 문제는 자사에서는 책임지지 않습니다. </string>
+    <string name="mv_count">검사파일수 : </string>
+    <string name="mv_infected">악성코드 발견 수 : </string>
+    <string name="mv_pattern">패턴버전 : </string>
+    <string name="mv_engine">엔진버전 : </string>
+    <string name="mv_dualengine">듀얼엔진버전 : </string>
+    <string name="mv_scan_result">검사결과</string>
+    <string name="mv_scan_result_msg">악성코드가 검출되었습니다. 삭제하시겠습니까? 삭제하지 않으면 스마트폰 내 정보가 해킹될 수 있습니다. </string>
+    <string name="mv_scan_detect_malware">TouchEn mVaccine이 악성코드를 탐지 하였습니다.</string>
+    <string name="mv_title_rootscan">루팅검사 </string>
+    <string name="mv_msg_rootapp">루팅관련 불법앱이 설치되어 있습니다.삭제 후 해당앱을 다시 실행해 주십시오. </string>
+    <string name="mv_msg_detect_malware_count"> 개의 악성코드를 발견하였습니다. </string>
+    <string name="mv_msg_surenot_delete">삭제하지 않은 앱이 있습니다. 삭제하지 않고 이 화면에서 나가시겠습니까?</string>
+    <string name="mv_delete">삭제</string>
+    <string name="mv_close">닫기</string>
+    <string name="mv_malware_name">악성코드명 : </string>
+    <string name="mv_risk_high">위험도 : 높음</string>
+    <string name="mv_stop">검사중지</string>
+    <string name="mv_scanning_middle_title">악성코드 검사 진행 중 . . .</string>
+    <string name="mv_path">검사경로: </string>
+    <string name="mv_msg_updateprogress">업데이트 진행 중입니다.\n네트워크 상태에 따라서 시간이 지연될 수 있습니다.</string>
+    <string name="mv_check_license">라이센스를 체크하는 중입니다.</string>
+    <string name="mv_license_expired">라이센스가 만료되었습니다.</string>
+    <string name="mv_license_not_matched">라이센스가 일치하지 않습니다.</string>
+    <string name="mv_siteid_error">잘못된 사이트ID 입니다.</string>
+    <string name="mv_sure_stop_scan">검사를 중지하시겠습니까?</string>
+    <string name="mv_msg_remote_connection_dected">Remote Access detected</string>
+    <string name="mv_msg_remote_connection_title">Remote Access </string>
+    <string name="mv_realtime_title">Realtime Scanning</string>
+    <string name="mv_realtime_message">Scanning Installed App on Realtime</string>
+	<string name="mv_malware_detect_headup_title">Malware detected</string>
+    <string name="mv_malware_detect_headup_message">Remove malware now</string>
+    <string name="mv_channel_discript_detect_malware">This is for Malware Detection</string>
+    <string name="mv_channel_discript_detect_mvaccine">This is for mVaccine Detection</string>
+</resources>
