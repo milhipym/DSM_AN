@@ -1,15 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: :smartmessage:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3352846bdab30ef206052b77b8846e9b/jetified-smartmessage/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3352846bdab30ef206052b77b8846e9b/jetified-smartmessage/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3352846bdab30ef206052b77b8846e9b/jetified-smartmessage/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49e8beb17b2c51005e0b864fd9a580b9/jetified-smartmessage/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49e8beb17b2c51005e0b864fd9a580b9/jetified-smartmessage/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49e8beb17b2c51005e0b864fd9a580b9/jetified-smartmessage/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f6990f1b436d027c0349a743799d5e0/jetified-smartmessage/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f6990f1b436d027c0349a743799d5e0/jetified-smartmessage/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f6990f1b436d027c0349a743799d5e0/jetified-smartmessage/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0638a52247936e8c41b0ebfd7995ebf/jetified-smartmessage/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0638a52247936e8c41b0ebfd7995ebf/jetified-smartmessage/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0638a52247936e8c41b0ebfd7995ebf/jetified-smartmessage/AndroidManifest.xml" />

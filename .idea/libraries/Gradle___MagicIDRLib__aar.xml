@@ -1,25 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: :MagicIDRLib:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dcae01cc6ac257dcf7ac92f491df92/jetified-MagicIDRLib/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dcae01cc6ac257dcf7ac92f491df92/jetified-MagicIDRLib/jars/libs/mCryptoMng.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dcae01cc6ac257dcf7ac92f491df92/jetified-MagicIDRLib/jars/libs/ABrainLib.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dcae01cc6ac257dcf7ac92f491df92/jetified-MagicIDRLib/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dcae01cc6ac257dcf7ac92f491df92/jetified-MagicIDRLib/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fab489a5decde493e61fffb3ddd7b4d/jetified-MagicIDRLib/jars/libs/mCryptoMng.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fab489a5decde493e61fffb3ddd7b4d/jetified-MagicIDRLib/jars/libs/ABrainLib.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fab489a5decde493e61fffb3ddd7b4d/jetified-MagicIDRLib/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fab489a5decde493e61fffb3ddd7b4d/jetified-MagicIDRLib/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fab489a5decde493e61fffb3ddd7b4d/jetified-MagicIDRLib/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f92e8d253ab26bed7022186fac008de/jetified-MagicIDRLib/jars/libs/mCryptoMng.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f92e8d253ab26bed7022186fac008de/jetified-MagicIDRLib/jars/libs/ABrainLib.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f92e8d253ab26bed7022186fac008de/jetified-MagicIDRLib/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f92e8d253ab26bed7022186fac008de/jetified-MagicIDRLib/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f92e8d253ab26bed7022186fac008de/jetified-MagicIDRLib/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/jars/libs/ABrainLib.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/jars/libs/mCryptoMng.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/jars/libs/mCryptoMng.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/jars/libs/ABrainLib.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/648de979b0d457e6360ce5413ad8aca1/jetified-MagicIDRLib/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />

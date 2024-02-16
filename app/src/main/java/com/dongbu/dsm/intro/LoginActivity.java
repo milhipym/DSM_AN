@@ -23,6 +23,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
+
 import com.blankj.utilcode.util.AppUtils;
 import com.blankj.utilcode.util.CacheUtils;
 import com.blankj.utilcode.util.KeyboardUtils;
@@ -69,7 +71,7 @@ public class LoginActivity extends IntroBaseActivity implements View.OnClickList
     private BackKeyEditText id_edit;
     private EditText passwd_edit;
     private ImageButton mIdDelBtn, mPasswdDelBtn;
-    private RelativeLayout mLoginScreen, mOutLoginLayout;
+    private ConstraintLayout mLoginScreen, mOutLoginLayout;
     private HorizontalScrollView keyscroll;
     private String mPlainText = "";
     private String mCipherText = "";
@@ -167,8 +169,8 @@ public class LoginActivity extends IntroBaseActivity implements View.OnClickList
             setupTestDomainBtn(true);
         }
 
-        mOutLoginLayout =   (RelativeLayout)    findViewById(R.id.out_login_layout);
-        mLoginScreen    =   (RelativeLayout)    findViewById(R.id.login_screen);
+        mOutLoginLayout =   (ConstraintLayout)    findViewById(R.id.out_login_layout);
+        mLoginScreen    =   (ConstraintLayout)    findViewById(R.id.login_screen);
         mLoginScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -224,7 +226,8 @@ public class LoginActivity extends IntroBaseActivity implements View.OnClickList
 
         if(Config.ENABLE_DISPLAY_APP_VERSION_IN_LOGIN) {
             if(DSMUtil.isTablet()) {
-                mSearchPwTv.setText("앱 버전 : " + AppUtils.getAppVersionName() + " " + (Config.IS_SERVER_HOST_REAL ? "" : "테스트"));
+                //mSearchPwTv.setText("앱 버전 : " + AppUtils.getAppVersionName() + " " + (Config.IS_SERVER_HOST_REAL ? "" : "테스트"));
+                mSearchPwTv.setText(AppUtils.getAppVersionName() + " " + (Config.IS_SERVER_HOST_REAL ? "" : "테스트"));
             } else {
                 mSearchPwTv.setText(AppUtils.getAppVersionName() + " " + (Config.IS_SERVER_HOST_REAL ? "" : "테스트"));
             }
@@ -274,7 +277,7 @@ public class LoginActivity extends IntroBaseActivity implements View.OnClickList
             mUserDeviceType.setText("자동");
         } else {
             if (DSMUtil.isTablet()) {mUserDeviceType.setText("태블릿");}
-            else {mUserDeviceType.setText("폰");}
+            else {mUserDeviceType.setText("폰모드");}
         }
         //#2. 터치하면서 폰-태블릿 변경기능
         mUserDeviceType.setOnClickListener(new View.OnClickListener() {
@@ -288,14 +291,16 @@ public class LoginActivity extends IntroBaseActivity implements View.OnClickList
     @SuppressLint("InvalidAnalyticsName")
     public void userDeviceTypeChoice()
     {
-        mTrace = FirebasePerformance.getInstance().newTrace("DSM_userDeviceTypeChoice");
-        mTrace.start();
         Bundle params = new Bundle();
         params.putString("Method","userDeviceTypeChoice()");
         mFirebaseAnalytics.logEvent("userDeviceTypeChoice",params);
+        mFirebaseAnalytics.logEvent("UATEST", params);
+        mFirebaseAnalytics.logEvent("UAMODEL" + Build.MODEL + "_" + Build.DEVICE,params);
         String message = "";
-        String sub_message = "\n*해당 기능은 안드로이드의 다양한 해상도를 일부 중촉시켜드리고자 제공하는 것으로 "
-                            +"\n해상도가 맞지 않는 경우 단말종류를 최대한 맞게 변경하여 사용해 주시기 바랍니다. ";
+        String sub_message = "";
+/*                "\n*해당 기능은 안드로이드의 다양한 해상도를 일부 충족시켜드리고자 제공하는 것으로 "
+                            +"\n해상도가 맞지 않는 경우 최대한 맞게 변경하여 사용해 주시기 바랍니다. "
+                            +"\n설정 -> 디스플레이 메뉴에서 글자크기를 작게 줄이시거나 화면 레이아웃 메뉴에서 화면크기를 줄이시기 바랍니다.";*/
         if(DSMUtil.isTablet()){ message = "현재 단말 상태는 태블릿을 설정되어 있습니다. 폰으로 변경하시겠습니까?"+ "\n" + sub_message; }
         else{ message = "현재 단말 상태는 폰으로 설정되어 있습니다. 태블릿으로 변경하시겠습니까?"+ "\n" + sub_message; }
 
@@ -331,7 +336,6 @@ public class LoginActivity extends IntroBaseActivity implements View.OnClickList
                 userDeviceTypeDialog.dismiss();
             }
         });
-        mTrace.stop();
         userDeviceTypeDialog.show();
     }
 

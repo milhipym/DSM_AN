@@ -39,7 +39,7 @@ public class Config {
     /**
      * 로그인 후 MDM Agent Check 실행 여부
      */
-    public static boolean ENABLE_MDM_AGENT_CHECK = false;                                   // 로그인 후 MDM Agent Check 실행 여부
+    public static boolean ENABLE_MDM_AGENT_CHECK = true;                                   // 로그인 후 MDM Agent Check 실행 여부
 
     /**
      * MDM 을 통한 DSM 앱 업데이트 활성화 여부
