@@ -434,6 +434,7 @@ public class CommonData {
     public static final int MDM_ACTION_LAUNCH_APP = 204;
     public static final int MDM_ACTION_LOGIN_OFFICE_CHECK = 205;
     public static final int MDM_ACTION_FORGEAPP_CHECK = 206;
+    public static final int MDM_ACTION_UPMOOAPP_UPDATE = 207;
 
     // -----------------------------------------------------------------------------------------------------------------------------------------------
     // 로그아웃 관련

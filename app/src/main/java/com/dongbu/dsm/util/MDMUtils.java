@@ -222,13 +222,18 @@ public class MDMUtils {
                 _mdm.RS_MDM_Init(mContext, NetworkConst.getInstance().getMDMDomain(), mGuardConnectionListener);
                 break;
             case CommonData.MDM_ACTION_LAUNCH_APP:
+
                 HandlerUtils.post(new Runnable() {
                     @Override
-                    public void run() {
-                        AppUtils.launchApp(CommonData.APP_PACKAGE_NAME_MDM);
-                    }
+                    public void run() { AppUtils.launchApp(CommonData.APP_PACKAGE_NAME_MDM ); }
                 });
-
+                break;
+            case CommonData.MDM_ACTION_UPMOOAPP_UPDATE:
+                android.util.Log.d("YYMY", "MDM_ACTION_UPMOOAPP_UPDATE");
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                i.setData(Uri.parse("mguard://mam/office"));
+                mActivity.startActivity(i);
                 break;
             case CommonData.MDM_ACTION_CHECK_AGENT:
                 _mdm.RS_MDM_CheckAgent(mContext, new MDMAPI.MGuardCallbackListener() {
@@ -673,7 +678,12 @@ public class MDMUtils {
                                 atualizaApp.setContext(mActivity);
                                 atualizaApp.execute(downloadUrl);
                             } else {
-                                doProc(CommonData.MDM_ACTION_LAUNCH_APP, false);
+                                //doProc(CommonData.MDM_ACTION_LAUNCH_APP, false);
+                                android.util.Log.d("YYMY", "POPUP_TYPE_MDM_VERSION_CHECK");
+                                Intent i = new Intent(Intent.ACTION_VIEW);
+                                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                i.setData(Uri.parse("mguard://mam/office"));
+                                mActivity.startActivity(i);
                             }
                         }
 

@@ -1664,6 +1664,7 @@ public class BaseActivity extends AppCompatActivity {
                     break;
                 case CommonData.POPUP_TYPE_INSTALL_FOR_GO_TO_MDM:				        					// 외부 앱 실행 button click
                     if(commonData.isLogined() && Config.ENABLE_MDM_AGENT_CHECK) {
+                        android.util.Log.e("YYYM", "POPUP_TYPE_INSTALL_FOR_GO_TO_MDM..." );
                         MDMUtils.getInstance(mContext, BaseActivity.this).doProc(CommonData.MDM_ACTION_LAUNCH_APP, false);
                     } else {
                         PopupUtils.show(BaseActivity.this, "MDM 을 지원하지 않는 버전입니다.");
